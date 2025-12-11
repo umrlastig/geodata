@@ -206,6 +206,12 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:label "Research Geodataset" .
 
 
+###  http://purl.org/www.umr-lastig.fr/geodata#UserFeedback
+:UserFeedback rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
+              rdfs:comment "User feedback about using one or more resource" .
+
+
 ###  http://xmlns.com/foaf/0.1/Organization
 <http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class .
 

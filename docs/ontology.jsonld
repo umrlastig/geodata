@@ -208,6 +208,15 @@
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
   } ]
 }, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "User feedback about using one or more resource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Resource"
+  } ]
+}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#amraimond",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Agent", "http://www.w3.org/ns/prov#Person", "http://xmlns.com/foaf/0.1/Person" ],
   "http://www.w3.org/ns/prov#actedOnBehalfOf" : [ {
