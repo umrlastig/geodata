@@ -338,6 +338,15 @@
     
 
 
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#UserFeedback -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:comment>User feedback about using one or more resource</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/Organization -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
