@@ -43,7 +43,7 @@
     "@id" : "https://intforout.github.io/geodata#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Ontology to describe geodatasets in support of knowledge production and transfer"
+    "@value" : "A knowledge graph, including a dedicated vocabulary and possible instances, dedicated to describe how geodatasets support knowledge production and transfer. It describes datasets, papers, storymaps, pedagogic material and processes, altogether referred to as catalogued resources, that need to be shared, discovered or reused. The object property \"represents\" connects a catalogued resource with a concept. Specific concepts are introduced in projects that use Geodata to describe more precisely the knowledge at stake."
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core"
@@ -136,12 +136,18 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Collection of items that supports the usage of geodata for a pedagogic or learning purpose, in relationship with given concepts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Resource"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#CollectionItem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A collection item is composed of different pieces of data, usually selections from bigger datasets, associated with a proposed visualisation, and narratives that connect the visual items to the concepts of the collection. It has a spatial and temporal extent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Resource"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geocatalog",
@@ -184,10 +190,13 @@
     "@id" : "http://www.w3.org/ns/dcat#DatasetSeries"
   } ]
 }, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Representation",
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Cette classe décrit la représentation d'un concept dans un jeu de données, dans un schéma de données, dans une collection. Elle permet de faire le lien entre des données et des concepts. C'est une classe plutôt qu'une propriété pour permettre de plus facilement lui ajouter des propriétés qui précisent le mode de représentation, par exemple si un jeu ReseauDeMobilité comporte des instances de réseaux de mobilité ou alors représente globalement un réseau de mobilité."
+    "@value" : "Ready to use material to teach a given competence, in relationship with concepts, to a given audience. For example a wikipedia page, a storymap, a GIS exercise, an outdoor educational activity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Resource"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset",
@@ -251,24 +260,6 @@
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Géodata Paris (ex ENSG-Géomatique)"
-  } ]
-}, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#hasConcept",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Representation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#hasData",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Representation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Resource"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction",
@@ -335,6 +326,15 @@
   } ],
   "http://xmlns.com/foaf/0.1/workInfoHomepage" : [ {
     "@value" : "https://www.umr-lastig.fr/mdvandamme/"
+  } ]
+}, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#represents",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Resource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ymeneroux",
