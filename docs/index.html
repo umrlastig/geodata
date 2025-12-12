@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/geodata#","name":"Ontology for Geospatial Datasets", "headline":"Document describing the ontology https://intforout.github.io/geodata#", "dateReleased":"Thu Dec 11 13:54:54 UTC 2025", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/geodata#","name":"Ontology for Geospatial Datasets", "headline":"Document describing the ontology https://intforout.github.io/geodata#", "dateReleased":"Fri Dec 12 17:19:54 UTC 2025", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -120,17 +120,21 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#Geocatalog"
-         title="http://purl.org/www.umr-lastig.fr/geodata#Geocatalog">Geocatalog</a>
+         title="http://purl.org/www.umr-lastig.fr/geodata#Geocatalog">DEPRECATED Geocatalog</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
+         title="http://purl.org/www.umr-lastig.fr/geodata#Geodataset">DEPRECATED Geodataset</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset"
+         title="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset">DEPRECATED Research Geodataset</a>
    </li>
    <li>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodata_process"
          title="http://purl.org/www.umr-lastig.fr/geodata#Geodata_process">
          <span>Geodata process</span>
       </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
-         title="http://purl.org/www.umr-lastig.fr/geodata#Geodataset">Geodataset</a>
    </li>
    <li>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series"
@@ -145,8 +149,16 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset"
-         title="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset">Research Geodataset</a>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#Process"
+         title="http://purl.org/www.umr-lastig.fr/geodata#Process">
+         <span>Process</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset"
+         title="http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset">
+         <span>Research Dataset</span>
+      </a>
    </li>
    <li>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"
@@ -243,12 +255,14 @@ This section provides details for each class and property defined by Ontology fo
  <ul class="hlist">
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Collection" title="http://purl.org/www.umr-lastig.fr/geodata#Collection"> <span>Collection</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#CollectionItem" title="http://purl.org/www.umr-lastig.fr/geodata#CollectionItem"> <span>Collection Item</span> </a></li>
-  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Geocatalog" title="http://purl.org/www.umr-lastig.fr/geodata#Geocatalog">Geocatalog</a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Geocatalog" title="http://purl.org/www.umr-lastig.fr/geodata#Geocatalog">DEPRECATED Geocatalog</a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset" title="http://purl.org/www.umr-lastig.fr/geodata#Geodataset">DEPRECATED Geodataset</a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset" title="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset">DEPRECATED Research Geodataset</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodata_process" title="http://purl.org/www.umr-lastig.fr/geodata#Geodata_process"> <span>Geodata process</span> </a></li>
-  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset" title="http://purl.org/www.umr-lastig.fr/geodata#Geodataset">Geodataset</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series" title="http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series"> <span>Geodataset series</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial" title="http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial"> <span>Pedagogic Material</span> </a></li>
-  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset" title="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset">Research Geodataset</a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Process" title="http://purl.org/www.umr-lastig.fr/geodata#Process"> <span>Process</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset" title="http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset"> <span>Research Dataset</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" title="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"> <span>User Feedback</span> </a></li>
  </ul>
  <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#Collection">
@@ -294,17 +308,41 @@ This section provides details for each class and property defined by Ontology fo
   </dl>
  </div>
  <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#Geocatalog">
-  <h3>Geocatalog<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <h3>DEPRECATED Geocatalog<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#Geocatalog</p>
   <div class="comment">
-   <span class="markdown">Geocatalog</span>
+   <span class="markdown">DEPRECATED Geocatalog</span>
   </div>
-  <dl class="description">
+  <dl>
    <dt>
-    has super-classes
+    Is deprecated
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#Catalog" target="_blank" title="http://www.w3.org/ns/dcat#Catalog">Catalog</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset" title="http://purl.org/www.umr-lastig.fr/geodata#Geodataset">Geodataset</a> <sup class="type-c" title="class">c</sup>
+    true
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#Geodataset">
+  <h3>DEPRECATED Geodataset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#Geodataset</p>
+  <dl>
+   <dt>
+    Is deprecated
+   </dt>
+   <dd>
+    true
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset">
+  <h3>DEPRECATED Research Geodataset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset</p>
+  <dl>
+   <dt>
+    Is deprecated
+   </dt>
+   <dd>
+    true
    </dd>
   </dl>
  </div>
@@ -323,39 +361,18 @@ This section provides details for each class and property defined by Ontology fo
    </dd>
   </dl>
  </div>
- <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#Geodataset">
-  <h3>Geodataset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#Geodataset</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#Dataset" target="_blank" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has sub-classes
-   </dt>
-   <dd>
-    <a href="#http://purl.org/www.umr-lastig.fr/geodata#Geocatalog" title="http://purl.org/www.umr-lastig.fr/geodata#Geocatalog">Geocatalog</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset" title="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset">Research Geodataset</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3" title="http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3">B D T O P O® V3</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-  </dl>
- </div>
  <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series">
   <h3>Geodataset series<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series</p>
-  <dl class="description">
+  <div class="comment">
+   <span class="markdown">Rather use Dataset series</span>
+  </div>
+  <dl>
    <dt>
-    has super-classes
+    Is deprecated
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#DatasetSeries" target="_blank" title="http://www.w3.org/ns/dcat#DatasetSeries">Dataset series</a> <sup class="type-c" title="class">c</sup>
+    true
    </dd>
   </dl>
  </div>
@@ -374,15 +391,30 @@ This section provides details for each class and property defined by Ontology fo
    </dd>
   </dl>
  </div>
- <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset">
-  <h3>Research Geodataset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset</p>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#Process">
+  <h3>Process<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#Process</p>
+  <div class="comment">
+   <span class="markdown">Set of operations in a technical environment to yield an output based on input</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
-    <a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset" title="http://purl.org/www.umr-lastig.fr/geodata#Geodataset">Geodataset</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset">
+  <h3>Research Dataset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#Dataset" target="_blank" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -527,7 +559,7 @@ This section provides details for each class and property defined by Ontology fo
     belongs to
    </dt>
    <dd>
-    <a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset" title="http://purl.org/www.umr-lastig.fr/geodata#Geodataset">Geodataset</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://www.w3.org/ns/dcat#Dataset" target="_blank" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts

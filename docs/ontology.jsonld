@@ -54,7 +54,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://schema.org/alternateName" : [ {
     "@value" : "BD TOPO® description vectorielle 3D ("
   } ],
@@ -121,9 +121,6 @@
   "http://schema.org/name" : [ {
     "@value" : "BD TOPO®"
   } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
-  } ],
   "http://www.w3.org/ns/dcat#language" : [ {
     "@value" : "fr-FR"
   } ],
@@ -154,16 +151,18 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Geocatalog"
+    "@value" : "DEPRECATED Geocatalog"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Geocatalog"
+    "@value" : "DEPRECATED Geocatalog"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
-  }, {
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Catalog"
+  } ],
+  "http://www.w3.org/2002/07/owl#deprecated" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodata_process",
@@ -178,16 +177,27 @@
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Geodataset"
+    "@value" : "DEPRECATED Geodataset"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
+  } ],
+  "http://www.w3.org/2002/07/owl#deprecated" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Rather use Dataset series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "http://www.w3.org/ns/dcat#DatasetSeries"
+  } ],
+  "http://www.w3.org/2002/07/owl#deprecated" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial",
@@ -199,13 +209,37 @@
     "@id" : "http://www.w3.org/ns/dcat#Resource"
   } ]
 }, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Process",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Set of operations in a technical environment to yield an output based on input"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "http://eurovoc.europa.eu/3640"
+  }, {
+    "@value" : "https://www.wikidata.org/wiki/Q500669"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Resource"
+  } ]
+}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Research Geodataset"
+    "@value" : "DEPRECATED Research Geodataset"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset"
+  } ],
+  "http://www.w3.org/2002/07/owl#deprecated" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback",

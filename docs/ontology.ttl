@@ -171,10 +171,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#Geocatalog
 :Geocatalog rdf:type owl:Class ;
-            rdfs:subClassOf :Geodataset ,
-                            <http://www.w3.org/ns/dcat#Catalog> ;
-            rdfs:comment "Geocatalog"@en ;
-            rdfs:label "Geocatalog"@en .
+            rdfs:comment "DEPRECATED Geocatalog"@en ;
+            rdfs:label "DEPRECATED Geocatalog"@en ;
+            rdfs:seeAlso <http://www.w3.org/ns/dcat#Catalog> ;
+            owl:deprecated "true"^^xsd:boolean .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#Geodata_process
@@ -185,13 +185,16 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#Geodataset
 :Geodataset rdf:type owl:Class ;
-            rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
-            rdfs:label "Geodataset" .
+            rdfs:label "DEPRECATED Geodataset" ;
+            rdfs:seeAlso <http://www.w3.org/ns/dcat#Dataset> ;
+            owl:deprecated "true"^^xsd:boolean .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series
 :Geodataset_series rdf:type owl:Class ;
-                   rdfs:subClassOf <http://www.w3.org/ns/dcat#DatasetSeries> .
+                   rdfs:comment "Rather use Dataset series" ;
+                   rdfs:seeAlso <http://www.w3.org/ns/dcat#DatasetSeries> ;
+                   owl:deprecated "true"^^xsd:boolean .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial
@@ -200,10 +203,24 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:comment "Ready to use material to teach a given competence, in relationship with concepts, to a given audience. For example a wikipedia page, a storymap, a GIS exercise, an outdoor educational activity." .
 
 
+###  http://purl.org/www.umr-lastig.fr/geodata#Process
+:Process rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
+         rdfs:comment "Set of operations in a technical environment to yield an output based on input" ;
+         rdfs:seeAlso "http://eurovoc.europa.eu/3640" ,
+                      "https://www.wikidata.org/wiki/Q500669" .
+
+
 ###  http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset
 :ResearchGeodataset rdf:type owl:Class ;
-                    rdfs:subClassOf :Geodataset ;
-                    rdfs:label "Research Geodataset" .
+                    rdfs:label "DEPRECATED Research Geodataset" ;
+                    rdfs:seeAlso :Research_Dataset ;
+                    owl:deprecated "true"^^xsd:boolean .
+
+
+###  http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset
+:Research_Dataset rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#UserFeedback
@@ -297,7 +314,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> rdf:type owl:NamedIndividual ,
-                                                                 :Geodataset ;
+                                                                 <http://www.w3.org/ns/dcat#Dataset> ;
                                                         <http://schema.org/alternateName> "BD TOPO® description vectorielle 3D (" ;
                                                         <http://schema.org/creator> <http://njh.me/contact.geoservices@ign.fr> ;
                                                         <http://schema.org/dateCreated> "2002-12-15"^^<http://schema.org/Date> ;

@@ -151,10 +151,10 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#Geocatalog
 <http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> .
-<http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Catalog> .
-<http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> <http://www.w3.org/2000/01/rdf-schema#comment> "Geocatalog"@en .
-<http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> <http://www.w3.org/2000/01/rdf-schema#label> "Geocatalog"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> <http://www.w3.org/2000/01/rdf-schema#comment> "DEPRECATED Geocatalog"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> <http://www.w3.org/2000/01/rdf-schema#label> "DEPRECATED Geocatalog"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/dcat#Catalog> .
+<http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#Geodata_process
 <http://purl.org/www.umr-lastig.fr/geodata#Geodata_process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -163,22 +163,37 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#Geodataset
 <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/www.umr-lastig.fr/geodata#Geodataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
-<http://purl.org/www.umr-lastig.fr/geodata#Geodataset> <http://www.w3.org/2000/01/rdf-schema#label> "Geodataset" .
+<http://purl.org/www.umr-lastig.fr/geodata#Geodataset> <http://www.w3.org/2000/01/rdf-schema#label> "DEPRECATED Geodataset" .
+<http://purl.org/www.umr-lastig.fr/geodata#Geodataset> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/dcat#Dataset> .
+<http://purl.org/www.umr-lastig.fr/geodata#Geodataset> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series
 <http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#DatasetSeries> .
+<http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series> <http://www.w3.org/2000/01/rdf-schema#comment> "Rather use Dataset series" .
+<http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/dcat#DatasetSeries> .
+<http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial
 <http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
 <http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Ready to use material to teach a given competence, in relationship with concepts, to a given audience. For example a wikipedia page, a storymap, a GIS exercise, an outdoor educational activity." .
 # 
+# http://purl.org/www.umr-lastig.fr/geodata#Process
+<http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+<http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of operations in a technical environment to yield an output based on input" .
+<http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://eurovoc.europa.eu/3640" .
+<http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q500669" .
+# 
 # http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset
 <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> .
-<http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> <http://www.w3.org/2000/01/rdf-schema#label> "Research Geodataset" .
+<http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> <http://www.w3.org/2000/01/rdf-schema#label> "DEPRECATED Research Geodataset" .
+<http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset> .
+<http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset
+<http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#UserFeedback
 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -267,7 +282,7 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/alternateName> "BD TOPO® description vectorielle 3D (" .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/creator> <http://njh.me/contact.geoservices@ign.fr> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/dateCreated> "2002-12-15"^^<http://schema.org/Date> .
