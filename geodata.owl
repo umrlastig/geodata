@@ -286,10 +286,10 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#Geocatalog -->
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Geocatalog">
-        <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
-        <rdfs:comment xml:lang="en">Geocatalog</rdfs:comment>
-        <rdfs:label xml:lang="en">Geocatalog</rdfs:label>
+        <rdfs:comment xml:lang="en">DEPRECATED Geocatalog</rdfs:comment>
+        <rdfs:label xml:lang="en">DEPRECATED Geocatalog</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -306,8 +306,9 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#Geodataset -->
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Geodataset">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <rdfs:label>Geodataset</rdfs:label>
+        <rdfs:label>DEPRECATED Geodataset</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -315,7 +316,9 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series -->
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#DatasetSeries"/>
+        <rdfs:comment>Rather use Dataset series</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/dcat#DatasetSeries"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -329,11 +332,31 @@
     
 
 
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#Process -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Process">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:comment>Set of operations in a technical environment to yield an output based on input</rdfs:comment>
+        <rdfs:seeAlso>http://eurovoc.europa.eu/3640</rdfs:seeAlso>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q500669</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset -->
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset">
-        <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
-        <rdfs:label>Research Geodataset</rdfs:label>
+        <rdfs:label>DEPRECATED Research Geodataset</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
     </owl:Class>
     
 
@@ -463,7 +486,7 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3">
-        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <schema:alternateName>BD TOPO® description vectorielle 3D (</schema:alternateName>
         <schema:creator rdf:resource="http://njh.me/contact.geoservices@ign.fr"/>
         <schema:dateCreated rdf:datatype="http://schema.org/Date">2002-12-15</schema:dateCreated>
