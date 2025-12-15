@@ -13,11 +13,11 @@
 <script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
 	<dark-mode-toggle class="slider"></dark-mode-toggle>
 </div>
- <title>Ontology for Geospatial Datasets</title>
+ <title>Ontology of Geospatial Datasets for Open Science</title>
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/geodata#","name":"Ontology for Geospatial Datasets", "headline":"Document describing the ontology https://intforout.github.io/geodata#", "dateReleased":"Fri Dec 12 17:19:54 UTC 2025", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/geodata#","name":"Ontology of Geospatial Datasets for Open Science", "headline":"Document describing the ontology https://intforout.github.io/geodata#", "dateReleased":"Mon Dec 15 17:29:56 UTC 2025", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -65,7 +65,7 @@ $(function(){
 <div class="container">
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
-<h1>Ontology for Geospatial Datasets</h1>
+<h1>Ontology of Geospatial Datasets for Open Science</h1>
 
 
 <dl>
@@ -77,7 +77,7 @@ $(function(){
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.example.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.example.org" /></a>
 </dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Ana-Maria Raimond, Bénédicte Bucher, Marie-Dominique Van Damme. Ontology for Geospatial Datasets.</dd>
+<dd>Ana-Maria Raimond, Bénédicte Bucher, Marie-Dominique Van Damme. Ontology of Geospatial Datasets for Open Science.</dd>
 </dl>
 
 <a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
@@ -99,7 +99,7 @@ This is a place holder text for the introduction. The introduction should briefl
   
 
 <!--OVERVIEW SECTION-->
-    <div id="overview"><h2 id="overv" class="list">Ontology for Geospatial Datasets: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+    <div id="overview"><h2 id="overv" class="list">Ontology of Geospatial Datasets for Open Science: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
@@ -131,12 +131,6 @@ This ontology has the following classes and properties.</span>
          title="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset">DEPRECATED Research Geodataset</a>
    </li>
    <li>
-      <a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodata_process"
-         title="http://purl.org/www.umr-lastig.fr/geodata#Geodata_process">
-         <span>Geodata process</span>
-      </a>
-   </li>
-   <li>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series"
          title="http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series">
          <span>Geodataset series</span>
@@ -152,6 +146,12 @@ This ontology has the following classes and properties.</span>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#Process"
          title="http://purl.org/www.umr-lastig.fr/geodata#Process">
          <span>Process</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess"
+         title="http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess">
+         <span>Reproducible Process</span>
       </a>
    </li>
    <li>
@@ -242,14 +242,14 @@ This ontology has the following classes and properties.</span>
   
 
 <!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">Ontology for Geospatial Datasets: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+    <div id="description"><h2 id="desc" class="list">Ontology of Geospatial Datasets for Open Science: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
-<span class="markdown">A knowledge graph, including a dedicated vocabulary and possible instances, dedicated to describe how geodatasets support knowledge production and transfer. It describes datasets, papers, storymaps, pedagogic material and processes, altogether referred to as catalogued resources, that need to be shared, discovered or reused. The object property "represents" connects a catalogued resource with a concept. Specific concepts are introduced in projects that use Geodata to describe more precisely the knowledge at stake.</span></div>
+<span class="markdown">A knowledge graph, including a vocabulary and instances, that represents datasets, papers, storymaps, pedagogic material and processes, altogether referred to as catalogued resources, that need to be shared, discovered or reused in order to produce new knowledge or to produce pedagogic material to disseminate knowledge. The object property "represents" connects a catalogued resource with a concept. Specific concepts are introduced in projects that use Geodata to describe more precisely the knowledge at stake.</span></div>
    
 
 <!--CROSSREF SECTION-->
-   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Ontology for Geospatial Datasets classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by Ontology for Geospatial Datasets.
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Ontology of Geospatial Datasets for Open Science classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Ontology of Geospatial Datasets for Open Science.
 <div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
@@ -258,10 +258,10 @@ This section provides details for each class and property defined by Ontology fo
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Geocatalog" title="http://purl.org/www.umr-lastig.fr/geodata#Geocatalog">DEPRECATED Geocatalog</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset" title="http://purl.org/www.umr-lastig.fr/geodata#Geodataset">DEPRECATED Geodataset</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset" title="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset">DEPRECATED Research Geodataset</a></li>
-  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodata_process" title="http://purl.org/www.umr-lastig.fr/geodata#Geodata_process"> <span>Geodata process</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series" title="http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series"> <span>Geodataset series</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial" title="http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial"> <span>Pedagogic Material</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Process" title="http://purl.org/www.umr-lastig.fr/geodata#Process"> <span>Process</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess" title="http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess"> <span>Reproducible Process</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset" title="http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset"> <span>Research Dataset</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" title="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"> <span>User Feedback</span> </a></li>
  </ul>
@@ -346,21 +346,6 @@ This section provides details for each class and property defined by Ontology fo
    </dd>
   </dl>
  </div>
- <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#Geodata_process">
-  <h3>Geodata process<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#Geodata_process</p>
-  <div class="comment">
-   <span class="markdown">Process to derive data, that may combine data services but not necessarily</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
  <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series">
   <h3>Geodataset series<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series</p>
@@ -396,6 +381,21 @@ This section provides details for each class and property defined by Ontology fo
   <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#Process</p>
   <div class="comment">
    <span class="markdown">Set of operations in a technical environment to yield an output based on input</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess">
+  <h3>Reproducible Process<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess</p>
+  <div class="comment">
+   <span class="markdown">Process to derive data, that may combine data services but not necessarily, and that is aimed to be reused as a catalogued resources, more or less reproducible</span>
   </div>
   <dl class="description">
    <dt>
