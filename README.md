@@ -1,12 +1,14 @@
-# Geodata Ontology
+# Geodata knowledge graph
 
-Ontology to describe geodatasets in support of knowledge production and transfer
+Knowledge graph (core structure and instances) where nodes are :
+- different digital assets based on geodata and relevant for research, education and open science : datasources, datasets, processes, maps, storymaps, other pedagogic materials, particularly located collections.
+- catalogues organising these nodes
+- user-oriented concepts that can be used to query the catalogues  
 
 Documentation site: **[geodata](https://www.umr-lastig.fr/geodata/index.html)**
 
 
-
-# Projects that use this ontology:
+# Projects that use Geodata:
 
 * INTFOROUT: **[OutdoorPressure](https://intforout.github.io/outdoorPressure/index.html)**
 * SUBDENSE: **[Urban densification ontology](https://github.com/subdense/urbandensification-ontology)**
