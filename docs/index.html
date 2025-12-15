@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/geodata#","name":"Ontology of Geospatial Datasets for Open Science", "headline":"Document describing the ontology https://intforout.github.io/geodata#", "dateReleased":"Mon Dec 15 17:29:56 UTC 2025", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/geodata#","name":"Ontology of Geospatial Datasets for Open Science", "headline":"Document describing the ontology https://intforout.github.io/geodata#", "dateReleased":"Mon Dec 15 17:39:57 UTC 2025", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -169,6 +169,12 @@ This ontology has the following classes and properties.</span>
 </ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#annotates"
+         title="http://purl.org/www.umr-lastig.fr/geodata#annotates">
+         <span>annotates</span>
+      </a>
+   </li>
    <li>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#has_member"
          title="http://purl.org/www.umr-lastig.fr/geodata#has_member">
@@ -436,10 +442,31 @@ This section provides details for each class and property defined by Ontology of
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#annotates" title="http://purl.org/www.umr-lastig.fr/geodata#annotates"> <span>annotates</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#has_member" title="http://purl.org/www.umr-lastig.fr/geodata#has_member"> <span>has member</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction" title="http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction"> <span>has Method Of Instruction</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#represents" title="http://purl.org/www.umr-lastig.fr/geodata#represents"> <span>represents</span> </a></li>
  </ul>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#annotates">
+  <h3>annotates<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#annotates</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/dcat#Dataset" target="_blank" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/dcat#Dataset" target="_blank" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#has_member">
   <h3>has member<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#has_member</p>

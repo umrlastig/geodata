@@ -112,6 +112,11 @@
 # #################################################################
 # 
 # 
+# http://purl.org/www.umr-lastig.fr/geodata#annotates
+<http://purl.org/www.umr-lastig.fr/geodata#annotates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/www.umr-lastig.fr/geodata#annotates> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Dataset> .
+<http://purl.org/www.umr-lastig.fr/geodata#annotates> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Dataset> .
+# 
 # http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction
 <http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/www.umr-lastig.fr/geodata#Collection> .
@@ -199,6 +204,9 @@
 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "User feedback about using one or more resource" .
+# 
+# http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a dataset that is a set of annotations for another dataset, e.g. an annotation layer in a QGIS project." .
 # 
 # http://xmlns.com/foaf/0.1/Organization
 <http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

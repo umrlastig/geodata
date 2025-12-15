@@ -131,6 +131,12 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  http://purl.org/www.umr-lastig.fr/geodata#annotates
+:annotates rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
+           rdfs:range <http://www.w3.org/ns/dcat#Dataset> .
+
+
 ###  http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction
 :hasMethodOfInstruction rdf:type owl:ObjectProperty ;
                         rdfs:domain :Collection ;
@@ -227,6 +233,10 @@ xsd:date rdf:type rdfs:Datatype .
 :UserFeedback rdf:type owl:Class ;
               rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
               rdfs:comment "User feedback about using one or more resource" .
+
+
+###  http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> rdfs:comment "Relation between a dataset that is a set of annotations for another dataset, e.g. an annotation layer in a QGIS project." .
 
 
 ###  http://xmlns.com/foaf/0.1/Organization

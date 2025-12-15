@@ -54,7 +54,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://schema.org/alternateName" : [ {
     "@value" : "BD TOPO® description vectorielle 3D ("
   } ],
@@ -120,6 +120,9 @@
   } ],
   "http://schema.org/name" : [ {
     "@value" : "BD TOPO®"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
   } ],
   "http://www.w3.org/ns/dcat#language" : [ {
     "@value" : "fr-FR"
@@ -270,6 +273,15 @@
   } ],
   "http://xmlns.com/foaf/0.1/title" : [ {
     "@value" : "Mme."
+  } ]
+}, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#annotates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#bbucher",
@@ -427,6 +439,11 @@
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#Dataset",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relation between a dataset that is a set of annotations for another dataset, e.g. an annotation layer in a QGIS project."
+  } ]
 }, {
   "@id" : "http://www.w3.org/ns/dcat#format",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
