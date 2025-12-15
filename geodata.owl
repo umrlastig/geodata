@@ -221,6 +221,15 @@
     
 
 
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#annotates -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/www.umr-lastig.fr/geodata#annotates">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction">
@@ -367,6 +376,14 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
         <rdfs:comment>User feedback about using one or more resource</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Dataset -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/dcat#Dataset">
+        <rdfs:comment>Relation between a dataset that is a set of annotations for another dataset, e.g. an annotation layer in a QGIS project.</rdfs:comment>
+    </rdf:Description>
     
 
 
