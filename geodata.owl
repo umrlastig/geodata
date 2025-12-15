@@ -29,11 +29,11 @@
         <dc:creator>Ana-Maria Raimond</dc:creator>
         <dc:creator>Bénédicte Bucher</dc:creator>
         <dc:creator>Marie-Dominique Van Damme</dc:creator>
-        <terms:title xml:lang="fr">Ontologie des jeux de données géospatiales</terms:title>
-        <terms:title xml:lang="en">Ontology for Geospatial Datasets</terms:title>
+        <terms:title xml:lang="fr">Ontologie des jeux de données géographiques pour la science ouverte</terms:title>
+        <terms:title xml:lang="en">Ontology of Geospatial Datasets for Open Science</terms:title>
         <vann:preferredNamespacePrefix>geodata</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://intforout.github.io/geodata#"/>
-        <rdfs:comment>A knowledge graph, including a dedicated vocabulary and possible instances, dedicated to describe how geodatasets support knowledge production and transfer. It describes datasets, papers, storymaps, pedagogic material and processes, altogether referred to as catalogued resources, that need to be shared, discovered or reused. The object property &quot;represents&quot; connects a catalogued resource with a concept. Specific concepts are introduced in projects that use Geodata to describe more precisely the knowledge at stake.</rdfs:comment>
+        <rdfs:comment>A knowledge graph, including a vocabulary and instances, that represents datasets, papers, storymaps, pedagogic material and processes, altogether referred to as catalogued resources, that need to be shared, discovered or reused in order to produce new knowledge or to produce pedagogic material to disseminate knowledge. The object property &quot;represents&quot; connects a catalogued resource with a concept. Specific concepts are introduced in projects that use Geodata to describe more precisely the knowledge at stake.</rdfs:comment>
     </owl:Ontology>
     
 
@@ -294,15 +294,6 @@
     
 
 
-    <!-- http://purl.org/www.umr-lastig.fr/geodata#Geodata_process -->
-
-    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Geodata_process">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
-        <rdfs:comment>Process to derive data, that may combine data services but not necessarily</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/www.umr-lastig.fr/geodata#Geodataset -->
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Geodataset">
@@ -339,6 +330,15 @@
         <rdfs:comment>Set of operations in a technical environment to yield an output based on input</rdfs:comment>
         <rdfs:seeAlso>http://eurovoc.europa.eu/3640</rdfs:seeAlso>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q500669</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:comment>Process to derive data, that may combine data services but not necessarily, and that is aimed to be reused as a catalogued resources, more or less reproducible</rdfs:comment>
     </owl:Class>
     
 
