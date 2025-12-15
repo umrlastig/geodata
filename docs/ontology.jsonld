@@ -31,10 +31,10 @@
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
-    "@value" : "Ontologie des jeux de données géospatiales"
+    "@value" : "Ontologie des jeux de données géographiques pour la science ouverte"
   }, {
     "@language" : "en",
-    "@value" : "Ontology for Geospatial Datasets"
+    "@value" : "Ontology of Geospatial Datasets for Open Science"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "geodata"
@@ -43,7 +43,7 @@
     "@id" : "https://intforout.github.io/geodata#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A knowledge graph, including a dedicated vocabulary and possible instances, dedicated to describe how geodatasets support knowledge production and transfer. It describes datasets, papers, storymaps, pedagogic material and processes, altogether referred to as catalogued resources, that need to be shared, discovered or reused. The object property \"represents\" connects a catalogued resource with a concept. Specific concepts are introduced in projects that use Geodata to describe more precisely the knowledge at stake."
+    "@value" : "A knowledge graph, including a vocabulary and instances, that represents datasets, papers, storymaps, pedagogic material and processes, altogether referred to as catalogued resources, that need to be shared, discovered or reused in order to produce new knowledge or to produce pedagogic material to disseminate knowledge. The object property \"represents\" connects a catalogued resource with a concept. Specific concepts are introduced in projects that use Geodata to describe more precisely the knowledge at stake."
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core"
@@ -165,15 +165,6 @@
     "@value" : "true"
   } ]
 }, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodata_process",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Process to derive data, that may combine data services but not necessarily"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Resource"
-  } ]
-}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -218,6 +209,15 @@
     "@value" : "http://eurovoc.europa.eu/3640"
   }, {
     "@value" : "https://www.wikidata.org/wiki/Q500669"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Resource"
+  } ]
+}, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Process to derive data, that may combine data services but not necessarily, and that is aimed to be reused as a catalogued resources, more or less reproducible"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Resource"

@@ -5,11 +5,11 @@
 <http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/dc/elements/1.1/creator> "Ana-Maria Raimond" .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/dc/elements/1.1/creator> "Bénédicte Bucher" .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/dc/elements/1.1/creator> "Marie-Dominique Van Damme" .
-<http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/dc/terms/title> "Ontologie des jeux de données géospatiales"@fr .
-<http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/dc/terms/title> "Ontology for Geospatial Datasets"@en .
+<http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/dc/terms/title> "Ontologie des jeux de données géographiques pour la science ouverte"@fr .
+<http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/dc/terms/title> "Ontology of Geospatial Datasets for Open Science"@en .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/vocab/vann/preferredNamespacePrefix> "geodata" .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://intforout.github.io/geodata#> .
-<http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/2000/01/rdf-schema#comment> "A knowledge graph, including a dedicated vocabulary and possible instances, dedicated to describe how geodatasets support knowledge production and transfer. It describes datasets, papers, storymaps, pedagogic material and processes, altogether referred to as catalogued resources, that need to be shared, discovered or reused. The object property \"represents\" connects a catalogued resource with a concept. Specific concepts are introduced in projects that use Geodata to describe more precisely the knowledge at stake." .
+<http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/2000/01/rdf-schema#comment> "A knowledge graph, including a vocabulary and instances, that represents datasets, papers, storymaps, pedagogic material and processes, altogether referred to as catalogued resources, that need to be shared, discovered or reused in order to produce new knowledge or to produce pedagogic material to disseminate knowledge. The object property \"represents\" connects a catalogued resource with a concept. Specific concepts are introduced in projects that use Geodata to describe more precisely the knowledge at stake." .
 # 
 # 
 # #################################################################
@@ -156,11 +156,6 @@
 <http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/dcat#Catalog> .
 <http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 # 
-# http://purl.org/www.umr-lastig.fr/geodata#Geodata_process
-<http://purl.org/www.umr-lastig.fr/geodata#Geodata_process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/www.umr-lastig.fr/geodata#Geodata_process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
-<http://purl.org/www.umr-lastig.fr/geodata#Geodata_process> <http://www.w3.org/2000/01/rdf-schema#comment> "Process to derive data, that may combine data services but not necessarily" .
-# 
 # http://purl.org/www.umr-lastig.fr/geodata#Geodataset
 <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> <http://www.w3.org/2000/01/rdf-schema#label> "DEPRECATED Geodataset" .
@@ -184,6 +179,11 @@
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of operations in a technical environment to yield an output based on input" .
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://eurovoc.europa.eu/3640" .
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q500669" .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess
+<http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+<http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "Process to derive data, that may combine data services but not necessarily, and that is aimed to be reused as a catalogued resources, more or less reproducible" .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset
 <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

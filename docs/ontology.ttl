@@ -13,11 +13,11 @@
                                              <http://purl.org/dc/elements/1.1/creator> "Ana-Maria Raimond" ,
                                                                                        "Bénédicte Bucher" ,
                                                                                        "Marie-Dominique Van Damme" ;
-                                             <http://purl.org/dc/terms/title> "Ontologie des jeux de données géospatiales"@fr ,
-                                                                              "Ontology for Geospatial Datasets"@en ;
+                                             <http://purl.org/dc/terms/title> "Ontologie des jeux de données géographiques pour la science ouverte"@fr ,
+                                                                              "Ontology of Geospatial Datasets for Open Science"@en ;
                                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "geodata" ;
                                              <http://purl.org/vocab/vann/preferredNamespaceUri> <https://intforout.github.io/geodata#> ;
-                                             rdfs:comment "A knowledge graph, including a dedicated vocabulary and possible instances, dedicated to describe how geodatasets support knowledge production and transfer. It describes datasets, papers, storymaps, pedagogic material and processes, altogether referred to as catalogued resources, that need to be shared, discovered or reused. The object property \"represents\" connects a catalogued resource with a concept. Specific concepts are introduced in projects that use Geodata to describe more precisely the knowledge at stake." .
+                                             rdfs:comment "A knowledge graph, including a vocabulary and instances, that represents datasets, papers, storymaps, pedagogic material and processes, altogether referred to as catalogued resources, that need to be shared, discovered or reused in order to produce new knowledge or to produce pedagogic material to disseminate knowledge. The object property \"represents\" connects a catalogued resource with a concept. Specific concepts are introduced in projects that use Geodata to describe more precisely the knowledge at stake." .
 
 #################################################################
 #    Annotation properties
@@ -177,12 +177,6 @@ xsd:date rdf:type rdfs:Datatype .
             owl:deprecated "true"^^xsd:boolean .
 
 
-###  http://purl.org/www.umr-lastig.fr/geodata#Geodata_process
-:Geodata_process rdf:type owl:Class ;
-                 rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
-                 rdfs:comment "Process to derive data, that may combine data services but not necessarily" .
-
-
 ###  http://purl.org/www.umr-lastig.fr/geodata#Geodataset
 :Geodataset rdf:type owl:Class ;
             rdfs:label "DEPRECATED Geodataset" ;
@@ -209,6 +203,12 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:comment "Set of operations in a technical environment to yield an output based on input" ;
          rdfs:seeAlso "http://eurovoc.europa.eu/3640" ,
                       "https://www.wikidata.org/wiki/Q500669" .
+
+
+###  http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess
+:ReproducibleProcess rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
+                     rdfs:comment "Process to derive data, that may combine data services but not necessarily, and that is aimed to be reused as a catalogued resources, more or less reproducible" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset
