@@ -154,25 +154,6 @@
 <http://purl.org/www.umr-lastig.fr/geodata#CollectionItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
 <http://purl.org/www.umr-lastig.fr/geodata#CollectionItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection item is composed of different pieces of data, usually selections from bigger datasets, associated with a proposed visualisation, and narratives that connect the visual items to the concepts of the collection. It has a spatial and temporal extent." .
 # 
-# http://purl.org/www.umr-lastig.fr/geodata#Geocatalog
-<http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> <http://www.w3.org/2000/01/rdf-schema#comment> "DEPRECATED Geocatalog"@en .
-<http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> <http://www.w3.org/2000/01/rdf-schema#label> "DEPRECATED Geocatalog"@en .
-<http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/dcat#Catalog> .
-<http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-# 
-# http://purl.org/www.umr-lastig.fr/geodata#Geodataset
-<http://purl.org/www.umr-lastig.fr/geodata#Geodataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/www.umr-lastig.fr/geodata#Geodataset> <http://www.w3.org/2000/01/rdf-schema#label> "DEPRECATED Geodataset" .
-<http://purl.org/www.umr-lastig.fr/geodata#Geodataset> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/dcat#Dataset> .
-<http://purl.org/www.umr-lastig.fr/geodata#Geodataset> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-# 
-# http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series
-<http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series> <http://www.w3.org/2000/01/rdf-schema#comment> "Rather use Dataset series" .
-<http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/dcat#DatasetSeries> .
-<http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-# 
 # http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial
 <http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
@@ -189,12 +170,6 @@
 <http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
 <http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "Process to derive data, that may combine data services but not necessarily, and that is aimed to be reused as a catalogued resources, more or less reproducible" .
-# 
-# http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset
-<http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> <http://www.w3.org/2000/01/rdf-schema#label> "DEPRECATED Research Geodataset" .
-<http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset> .
-<http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset
 <http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

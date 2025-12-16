@@ -175,28 +175,6 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:comment "A collection item is composed of different pieces of data, usually selections from bigger datasets, associated with a proposed visualisation, and narratives that connect the visual items to the concepts of the collection. It has a spatial and temporal extent." .
 
 
-###  http://purl.org/www.umr-lastig.fr/geodata#Geocatalog
-:Geocatalog rdf:type owl:Class ;
-            rdfs:comment "DEPRECATED Geocatalog"@en ;
-            rdfs:label "DEPRECATED Geocatalog"@en ;
-            rdfs:seeAlso <http://www.w3.org/ns/dcat#Catalog> ;
-            owl:deprecated "true"^^xsd:boolean .
-
-
-###  http://purl.org/www.umr-lastig.fr/geodata#Geodataset
-:Geodataset rdf:type owl:Class ;
-            rdfs:label "DEPRECATED Geodataset" ;
-            rdfs:seeAlso <http://www.w3.org/ns/dcat#Dataset> ;
-            owl:deprecated "true"^^xsd:boolean .
-
-
-###  http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series
-:Geodataset_series rdf:type owl:Class ;
-                   rdfs:comment "Rather use Dataset series" ;
-                   rdfs:seeAlso <http://www.w3.org/ns/dcat#DatasetSeries> ;
-                   owl:deprecated "true"^^xsd:boolean .
-
-
 ###  http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial
 :PedagogicMaterial rdf:type owl:Class ;
                    rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
@@ -215,13 +193,6 @@ xsd:date rdf:type rdfs:Datatype .
 :ReproducibleProcess rdf:type owl:Class ;
                      rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
                      rdfs:comment "Process to derive data, that may combine data services but not necessarily, and that is aimed to be reused as a catalogued resources, more or less reproducible" .
-
-
-###  http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset
-:ResearchGeodataset rdf:type owl:Class ;
-                    rdfs:label "DEPRECATED Research Geodataset" ;
-                    rdfs:seeAlso :Research_Dataset ;
-                    owl:deprecated "true"^^xsd:boolean .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset

@@ -150,50 +150,6 @@
     "@id" : "http://www.w3.org/ns/dcat#Resource"
   } ]
 }, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geocatalog",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "DEPRECATED Geocatalog"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "DEPRECATED Geocatalog"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Catalog"
-  } ],
-  "http://www.w3.org/2002/07/owl#deprecated" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ]
-}, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "DEPRECATED Geodataset"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Dataset"
-  } ],
-  "http://www.w3.org/2002/07/owl#deprecated" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ]
-}, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Rather use Dataset series"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#DatasetSeries"
-  } ],
-  "http://www.w3.org/2002/07/owl#deprecated" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ]
-}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -224,19 +180,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Resource"
-  } ]
-}, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "DEPRECATED Research Geodataset"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset"
-  } ],
-  "http://www.w3.org/2002/07/owl#deprecated" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset",
