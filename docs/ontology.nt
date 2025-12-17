@@ -130,7 +130,7 @@
 # http://purl.org/www.umr-lastig.fr/geodata#represents
 <http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Resource> .
-<http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
 # 
 # 
 # 
@@ -174,6 +174,10 @@
 # http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset
 <http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper
+<http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#UserFeedback
 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

@@ -188,6 +188,12 @@
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
   } ]
 }, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Resource"
+  } ]
+}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -332,7 +338,7 @@
     "@id" : "http://www.w3.org/ns/dcat#Resource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ymeneroux",

@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/geodata#","name":"Ontology of Geospatial Datasets for Open Science", "headline":"Document describing the ontology https://intforout.github.io/geodata#", "dateReleased":"Tue Dec 16 11:48:36 UTC 2025", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/geodata#","name":"Ontology of Geospatial Datasets for Open Science", "headline":"Document describing the ontology https://intforout.github.io/geodata#", "dateReleased":"Wed Dec 17 13:04:50 UTC 2025", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -143,6 +143,12 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"
+         title="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper">
+         <span>Scientific Paper</span>
+      </a>
+   </li>
+   <li>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"
          title="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback">
          <span>User Feedback</span>
@@ -247,6 +253,7 @@ This section provides details for each class and property defined by Ontology of
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Process" title="http://purl.org/www.umr-lastig.fr/geodata#Process"> <span>Process</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess" title="http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess"> <span>Reproducible Process</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset" title="http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset"> <span>Research Dataset</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper" title="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"> <span>Scientific Paper</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" title="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"> <span>User Feedback</span> </a></li>
  </ul>
  <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#Collection">
@@ -348,6 +355,18 @@ This section provides details for each class and property defined by Ontology of
    </dd>
   </dl>
  </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper">
+  <h3>Scientific Paper<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback">
   <h3>User Feedback<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#UserFeedback</p>
@@ -446,7 +465,7 @@ This section provides details for each class and property defined by Ontology of
      has range
     </dt>
     <dd>
-     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>
+     <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>

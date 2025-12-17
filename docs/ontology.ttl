@@ -152,7 +152,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://purl.org/www.umr-lastig.fr/geodata#represents
 :represents rdf:type owl:ObjectProperty ;
             rdfs:domain <http://www.w3.org/ns/dcat#Resource> ;
-            rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
+            rdfs:range owl:Thing .
 
 
 #################################################################
@@ -198,6 +198,11 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset
 :Research_Dataset rdf:type owl:Class ;
                   rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> .
+
+
+###  http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper
+:ScientificPaper rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#UserFeedback
