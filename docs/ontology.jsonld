@@ -173,21 +173,6 @@
     "@id" : "http://www.w3.org/ns/dcat#Resource"
   } ]
 }, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Process to derive data, that may combine data services but not necessarily, and that is aimed to be reused as a catalogued resources, more or less reproducible"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Resource"
-  } ]
-}, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Dataset"
-  } ]
-}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {

@@ -189,17 +189,6 @@ xsd:date rdf:type rdfs:Datatype .
                       "https://www.wikidata.org/wiki/Q500669" .
 
 
-###  http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess
-:ReproducibleProcess rdf:type owl:Class ;
-                     rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
-                     rdfs:comment "Process to derive data, that may combine data services but not necessarily, and that is aimed to be reused as a catalogued resources, more or less reproducible" .
-
-
-###  http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset
-:Research_Dataset rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> .
-
-
 ###  http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper
 :ScientificPaper rdf:type owl:Class ;
                  rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> .

@@ -166,15 +166,6 @@
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://eurovoc.europa.eu/3640" .
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q500669" .
 # 
-# http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess
-<http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
-<http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "Process to derive data, that may combine data services but not necessarily, and that is aimed to be reused as a catalogued resources, more or less reproducible" .
-# 
-# http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset
-<http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
-# 
 # http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
