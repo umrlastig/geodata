@@ -252,7 +252,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/www.umr-lastig.fr/geodata#represents">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:ObjectProperty>
     
 
@@ -292,39 +292,6 @@
     
 
 
-    <!-- http://purl.org/www.umr-lastig.fr/geodata#Geocatalog 
-
-    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Geocatalog">
-        <rdfs:comment xml:lang="en">DEPRECATED Geocatalog</rdfs:comment>
-        <rdfs:label xml:lang="en">DEPRECATED Geocatalog</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-
-    -->
-    
-
-
-    <!-- http://purl.org/www.umr-lastig.fr/geodata#Geodataset 
-
-    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Geodataset">
-        <rdfs:label>DEPRECATED Geodataset</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    -->
-
-
-    <!-- http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series 
-
-    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series">
-        <rdfs:comment>Rather use Dataset series</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/dcat#DatasetSeries"/>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    -->
-
-
     <!-- http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial -->
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial">
@@ -354,20 +321,18 @@
     
 
 
-    <!-- http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset 
-
-    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset">
-        <rdfs:label>DEPRECATED Research Geodataset</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset"/>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    -->
-
-
     <!-- http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset -->
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
     </owl:Class>
     
 
