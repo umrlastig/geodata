@@ -312,23 +312,6 @@
     
 
 
-    <!-- http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess -->
-
-    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ReproducibleProcess">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
-        <rdfs:comment>Process to derive data, that may combine data services but not necessarily, and that is aimed to be reused as a catalogued resources, more or less reproducible</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset -->
-
-    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Research_Dataset">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper -->
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper">
