@@ -11,7 +11,7 @@
      xmlns:adms="http://www.w3.org/ns/adms#"
      xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:core="http://purl.org/vocab/frbr/core#"
-     xmlns:dcam="http://purl.org/dc/dcam/"
+     xmlns:dcam="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"
      xmlns:dcat="http://www.w3.org/ns/dcat#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:prov="http://www.w3.org/ns/prov#"
@@ -19,6 +19,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:topo="http://data.ign.fr/def/topo#"
      xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dcam1="http://purl.org/dc/dcam/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
      xmlns:schema="http://schema.org/">
@@ -453,7 +454,6 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3">
-        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <schema:alternateName>BD TOPO® description vectorielle 3D (</schema:alternateName>
         <schema:creator rdf:resource="http://njh.me/contact.geoservices@ign.fr"/>
         <schema:dateCreated rdf:datatype="http://schema.org/Date">2002-12-15</schema:dateCreated>
