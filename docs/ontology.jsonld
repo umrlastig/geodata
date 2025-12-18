@@ -121,9 +121,6 @@
   "http://schema.org/name" : [ {
     "@value" : "BD TOPO®"
   } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Dataset"
-  } ],
   "http://www.w3.org/ns/dcat#language" : [ {
     "@value" : "fr-FR"
   } ],

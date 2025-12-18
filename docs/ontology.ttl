@@ -288,8 +288,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.w3.org/ns/dcat#Dataset> ;
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> rdf:type owl:NamedIndividual ;
                                                         <http://schema.org/alternateName> "BD TOPO® description vectorielle 3D (" ;
                                                         <http://schema.org/creator> <http://njh.me/contact.geoservices@ign.fr> ;
                                                         <http://schema.org/dateCreated> "2002-12-15"^^<http://schema.org/Date> ;

@@ -260,7 +260,6 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/alternateName> "BD TOPO® description vectorielle 3D (" .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/creator> <http://njh.me/contact.geoservices@ign.fr> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/dateCreated> "2002-12-15"^^<http://schema.org/Date> .
