@@ -1,9 +1,6 @@
 # Geodata knowledge graph
 
-Knowledge graph (core structure and instances) where nodes are :
-- different digital assets based on geodata and relevant for research, education and open science : datasources, datasets, processes, maps, storymaps, other pedagogic materials, particularly located collections.
-- catalogues organising these nodes
-- user-oriented concepts that can be used to query the catalogues  
+This is a combined set of classes, properties and instances, altogether designed as knowledge graph dedicated to support geodata-driven knowledge production and transfer, i.e. science and education. It can be seen as a catalogue of assets -datasources, datasets, processes, maps, storymaps, other pedagogic materials, particularly located collections- and a general property that connect any asset to user-oriented concepts that can be used to express user queries, that will be reformulated into catalogue queries.    
 
 Documentation site: **[geodata](https://www.umr-lastig.fr/geodata/index.html)**
 
