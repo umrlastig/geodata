@@ -149,15 +149,20 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:range :CollectionItem .
 
 
+###  http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy
+:isRepresentedBy rdf:type owl:ObjectProperty .
+
+
 ###  http://purl.org/www.umr-lastig.fr/geodata#represents
 :represents rdf:type owl:ObjectProperty ;
-            owl:inverseOf <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy> ;
+            owl:inverseOf :isRepresentedBy ;
             rdfs:domain <http://www.w3.org/ns/dcat#Resource> ;
             rdfs:range owl:Thing .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy> rdf:type owl:ObjectProperty .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy> rdf:type owl:ObjectProperty ;
+                                                                                       owl:inverseOf :represents .
 
 
 #################################################################

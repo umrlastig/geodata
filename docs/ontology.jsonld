@@ -278,6 +278,9 @@
     "@value" : "Institut national de l'information géographique et forestière"
   } ]
 }, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#jadawson",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Agent", "http://www.w3.org/ns/prov#Person", "http://xmlns.com/foaf/0.1/Person" ],
   "http://xmlns.com/foaf/0.1/family_name" : [ {
@@ -323,7 +326,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy"
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ymeneroux",
@@ -369,7 +372,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#represents"
+  } ]
 }, {
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]

@@ -127,14 +127,18 @@
 <http://purl.org/www.umr-lastig.fr/geodata#has_member> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/www.umr-lastig.fr/geodata#Collection> .
 <http://purl.org/www.umr-lastig.fr/geodata#has_member> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/www.umr-lastig.fr/geodata#CollectionItem> .
 # 
+# http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy
+<http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # http://purl.org/www.umr-lastig.fr/geodata#represents
 <http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy> .
+<http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy> .
 <http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Resource> .
 <http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/www.umr-lastig.fr/geodata#represents> .
 # 
 # 
 # 
