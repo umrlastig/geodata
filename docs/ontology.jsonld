@@ -321,6 +321,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ymeneroux",
@@ -364,6 +367,9 @@
 }, {
   "@id" : "http://schema.org/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
