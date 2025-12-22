@@ -412,6 +412,39 @@
 
  
 
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:comment>An organized data acquisition activity carried out according to a defined methodology, using appropriate instruments or protocols, in order to observe, measure, or document phenomena for scientific analysis</rdfs:comment>
+        <rdfs:label>Scientific survey</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey">
+        <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey"/>
+        <rdfs:comment>A topographic survey is a detailed mapping of a site that records natural and man‑made features in both plan and elevation</rdfs:comment>
+        <rdfs:label>Topometric survey</rdfs:label>
+        <skos:altLabel>Topographical survey</skos:altLabel>
+        <skos:altLabel>Topo survey</skos:altLabel>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey">
+        <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q747810"/>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q747810</rdfs:isDefinedBy>
+        <rdfs:comment>research instrument consisting of a series of questions and other prompts for the purpose of gathering information from respondents</rdfs:comment>
+        <rdfs:label>Questionnary survey</rdfs:label>
+    </owl:Class>
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
