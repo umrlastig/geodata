@@ -325,6 +325,7 @@
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Process">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>Set of operations in a technical environment to yield an output based on input</rdfs:comment>
         <rdfs:seeAlso>http://eurovoc.europa.eu/3640</rdfs:seeAlso>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q500669</rdfs:seeAlso>
@@ -346,6 +347,10 @@
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/Resource"/>
+        <rdfs:comment xml:lang="en">Scientific papers are for sharing your own original research work with other scientists or for reviewing the research conducted by others.</rdfs:comment>
+        <skos:prefLabel xml:lang="fr">Papier scientifique</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Scientific Paper</skos:prefLabel>
     </owl:Class>
 
 
@@ -474,6 +479,8 @@
     <owl:Class rdf:about="http://www.w3.org/ns/prov#SoftwareAgent">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
     </owl:Class>
+
+
 
 
     <!-- 
