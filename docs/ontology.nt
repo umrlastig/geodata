@@ -155,6 +155,9 @@
 # #################################################################
 # 
 # 
+# http://purl.org/spar/datacite/Resource
+<http://purl.org/spar/datacite/Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter
 <http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> .
@@ -200,6 +203,7 @@
 # http://purl.org/www.umr-lastig.fr/geodata#Process
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+<http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of operations in a technical environment to yield an output based on input" .
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://eurovoc.europa.eu/3640" .
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q500669" .
@@ -219,7 +223,11 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/datacite/Resource> .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+<http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/2000/01/rdf-schema#comment> "Scientific papers are for sharing your own original research work with other scientists or for reviewing the research conducted by others."@en .
+<http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/2004/02/skos/core#prefLabel> "Papier scientifique"@fr .
+<http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/2004/02/skos/core#prefLabel> "Scientific Paper"@en .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

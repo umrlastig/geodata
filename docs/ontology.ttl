@@ -176,6 +176,10 @@ xsd:date rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
+###  http://purl.org/spar/datacite/Resource
+<http://purl.org/spar/datacite/Resource> rdf:type owl:Class .
+
+
 ###  http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter
 :ActiveMobilityCounter rdf:type owl:Class ;
                        rdfs:subClassOf :DataCollectionInstrument ;
@@ -227,7 +231,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#Process
 :Process rdf:type owl:Class ;
-         rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
+         rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ,
+                         <http://www.w3.org/ns/prov#Activity> ;
          rdfs:comment "Set of operations in a technical environment to yield an output based on input" ;
          rdfs:seeAlso "http://eurovoc.europa.eu/3640" ,
                       "https://www.wikidata.org/wiki/Q500669" .
@@ -250,7 +255,11 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper
 :ScientificPaper rdf:type owl:Class ;
-                 rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> .
+                 rdfs:subClassOf <http://purl.org/spar/datacite/Resource> ,
+                                 <http://www.w3.org/ns/dcat#Resource> ;
+                 rdfs:comment "Scientific papers are for sharing your own original research work with other scientists or for reviewing the research conducted by others."@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Papier scientifique"@fr ,
+                                                                 "Scientific Paper"@en .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey

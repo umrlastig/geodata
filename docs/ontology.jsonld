@@ -17,6 +17,9 @@
   "@id" : "http://purl.org/dc/terms/type",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/spar/datacite/Resource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
@@ -155,6 +158,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Resource"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov#Activity"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey",
@@ -186,8 +191,21 @@
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Scientific papers are for sharing your own original research work with other scientists or for reviewing the research conducted by others."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/spar/datacite/Resource"
+  }, {
     "@id" : "http://www.w3.org/ns/dcat#Resource"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Papier scientifique"
+  }, {
+    "@language" : "en",
+    "@value" : "Scientific Paper"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey",
