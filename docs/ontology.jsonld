@@ -125,6 +125,15 @@
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"
   } ]
 }, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LASTIG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Organization"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "LAboratoire en Sciences et Technologies de l'Information Géographique pour la ville intelligente et les territoires durables"
+  } ]
+}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -227,6 +236,40 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"
+  } ]
+}, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Tracklib",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
+  }, {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LASTIG"
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://doi.org/10.5281/zenodo.13899752"
+  }, {
+    "@value" : "Tracklib"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "xsd:date",
+    "@value" : "2023-12-20"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Python library for processing and manipulating GPS trajectories, designed for preprocessing and multi-scale operations."
+  }, {
+    "@language" : "fr",
+    "@value" : "Librairie Python de traitement et manipulations de trajectoires GPS, orienté pré-traitements et « multi-échelles »"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/prov#SoftwareAgent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tracklib"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback",
@@ -344,7 +387,7 @@
     "@id" : "http://www.w3.org/ns/prov#Organization"
   } ],
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://www.ign.fr/"
+    "@id" : "https://www.ign.fr"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Institut national de l'information géographique et forestière"
@@ -473,6 +516,9 @@
   "@id" : "http://schema.org/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -539,6 +585,9 @@
   "@id" : "https://geodata-paris.fr",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
-  "@id" : "https://www.ign.fr/",
+  "@id" : "https://www.ign.fr",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "xsd:date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 } ]
