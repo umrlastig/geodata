@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/geodata#","name":"Ontology of Geospatial Datasets for Open Science", "headline":"Document describing the ontology https://intforout.github.io/geodata#", "dateReleased":"Mon Dec 22 16:20:47 UTC 2025", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/geodata#","name":"Ontology of Geospatial Datasets for Open Science", "headline":"Document describing the ontology https://intforout.github.io/geodata#", "dateReleased":"Mon Dec 22 17:32:15 UTC 2025", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -153,10 +153,24 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey"
+         title="http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey">
+         <span>Questionnary survey</span>
+      </a>
+   </li>
+   <li>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"
          title="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper">
          <span>Scientific Paper</span>
       </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey"
+         title="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey">Scientific survey</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey"
+         title="http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey">Topometric survey</a>
    </li>
    <li>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#TotalStation"
@@ -266,6 +280,12 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey"
+         title="http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey">
+         <span>Questionnary survey</span>
+      </a>
+   </li>
+   <li>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#TotalStation"
          title="http://purl.org/www.umr-lastig.fr/geodata#TotalStation">
          <span>Total station</span>
@@ -301,7 +321,10 @@ This section provides details for each class and property defined by Ontology of
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#GPSDevice" title="http://purl.org/www.umr-lastig.fr/geodata#GPSDevice"> <span>GPS sensor</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial" title="http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial"> <span>Pedagogic Material</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Process" title="http://purl.org/www.umr-lastig.fr/geodata#Process"> <span>Process</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey" title="http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey"> <span>Questionnary survey</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper" title="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"> <span>Scientific Paper</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey" title="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey">Scientific survey</a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey" title="http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey">Topometric survey</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#TotalStation" title="http://purl.org/www.umr-lastig.fr/geodata#TotalStation"> <span>Total station</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" title="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"> <span>User Feedback</span> </a></li>
  </ul>
@@ -452,6 +475,24 @@ This section provides details for each class and property defined by Ontology of
    </dd>
   </dl>
  </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey">
+  <h3>Questionnary survey<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey" title="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey">Scientific survey</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is also defined as
+   </dt>
+   <dd>
+    <a href="#http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey">named individual</a>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper">
   <h3>Scientific Paper<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper</p>
@@ -461,6 +502,42 @@ This section provides details for each class and property defined by Ontology of
    </dt>
    <dd>
     <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey">
+  <h3>Scientific survey<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey</p>
+  <div class="comment">
+   <span class="markdown">An organized data acquisition activity carried out according to a defined methodology, using appropriate instruments or protocols, in order to observe, measure, or document phenomena for scientific analysis</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey" title="http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey">Questionnary survey</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey" title="http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey">Topometric survey</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey">
+  <h3>Topometric survey<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey</p>
+  <div class="comment">
+   <span class="markdown">A topographic survey is a detailed mapping of a site that records natural and man‑made features in both plan and elevation</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey" title="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey">Scientific survey</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -631,6 +708,7 @@ This section provides details for each class and property defined by Ontology of
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#ign" title="http://purl.org/www.umr-lastig.fr/geodata#ign"> <span>ign</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#jadawson" title="http://purl.org/www.umr-lastig.fr/geodata#jadawson"> <span>jadawson</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#mdvandamme" title="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"> <span>mdvandamme</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey" title="http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey"> <span>Questionnary survey</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#TotalStation" title="http://purl.org/www.umr-lastig.fr/geodata#TotalStation"> <span>Total station</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#ymeneroux" title="http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"> <span>ymeneroux</span> </a></li>
  </ul>
@@ -881,6 +959,24 @@ This section provides details for each class and property defined by Ontology of
    </dd>
    <dd>
     <a href="http://xmlns.com/foaf/0.1/workInfoHomepage" target="_blank" title="http://xmlns.com/foaf/0.1/workInfoHomepage">work Info Homepage</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"https://www.umr-lastig.fr/mdvandamme/"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey">
+  <h3>Questionnary survey<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey</p>
+  <dl class="description">
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#exactMatch" target="_blank" title="http://www.w3.org/2004/02/skos/core#exactMatch">has exact match</a> <sup class="type-op" title="object property">op</sup> <a href="https://www.wikidata.org/wiki/Q747810" target="_blank" title="https://www.wikidata.org/wiki/Q747810">Q747810</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is also defined as
+   </dt>
+   <dd>
+    <a href="#http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey">class</a>
    </dd>
   </dl>
  </div>

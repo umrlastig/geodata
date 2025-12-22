@@ -218,9 +218,30 @@ xsd:date rdf:type rdfs:Datatype .
                       "https://www.wikidata.org/wiki/Q500669" .
 
 
+###  http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey
+:QuestionnarySurvey rdf:type owl:Class ;
+                    rdfs:subClassOf :ScientificSurvey .
+
+
 ###  http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper
 :ScientificPaper rdf:type owl:Class ;
                  rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> .
+
+
+###  http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey
+:ScientificSurvey rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
+                  rdfs:comment "An organized data acquisition activity carried out according to a defined methodology, using appropriate instruments or protocols, in order to observe, measure, or document phenomena for scientific analysis" ;
+                  rdfs:label "Scientific survey" .
+
+
+###  http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey
+:TopometricSurvey rdf:type owl:Class ;
+                  rdfs:subClassOf :ScientificSurvey ;
+                  rdfs:comment "A topographic survey is a detailed mapping of a site that records natural and man‑made features in both plan and elevation" ;
+                  rdfs:label "Topometric survey" ;
+                  <http://www.w3.org/2004/02/skos/core#altLabel> "Topo survey" ,
+                                                                 "Topographical survey" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#TotalStation
@@ -259,6 +280,11 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://purl.org/www.umr-lastig.fr/geodata#GPSDevice
 :GPSDevice rdf:type owl:NamedIndividual ;
            <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.wikidata.org/wiki/Q253677> .
+
+
+###  http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey
+:QuestionnarySurvey rdf:type owl:NamedIndividual ;
+                    <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.wikidata.org/wiki/Q747810> .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#TotalStation
@@ -421,6 +447,10 @@ xsd:date rdf:type rdfs:Datatype .
 <https://www.wikidata.org/wiki/Q641296> rdf:type owl:NamedIndividual .
 
 
+###  https://www.wikidata.org/wiki/Q747810
+<https://www.wikidata.org/wiki/Q747810> rdf:type owl:NamedIndividual .
+
+
 #################################################################
 #    Annotations
 #################################################################
@@ -438,6 +468,11 @@ xsd:date rdf:type rdfs:Datatype .
 :GPSDevice rdfs:comment "navigation device that uses the Global Positioning System to track the device's movements and determine its geographic position" ;
            rdfs:isDefinedBy "https://www.wikidata.org/wiki/Q253677" ;
            rdfs:label "GPS sensor" .
+
+
+:QuestionnarySurvey rdfs:comment "research instrument consisting of a series of questions and other prompts for the purpose of gathering information from respondents" ;
+                    rdfs:isDefinedBy "https://www.wikidata.org/wiki/Q747810" ;
+                    rdfs:label "Questionnary survey" .
 
 
 :TotalStation rdfs:comment "A total station is a theodolite coupled with a distance meter. It is used to measure vertical and horizontal angles and distances." ;

@@ -190,9 +190,27 @@
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://eurovoc.europa.eu/3640" .
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q500669" .
 # 
+# http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey
+<http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> .
+# 
 # http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey
+<http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+<http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "An organized data acquisition activity carried out according to a defined methodology, using appropriate instruments or protocols, in order to observe, measure, or document phenomena for scientific analysis" .
+<http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific survey" .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey
+<http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> .
+<http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "A topographic survey is a detailed mapping of a site that records natural and man‑made features in both plan and elevation" .
+<http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Topometric survey" .
+<http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey> <http://www.w3.org/2004/02/skos/core#altLabel> "Topo survey" .
+<http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey> <http://www.w3.org/2004/02/skos/core#altLabel> "Topographical survey" .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#TotalStation
 <http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -232,6 +250,11 @@
 <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.wikidata.org/wiki/Q253677> .
 <https://www.wikidata.org/wiki/Q253677> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey
+<http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.wikidata.org/wiki/Q747810> .
+<https://www.wikidata.org/wiki/Q747810> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#TotalStation
 <http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -353,6 +376,8 @@
 # 
 # https://www.wikidata.org/wiki/Q641296
 # 
+# https://www.wikidata.org/wiki/Q747810
+# 
 # 
 # 
 # #################################################################
@@ -373,6 +398,10 @@
 <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "navigation device that uses the Global Positioning System to track the device's movements and determine its geographic position" .
 <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.wikidata.org/wiki/Q253677" .
 <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/2000/01/rdf-schema#label> "GPS sensor" .
+# 
+<http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "research instrument consisting of a series of questions and other prompts for the purpose of gathering information from respondents" .
+<http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.wikidata.org/wiki/Q747810" .
+<http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Questionnary survey" .
 # 
 <http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/2000/01/rdf-schema#comment> "A total station is a theodolite coupled with a distance meter. It is used to measure vertical and horizontal angles and distances." .
 <http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/2000/01/rdf-schema#label> "Tachéomètre"@fr .
