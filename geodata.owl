@@ -485,11 +485,34 @@
      -->
 
 
-     
 
 
 
-     
+
+     <!-- http://purl.org/www.umr-lastig.fr/geodata#Tracklib -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Tracklib">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+        <terms:identifier>Tracklib</terms:identifier>
+        <terms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.5281/zenodo.13899752</terms:identifier>
+        <terms:issued rdf:datatype="xsd:date">2023-12-20</terms:issued>
+        <rdf:comment xml:lang="en">A Python library for processing and manipulating GPS trajectories, designed for preprocessing and multi-scale operations.</rdf:comment>
+        <rdf:comment xml:lang="fr">Librairie Python de traitement et manipulations de trajectoires GPS, orienté pré-traitements et « multi-échelles »</rdf:comment>
+        <rdfs:label>Tracklib</rdfs:label>
+        <terms:contributor rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
+        <terms:contributor rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"/>
+        <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#LASTIG"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#LASTIG -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#LASTIG">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <foaf:name>LAboratoire en Sciences et Technologies de l&apos;Information Géographique pour la ville intelligente et les territoires durables</foaf:name>
+    </owl:NamedIndividual>
+
 
 
     <!-- http://purl.org/www.umr-lastig.fr/geodata#amraimond -->
@@ -542,7 +565,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ign">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
-        <foaf:homepage rdf:resource="https://www.ign.fr/"/>
+        <foaf:homepage rdf:resource="https://www.ign.fr"/>
         <foaf:name>Institut national de l&apos;information géographique et forestière</foaf:name>
     </owl:NamedIndividual>
     
