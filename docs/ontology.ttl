@@ -179,7 +179,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#CameraTrap
 :CameraTrap rdf:type owl:Class ;
-            rdfs:subClassOf :DataCollectionInstrument .
+            rdfs:subClassOf :DataCollectionInstrument ;
+            rdfs:comment "photographic device with any type of trigger causing a photo to be taken when activity is present" ;
+            rdfs:isDefinedBy "http://www.wikidata.org/entity/Q1723004" ;
+            rdfs:label "Camera trap" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#Collection
@@ -196,12 +199,18 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument
 :DataCollectionInstrument rdf:type owl:Class ;
-                          rdfs:subClassOf owl:Thing .
+                          rdfs:subClassOf owl:Thing ;
+                          rdfs:comment "tool used to facilitate the collection of qualitative or quantitative data" ;
+                          rdfs:isDefinedBy "http://www.wikidata.org/entity/Q130941907" ;
+                          rdfs:label "Data collection instrument" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#GPSDevice
 :GPSDevice rdf:type owl:Class ;
-           rdfs:subClassOf :DataCollectionInstrument .
+           rdfs:subClassOf :DataCollectionInstrument ;
+           rdfs:comment "navigation device that uses the Global Positioning System to track the device's movements and determine its geographic position" ;
+           rdfs:isDefinedBy "https://www.wikidata.org/wiki/Q253677" ;
+           rdfs:label "GPS sensor" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial
@@ -220,7 +229,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey
 :QuestionnarySurvey rdf:type owl:Class ;
-                    rdfs:subClassOf :ScientificSurvey .
+                    rdfs:subClassOf :ScientificSurvey ;
+                    rdfs:comment "research instrument consisting of a series of questions and other prompts for the purpose of gathering information from respondents" ;
+                    rdfs:isDefinedBy "https://www.wikidata.org/wiki/Q747810" ;
+                    rdfs:label "Questionnary survey" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper
@@ -246,7 +258,11 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#TotalStation
 :TotalStation rdf:type owl:Class ;
-              rdfs:subClassOf :DataCollectionInstrument .
+              rdfs:subClassOf :DataCollectionInstrument ;
+              rdfs:comment "A total station is a theodolite coupled with a distance meter. It is used to measure vertical and horizontal angles and distances." ;
+              rdfs:label "Tachéomètre"@fr ,
+                         "Total station"@en ;
+              rdfs:seeAlso "https://www.wikidata.org/wiki/Q641296" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#UserFeedback
@@ -267,34 +283,8 @@ xsd:date rdf:type rdfs:Datatype .
 #    Individuals
 #################################################################
 
-###  http://purl.org/www.umr-lastig.fr/geodata#CameraTrap
-:CameraTrap rdf:type owl:NamedIndividual ;
-            <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.wikidata.org/entity/Q1723004> .
-
-
-###  http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument
-:DataCollectionInstrument rdf:type owl:NamedIndividual ;
-                          <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.wikidata.org/entity/Q130941907> .
-
-
-###  http://purl.org/www.umr-lastig.fr/geodata#GPSDevice
-:GPSDevice rdf:type owl:NamedIndividual ;
-           <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.wikidata.org/wiki/Q253677> .
-
-
-###  http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey
-:QuestionnarySurvey rdf:type owl:NamedIndividual ;
-                    <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.wikidata.org/wiki/Q747810> .
-
-
-###  http://purl.org/www.umr-lastig.fr/geodata#TotalStation
-:TotalStation rdf:type owl:NamedIndividual ;
-              <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.wikidata.org/wiki/Q641296> .
-
-
 ###  http://purl.org/www.umr-lastig.fr/geodata#amraimond
 :amraimond rdf:type owl:NamedIndividual ,
-                    <http://www.w3.org/ns/prov#Agent> ,
                     <http://www.w3.org/ns/prov#Person> ,
                     <http://xmlns.com/foaf/0.1/Person> ;
            <http://www.w3.org/ns/prov#actedOnBehalfOf> :geodata-paris ;
@@ -423,61 +413,12 @@ xsd:date rdf:type rdfs:Datatype .
                                                         <http://www.w3.org/ns/dcat#title> "BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente l'ensemble des entités géographiques et administratives du territoire national. La BD TOPO® fournit une information de référence à tous les acteurs de la gestion, de l'aménagement et de l'observation du territoire pour analyser, situer, représenter des données dans leur réalité géographique"@fr .
 
 
-###  http://www.wikidata.org/entity/Q130941907
-<http://www.wikidata.org/entity/Q130941907> rdf:type owl:NamedIndividual .
-
-
-###  http://www.wikidata.org/entity/Q1723004
-<http://www.wikidata.org/entity/Q1723004> rdf:type owl:NamedIndividual .
-
-
 ###  https://geodata-paris.fr
 <https://geodata-paris.fr> rdf:type owl:NamedIndividual .
 
 
 ###  https://www.ign.fr/
 <https://www.ign.fr/> rdf:type owl:NamedIndividual .
-
-
-###  https://www.wikidata.org/wiki/Q253677
-<https://www.wikidata.org/wiki/Q253677> rdf:type owl:NamedIndividual .
-
-
-###  https://www.wikidata.org/wiki/Q641296
-<https://www.wikidata.org/wiki/Q641296> rdf:type owl:NamedIndividual .
-
-
-###  https://www.wikidata.org/wiki/Q747810
-<https://www.wikidata.org/wiki/Q747810> rdf:type owl:NamedIndividual .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-:CameraTrap rdfs:comment "photographic device with any type of trigger causing a photo to be taken when activity is present" ;
-            rdfs:isDefinedBy "http://www.wikidata.org/entity/Q1723004" ;
-            rdfs:label "Camera trap" .
-
-
-:DataCollectionInstrument rdfs:comment "tool used to facilitate the collection of qualitative or quantitative data" ;
-                          rdfs:isDefinedBy "http://www.wikidata.org/entity/Q130941907" ;
-                          rdfs:label "Data collection instrument" .
-
-
-:GPSDevice rdfs:comment "navigation device that uses the Global Positioning System to track the device's movements and determine its geographic position" ;
-           rdfs:isDefinedBy "https://www.wikidata.org/wiki/Q253677" ;
-           rdfs:label "GPS sensor" .
-
-
-:QuestionnarySurvey rdfs:comment "research instrument consisting of a series of questions and other prompts for the purpose of gathering information from respondents" ;
-                    rdfs:isDefinedBy "https://www.wikidata.org/wiki/Q747810" ;
-                    rdfs:label "Questionnary survey" .
-
-
-:TotalStation rdfs:comment "A total station is a theodolite coupled with a distance meter. It is used to measure vertical and horizontal angles and distances." ;
-              rdfs:label "Tachéomètre"@fr ,
-                         "Total station"@en .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

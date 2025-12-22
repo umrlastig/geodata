@@ -142,7 +142,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#CameraTrap",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "photographic device with any type of trigger causing a photo to be taken when activity is present"
   } ],
@@ -154,9 +154,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "http://www.wikidata.org/entity/Q1723004"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Collection",
@@ -178,7 +175,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "tool used to facilitate the collection of qualitative or quantitative data"
   } ],
@@ -190,13 +187,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "http://www.wikidata.org/entity/Q130941907"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#GPSDevice",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "navigation device that uses the Global Positioning System to track the device's movements and determine its geographic position"
   } ],
@@ -208,9 +202,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://www.wikidata.org/wiki/Q253677"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial",
@@ -237,7 +228,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "research instrument consisting of a series of questions and other prompts for the purpose of gathering information from respondents"
   } ],
@@ -249,9 +240,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://www.wikidata.org/wiki/Q747810"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper",
@@ -290,7 +278,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#TotalStation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A total station is a theodolite coupled with a distance meter. It is used to measure vertical and horizontal angles and distances."
   } ],
@@ -301,11 +289,11 @@
     "@language" : "en",
     "@value" : "Total station"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.wikidata.org/wiki/Q641296"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://www.wikidata.org/wiki/Q641296"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback",
@@ -318,7 +306,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#amraimond",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Agent", "http://www.w3.org/ns/prov#Person", "http://xmlns.com/foaf/0.1/Person" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person", "http://xmlns.com/foaf/0.1/Person" ],
   "http://www.w3.org/ns/prov#actedOnBehalfOf" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#geodata-paris"
   } ],
@@ -532,12 +520,6 @@
   "@id" : "http://www.w3.org/ns/dcat#title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.wikidata.org/entity/Q130941907",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "http://www.wikidata.org/entity/Q1723004",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
   "@id" : "http://xmlns.com/foaf/0.1/Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -557,14 +539,5 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://www.ign.fr/",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://www.wikidata.org/wiki/Q253677",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://www.wikidata.org/wiki/Q641296",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://www.wikidata.org/wiki/Q747810",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 } ]
