@@ -232,6 +232,7 @@
 # http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+<http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "An organized data acquisition activity carried out according to a defined methodology, using appropriate instruments or protocols, in order to observe, measure, or document phenomena for scientific analysis" .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific survey" .
 # 

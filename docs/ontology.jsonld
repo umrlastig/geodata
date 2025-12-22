@@ -218,6 +218,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Resource"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov#Activity"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey",

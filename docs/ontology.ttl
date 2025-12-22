@@ -264,7 +264,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey
 :ScientificSurvey rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
+                  rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ,
+                                  <http://www.w3.org/ns/prov#Activity> ;
                   rdfs:comment "An organized data acquisition activity carried out according to a defined methodology, using appropriate instruments or protocols, in order to observe, measure, or document phenomena for scientific analysis" ;
                   rdfs:label "Scientific survey" .
 
