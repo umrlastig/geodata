@@ -53,6 +53,18 @@
     "@id" : "http://www.w3.org/ns/prov#"
   } ]
 }, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Pedestrian and cyclist flows are measured using an active mobility counting system (automatic bicycle and pedestrian counter) installed along the study area."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bicycle and pedestrian counter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"
+  } ]
+}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://schema.org/alternateName" : [ {
@@ -129,6 +141,24 @@
     "@value" : "BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente l'ensemble des entités géographiques et administratives du territoire national. La BD TOPO® fournit une information de référence à tous les acteurs de la gestion, de l'aménagement et de l'observation du territoire pour analyser, situer, représenter des données dans leur réalité géographique"
   } ]
 }, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#CameraTrap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "photographic device with any type of trigger causing a photo to be taken when activity is present"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://www.wikidata.org/entity/Q1723004"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Camera trap"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://www.wikidata.org/entity/Q1723004"
+  } ]
+}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Collection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -145,6 +175,42 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Resource"
+  } ]
+}, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "tool used to facilitate the collection of qualitative or quantitative data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://www.wikidata.org/entity/Q130941907"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data collection instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://www.wikidata.org/entity/Q130941907"
+  } ]
+}, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#GPSDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "navigation device that uses the Global Positioning System to track the device's movements and determine its geographic position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://www.wikidata.org/wiki/Q253677"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "GPS sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://www.wikidata.org/wiki/Q253677"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial",
@@ -174,6 +240,25 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Resource"
+  } ]
+}, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#TotalStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A total station is a theodolite coupled with a distance meter. It is used to measure vertical and horizontal angles and distances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Tachéomètre"
+  }, {
+    "@language" : "en",
+    "@value" : "Total station"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://www.wikidata.org/wiki/Q641296"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback",
@@ -279,7 +364,16 @@
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Resource"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#represents"
+  } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#jadawson",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Agent", "http://www.w3.org/ns/prov#Person", "http://xmlns.com/foaf/0.1/Person" ],
@@ -324,9 +418,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ymeneroux",
@@ -371,12 +462,6 @@
   "@id" : "http://schema.org/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#represents"
-  } ]
-}, {
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -400,6 +485,12 @@
   "@id" : "http://www.w3.org/ns/dcat#title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.wikidata.org/entity/Q130941907",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.wikidata.org/entity/Q1723004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
   "@id" : "http://xmlns.com/foaf/0.1/Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -419,5 +510,11 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://www.ign.fr/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://www.wikidata.org/wiki/Q253677",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://www.wikidata.org/wiki/Q641296",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 } ]

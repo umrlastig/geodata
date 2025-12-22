@@ -129,16 +129,14 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy
 <http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/www.umr-lastig.fr/geodata#represents> .
+<http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Resource> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#represents
 <http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy> .
 <http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Resource> .
 <http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
-# 
-# http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/www.umr-lastig.fr/geodata#represents> .
 # 
 # 
 # 
@@ -152,6 +150,16 @@
 # http://purl.org/dc/terms/MethodOfInstruction
 <http://purl.org/dc/terms/MethodOfInstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter
+<http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> .
+<http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter> <http://www.w3.org/2000/01/rdf-schema#comment> "Pedestrian and cyclist flows are measured using an active mobility counting system (automatic bicycle and pedestrian counter) installed along the study area." .
+<http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter> <http://www.w3.org/2000/01/rdf-schema#label> "Bicycle and pedestrian counter" .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#CameraTrap
+<http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> .
+# 
 # http://purl.org/www.umr-lastig.fr/geodata#Collection
 <http://purl.org/www.umr-lastig.fr/geodata#Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#Collection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
@@ -161,6 +169,14 @@
 <http://purl.org/www.umr-lastig.fr/geodata#CollectionItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#CollectionItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
 <http://purl.org/www.umr-lastig.fr/geodata#CollectionItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection item is composed of different pieces of data, usually selections from bigger datasets, associated with a proposed visualisation, and narratives that connect the visual items to the concepts of the collection. It has a spatial and temporal extent." .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument
+<http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#GPSDevice
+<http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial
 <http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -177,6 +193,10 @@
 # http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#TotalStation
+<http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#UserFeedback
 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -197,6 +217,26 @@
 # #
 # #################################################################
 # 
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#CameraTrap
+<http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.wikidata.org/entity/Q1723004> .
+<http://www.wikidata.org/entity/Q1723004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument
+<http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.wikidata.org/entity/Q130941907> .
+<http://www.wikidata.org/entity/Q130941907> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#GPSDevice
+<http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.wikidata.org/wiki/Q253677> .
+<https://www.wikidata.org/wiki/Q253677> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#TotalStation
+<http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.wikidata.org/wiki/Q641296> .
+<https://www.wikidata.org/wiki/Q641296> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#amraimond
 <http://purl.org/www.umr-lastig.fr/geodata#amraimond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -299,10 +339,43 @@
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://www.w3.org/ns/dcat#language> "fr-FR" .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://www.w3.org/ns/dcat#title> "BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente l'ensemble des entités géographiques et administratives du territoire national. La BD TOPO® fournit une information de référence à tous les acteurs de la gestion, de l'aménagement et de l'observation du territoire pour analyser, situer, représenter des données dans leur réalité géographique"@fr .
 # 
+# http://www.wikidata.org/entity/Q130941907
+# 
+# http://www.wikidata.org/entity/Q1723004
+# 
 # https://geodata-paris.fr
 <https://geodata-paris.fr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://www.ign.fr/
 <https://www.ign.fr/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://www.wikidata.org/wiki/Q253677
+# 
+# https://www.wikidata.org/wiki/Q641296
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/2000/01/rdf-schema#comment> "photographic device with any type of trigger causing a photo to be taken when activity is present" .
+<http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.wikidata.org/entity/Q1723004" .
+<http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/2000/01/rdf-schema#label> "Camera trap" .
+# 
+<http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#comment> "tool used to facilitate the collection of qualitative or quantitative data" .
+<http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.wikidata.org/entity/Q130941907" .
+<http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "Data collection instrument" .
+# 
+<http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "navigation device that uses the Global Positioning System to track the device's movements and determine its geographic position" .
+<http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.wikidata.org/wiki/Q253677" .
+<http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/2000/01/rdf-schema#label> "GPS sensor" .
+# 
+<http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/2000/01/rdf-schema#comment> "A total station is a theodolite coupled with a distance meter. It is used to measure vertical and horizontal angles and distances." .
+<http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/2000/01/rdf-schema#label> "Tachéomètre"@fr .
+<http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/2000/01/rdf-schema#label> "Total station"@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
