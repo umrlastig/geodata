@@ -260,8 +260,10 @@
 
     <!-- http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy">
+    <owl:ObjectProperty rdf:about="http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy">
         <owl:inverseOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#represents"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
     </owl:ObjectProperty>
     
 
@@ -326,7 +328,7 @@
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
     </owl:Class>
-    
+
 
 
     <!-- http://purl.org/www.umr-lastig.fr/geodata#UserFeedback -->
@@ -349,8 +351,66 @@
     <!-- http://xmlns.com/foaf/0.1/Organization -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
-    
 
+
+
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q130941907"/>
+        <rdfs:isDefinedBy>http://www.wikidata.org/entity/Q130941907</rdfs:isDefinedBy>
+        <rdfs:comment>tool used to facilitate the collection of qualitative or quantitative data</rdfs:comment>
+        <rdfs:label>Data collection instrument</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#CameraTrap -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#CameraTrap">
+        <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"/>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q1723004"/>
+        <rdfs:isDefinedBy>http://www.wikidata.org/entity/Q1723004</rdfs:isDefinedBy>
+        <rdfs:comment>photographic device with any type of trigger causing a photo to be taken when activity is present</rdfs:comment>
+        <rdfs:label>Camera trap</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter">
+        <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"/>
+        <rdfs:comment>Pedestrian and cyclist flows are measured using an active mobility counting system (automatic bicycle and pedestrian counter) installed along the study area.</rdfs:comment>
+        <rdfs:label>Bicycle and pedestrian counter</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#TotalStation -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#TotalStation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q641296"/>
+        <rdfs:comment>A total station is a theodolite coupled with a distance meter. It is used to measure vertical and horizontal angles and distances.</rdfs:comment>
+        <rdfs:label xml:lang="en">Total station</rdfs:label>
+        <rdfs:label xml:lang="fr">Tachéomètre</rdfs:label>
+    </owl:Class>
+
+    
+    
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#GPSDevice -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#GPSDevice">
+        <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q253677"/>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q253677</rdfs:isDefinedBy>
+        <rdfs:comment>navigation device that uses the Global Positioning System to track the device's movements and determine its geographic position</rdfs:comment>
+        <rdfs:label>GPS sensor</rdfs:label>
+    </owl:Class>
+
+ 
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
