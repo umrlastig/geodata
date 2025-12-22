@@ -134,7 +134,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://purl.org/www.umr-lastig.fr/geodata#annotates
 :annotates rdf:type owl:ObjectProperty ;
            rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
-           rdfs:range <http://www.w3.org/ns/dcat#Dataset> .
+           rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
+           rdfs:comment "Relation between a dataset that is a set of annotations for another dataset, e.g. an annotation layer in a QGIS project." ;
+           rdfs:label "annotates"@en .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction
@@ -165,10 +167,6 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Classes
 #################################################################
-
-###  http://purl.org/dc/terms/MethodOfInstruction
-<http://purl.org/dc/terms/MethodOfInstruction> rdf:type owl:Class .
-
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter
 :ActiveMobilityCounter rdf:type owl:Class ;
@@ -235,6 +233,13 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:label "Questionnary survey" .
 
 
+###  http://purl.org/www.umr-lastig.fr/geodata#ReproductibleProcess
+:ReproductibleProcess rdf:type owl:Class ;
+                      rdfs:subClassOf :Process ;
+                      rdfs:comment "Refers to the capacity to faithfully replicate experimental and computational procedures" ;
+                      rdfs:label "Reproductible process" .
+
+
 ###  http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper
 :ScientificPaper rdf:type owl:Class ;
                  rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> .
@@ -271,146 +276,115 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:comment "User feedback about using one or more resource" .
 
 
+###  http://www.w3.org/ns/dcat#DataService
+<http://www.w3.org/ns/dcat#DataService> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> .
+
+
 ###  http://www.w3.org/ns/dcat#Dataset
-<http://www.w3.org/ns/dcat#Dataset> rdfs:comment "Relation between a dataset that is a set of annotations for another dataset, e.g. an annotation layer in a QGIS project." .
+<http://www.w3.org/ns/dcat#Dataset> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> .
 
 
-###  http://xmlns.com/foaf/0.1/Organization
-<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class .
+###  http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Organization
+<http://www.w3.org/ns/prov#Organization> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> .
+
+
+###  http://www.w3.org/ns/prov#Person
+<http://www.w3.org/ns/prov#Person> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> .
+
+
+###  http://www.w3.org/ns/prov#SoftwareAgent
+<http://www.w3.org/ns/prov#SoftwareAgent> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
+###  http://purl.org/www.umr-lastig.fr/geodata#aleguicher
+:aleguicher rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/ns/prov#Person> ;
+            <http://www.w3.org/ns/prov#actedOnBehalfOf> :geodata-paris ;
+            <http://xmlns.com/foaf/0.1/family_name> "Le Guilcher" ;
+            <http://xmlns.com/foaf/0.1/givenname> "Arnaud" ;
+            <http://xmlns.com/foaf/0.1/name> "Arnaud Le Guilcher" .
+
+
 ###  http://purl.org/www.umr-lastig.fr/geodata#amraimond
 :amraimond rdf:type owl:NamedIndividual ,
-                    <http://www.w3.org/ns/prov#Person> ,
-                    <http://xmlns.com/foaf/0.1/Person> ;
+                    <http://www.w3.org/ns/prov#Person> ;
            <http://www.w3.org/ns/prov#actedOnBehalfOf> :geodata-paris ;
            <http://xmlns.com/foaf/0.1/family_name> "Olteanu-Raimond" ;
            <http://xmlns.com/foaf/0.1/givenname> "Ana-Maria" ;
-           <http://xmlns.com/foaf/0.1/member> :geodata-paris ;
-           <http://xmlns.com/foaf/0.1/name> "Ana-Maria Olteanu-Raimond" ;
-           <http://xmlns.com/foaf/0.1/title> "Mme." .
+           <http://xmlns.com/foaf/0.1/name> "Ana-Maria Olteanu-Raimond" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#bbucher
 :bbucher rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/ns/prov#Agent> ,
-                  <http://www.w3.org/ns/prov#Person> ,
-                  <http://xmlns.com/foaf/0.1/Person> ;
+                  <http://www.w3.org/ns/prov#Person> ;
          <http://www.w3.org/ns/prov#actedOnBehalfOf> :geodata-paris ;
          <http://xmlns.com/foaf/0.1/family_name> "Bucher" ;
          <http://xmlns.com/foaf/0.1/givenname> "Bénédicte" ;
-         <http://xmlns.com/foaf/0.1/member> :geodata-paris ;
-         <http://xmlns.com/foaf/0.1/name> "Bénédicte Bucher" ;
-         <http://xmlns.com/foaf/0.1/title> "Mme." .
+         <http://xmlns.com/foaf/0.1/name> "Bénédicte Bucher" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#geodata-paris
 :geodata-paris rdf:type owl:NamedIndividual ,
-                        <http://xmlns.com/foaf/0.1/Organization> ;
+                        <http://www.w3.org/ns/prov#Organization> ;
                <http://xmlns.com/foaf/0.1/homepage> <https://geodata-paris.fr> ;
-               <http://xmlns.com/foaf/0.1/name> "Géodata Paris (ex ENSG-Géomatique)" .
+               <http://xmlns.com/foaf/0.1/name> "Géodata Paris" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#ign
 :ign rdf:type owl:NamedIndividual ,
-              <http://xmlns.com/foaf/0.1/Organization> ;
+              <http://www.w3.org/ns/prov#Organization> ;
      <http://xmlns.com/foaf/0.1/homepage> <https://www.ign.fr/> ;
      <http://xmlns.com/foaf/0.1/name> "Institut national de l'information géographique et forestière" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#jadawson
 :jadawson rdf:type owl:NamedIndividual ,
-                   <http://www.w3.org/ns/prov#Agent> ,
-                   <http://www.w3.org/ns/prov#Person> ,
-                   <http://xmlns.com/foaf/0.1/Person> ;
+                   <http://www.w3.org/ns/prov#Person> ;
+          <http://www.w3.org/ns/prov#actedOnBehalfOf> :geodata-paris ;
           <http://xmlns.com/foaf/0.1/family_name> "Dawson" ;
           <http://xmlns.com/foaf/0.1/givenname> "John-Andrew" ;
-          <http://xmlns.com/foaf/0.1/member> :geodata-paris ;
           <http://xmlns.com/foaf/0.1/name> "John-Andrew Dawson" .
+
+
+###  http://purl.org/www.umr-lastig.fr/geodata#ljolivet
+:ljolivet rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/ns/prov#Person> ;
+          <http://www.w3.org/ns/prov#actedOnBehalfOf> :geodata-paris ;
+          <http://xmlns.com/foaf/0.1/family_name> "Jolivet" ;
+          <http://xmlns.com/foaf/0.1/givenname> "Laurence" ;
+          <http://xmlns.com/foaf/0.1/name> "Laurence Jolivet" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#mdvandamme
 :mdvandamme rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/ns/prov#Agent> ,
-                     <http://www.w3.org/ns/prov#Person> ,
-                     <http://xmlns.com/foaf/0.1/Person> ;
+                     <http://www.w3.org/ns/prov#Person> ;
+            <http://www.w3.org/ns/prov#actedOnBehalfOf> :geodata-paris ;
             <http://xmlns.com/foaf/0.1/family_name> "Van Damme" ;
             <http://xmlns.com/foaf/0.1/givenname> "Marie-Dominique" ;
-            <http://xmlns.com/foaf/0.1/member> :geodata-paris ;
             <http://xmlns.com/foaf/0.1/name> "Marie-Dominique Van Damme" ;
-            <http://xmlns.com/foaf/0.1/title> "Mme." ;
             <http://xmlns.com/foaf/0.1/workInfoHomepage> "https://www.umr-lastig.fr/mdvandamme/" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#ymeneroux
 :ymeneroux rdf:type owl:NamedIndividual ,
-                    <http://www.w3.org/ns/prov#Agent> ,
-                    <http://www.w3.org/ns/prov#Person> ,
-                    <http://xmlns.com/foaf/0.1/Person> ;
-           <http://xmlns.com/foaf/0.1/family_name> "Ménéroux" ;
+                    <http://www.w3.org/ns/prov#Person> ;
+           <http://www.w3.org/ns/prov#actedOnBehalfOf> :ign ;
+           <http://xmlns.com/foaf/0.1/family_name> "Méneroux" ;
            <http://xmlns.com/foaf/0.1/givenname> "Yann" ;
-           <http://xmlns.com/foaf/0.1/member> :geodata-paris ;
            <http://xmlns.com/foaf/0.1/name> "Yann Méneroux" .
-
-
-###  http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> rdf:type owl:NamedIndividual ;
-                                                        <http://schema.org/alternateName> "BD TOPO® description vectorielle 3D (" ;
-                                                        <http://schema.org/creator> <http://njh.me/contact.geoservices@ign.fr> ;
-                                                        <http://schema.org/dateCreated> "2002-12-15"^^<http://schema.org/Date> ;
-                                                        <http://schema.org/datePublished> "2025-06-15"^^<http://schema.org/Date> ;
-                                                        <http://schema.org/description> """La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique.
-
-	Les objets de la BD TOPO® sont structurés en thèmes : 
-	 - l'administratif ; 
-	 - le bâti ; 
-	 - l'hydrographie ; 
-	 - les lieux nommés ; 
-	 - l'occupation du sol ; 
-	 - les services et activités ; 
-	 - le transport ; 
-	 - les zones réglementées. 
-
-	Le processus de production 3D permet de fournir l'altimétrie des objets, ainsi que la hauteur des bâtiments. 
-
-	Le relief est décrit sous forme de modèles numériques de terrain (MNT). 
-
-	Depuis la version 3.0, tous les objets possèdent un identifiant unique et stable dans le temps.
-
-	Le produit **BDTOPO® Express** est l’édition hebdomadaire de la BDTOPO® si vous avez besoin de travailler sur de la donnée topographique à haute fréquence (disponible depuis mai 2025). 
-
-	Le produit **Différentiel BD TOPO®** contient les différences géométriques et sémantiques sur l'ensemble du contenu BD TOPO® entre deux éditions trimestrielles successives BD TOPO®. 
-
-	Plus précisément, l'édition N du Différentiel BD TOPO® en vigueur contient tout objet de la BD TOPO® dont la date de modification, la date de création ou la date de suppression en base est postérieure à la date de prédiffusion de la précédente édition trimestrielle (N-1), équivalent à une activité de mise à jour par l'IGN d'une durée de 3 mois.""" ;
-                                                        <http://schema.org/encodingFormat> "GPKG" ,
-                                                                                           "PostGreSQL" ,
-                                                                                           "SHP" ,
-                                                                                           "TMS" ,
-                                                                                           "WFS" ,
-                                                                                           "WMS" ,
-                                                                                           "WMTS" ;
-                                                        <http://schema.org/keywords> "Altitude" ,
-                                                                                     "Bâtiments" ,
-                                                                                     "Dénominations géographiques" ,
-                                                                                     "Hydrographie" ,
-                                                                                     "Mobilité" ,
-                                                                                     "Réseaux de transport" ,
-                                                                                     "activités" ,
-                                                                                     "données ouvertes" ,
-                                                                                     "eau" ,
-                                                                                     "forêts" ,
-                                                                                     "haies" ,
-                                                                                     "routes" ,
-                                                                                     "toponymie" ,
-                                                                                     "transports" ,
-                                                                                     "végétation" ;
-                                                        <http://schema.org/name> "BD TOPO®" ;
-                                                        <http://www.w3.org/ns/dcat#language> "fr-FR" ;
-                                                        <http://www.w3.org/ns/dcat#title> "BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente l'ensemble des entités géographiques et administratives du territoire national. La BD TOPO® fournit une information de référence à tous les acteurs de la gestion, de l'aménagement et de l'observation du territoire pour analyser, situer, représenter des données dans leur réalité géographique"@fr .
 
 
 ###  https://geodata-paris.fr

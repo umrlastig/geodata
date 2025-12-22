@@ -116,6 +116,8 @@
 <http://purl.org/www.umr-lastig.fr/geodata#annotates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/www.umr-lastig.fr/geodata#annotates> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Dataset> .
 <http://purl.org/www.umr-lastig.fr/geodata#annotates> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Dataset> .
+<http://purl.org/www.umr-lastig.fr/geodata#annotates> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a dataset that is a set of annotations for another dataset, e.g. an annotation layer in a QGIS project." .
+<http://purl.org/www.umr-lastig.fr/geodata#annotates> <http://www.w3.org/2000/01/rdf-schema#label> "annotates"@en .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction
 <http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -146,9 +148,6 @@
 # #
 # #################################################################
 # 
-# 
-# http://purl.org/dc/terms/MethodOfInstruction
-<http://purl.org/dc/terms/MethodOfInstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter
 <http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -206,6 +205,12 @@
 <http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.wikidata.org/wiki/Q747810" .
 <http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Questionnary survey" .
 # 
+# http://purl.org/www.umr-lastig.fr/geodata#ReproductibleProcess
+<http://purl.org/www.umr-lastig.fr/geodata#ReproductibleProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#ReproductibleProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#Process> .
+<http://purl.org/www.umr-lastig.fr/geodata#ReproductibleProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the capacity to faithfully replicate experimental and computational procedures" .
+<http://purl.org/www.umr-lastig.fr/geodata#ReproductibleProcess> <http://www.w3.org/2000/01/rdf-schema#label> "Reproductible process" .
+# 
 # http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
@@ -237,11 +242,28 @@
 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "User feedback about using one or more resource" .
 # 
-# http://www.w3.org/ns/dcat#Dataset
-<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a dataset that is a set of annotations for another dataset, e.g. an annotation layer in a QGIS project." .
+# http://www.w3.org/ns/dcat#DataService
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
 # 
-# http://xmlns.com/foaf/0.1/Organization
-<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+# 
+# http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Organization
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+# 
+# http://www.w3.org/ns/prov#Person
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+# 
+# http://www.w3.org/ns/prov#SoftwareAgent
+<http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
 # 
 # 
 # 
@@ -252,110 +274,79 @@
 # #################################################################
 # 
 # 
+# http://purl.org/www.umr-lastig.fr/geodata#aleguicher
+<http://purl.org/www.umr-lastig.fr/geodata#aleguicher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#aleguicher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<http://purl.org/www.umr-lastig.fr/geodata#aleguicher> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> .
+<http://purl.org/www.umr-lastig.fr/geodata#aleguicher> <http://xmlns.com/foaf/0.1/family_name> "Le Guilcher" .
+<http://purl.org/www.umr-lastig.fr/geodata#aleguicher> <http://xmlns.com/foaf/0.1/givenname> "Arnaud" .
+<http://purl.org/www.umr-lastig.fr/geodata#aleguicher> <http://xmlns.com/foaf/0.1/name> "Arnaud Le Guilcher" .
+# 
 # http://purl.org/www.umr-lastig.fr/geodata#amraimond
 <http://purl.org/www.umr-lastig.fr/geodata#amraimond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#amraimond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
-<http://purl.org/www.umr-lastig.fr/geodata#amraimond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
 <http://purl.org/www.umr-lastig.fr/geodata#amraimond> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> .
 <http://purl.org/www.umr-lastig.fr/geodata#amraimond> <http://xmlns.com/foaf/0.1/family_name> "Olteanu-Raimond" .
 <http://purl.org/www.umr-lastig.fr/geodata#amraimond> <http://xmlns.com/foaf/0.1/givenname> "Ana-Maria" .
-<http://purl.org/www.umr-lastig.fr/geodata#amraimond> <http://xmlns.com/foaf/0.1/member> <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> .
 <http://purl.org/www.umr-lastig.fr/geodata#amraimond> <http://xmlns.com/foaf/0.1/name> "Ana-Maria Olteanu-Raimond" .
-<http://purl.org/www.umr-lastig.fr/geodata#amraimond> <http://xmlns.com/foaf/0.1/title> "Mme." .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#bbucher
 <http://purl.org/www.umr-lastig.fr/geodata#bbucher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#bbucher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
 <http://purl.org/www.umr-lastig.fr/geodata#bbucher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
-<http://purl.org/www.umr-lastig.fr/geodata#bbucher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
 <http://purl.org/www.umr-lastig.fr/geodata#bbucher> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> .
 <http://purl.org/www.umr-lastig.fr/geodata#bbucher> <http://xmlns.com/foaf/0.1/family_name> "Bucher" .
 <http://purl.org/www.umr-lastig.fr/geodata#bbucher> <http://xmlns.com/foaf/0.1/givenname> "Bénédicte" .
-<http://purl.org/www.umr-lastig.fr/geodata#bbucher> <http://xmlns.com/foaf/0.1/member> <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> .
 <http://purl.org/www.umr-lastig.fr/geodata#bbucher> <http://xmlns.com/foaf/0.1/name> "Bénédicte Bucher" .
-<http://purl.org/www.umr-lastig.fr/geodata#bbucher> <http://xmlns.com/foaf/0.1/title> "Mme." .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#geodata-paris
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://xmlns.com/foaf/0.1/homepage> <https://geodata-paris.fr> .
-<http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://xmlns.com/foaf/0.1/name> "Géodata Paris (ex ENSG-Géomatique)" .
+<https://geodata-paris.fr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://xmlns.com/foaf/0.1/name> "Géodata Paris" .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#ign
 <http://purl.org/www.umr-lastig.fr/geodata#ign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#ign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/www.umr-lastig.fr/geodata#ign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
 <http://purl.org/www.umr-lastig.fr/geodata#ign> <http://xmlns.com/foaf/0.1/homepage> <https://www.ign.fr/> .
+<https://www.ign.fr/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#ign> <http://xmlns.com/foaf/0.1/name> "Institut national de l'information géographique et forestière" .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#jadawson
 <http://purl.org/www.umr-lastig.fr/geodata#jadawson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#jadawson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
 <http://purl.org/www.umr-lastig.fr/geodata#jadawson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
-<http://purl.org/www.umr-lastig.fr/geodata#jadawson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/www.umr-lastig.fr/geodata#jadawson> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> .
 <http://purl.org/www.umr-lastig.fr/geodata#jadawson> <http://xmlns.com/foaf/0.1/family_name> "Dawson" .
 <http://purl.org/www.umr-lastig.fr/geodata#jadawson> <http://xmlns.com/foaf/0.1/givenname> "John-Andrew" .
-<http://purl.org/www.umr-lastig.fr/geodata#jadawson> <http://xmlns.com/foaf/0.1/member> <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> .
 <http://purl.org/www.umr-lastig.fr/geodata#jadawson> <http://xmlns.com/foaf/0.1/name> "John-Andrew Dawson" .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#ljolivet
+<http://purl.org/www.umr-lastig.fr/geodata#ljolivet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#ljolivet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<http://purl.org/www.umr-lastig.fr/geodata#ljolivet> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> .
+<http://purl.org/www.umr-lastig.fr/geodata#ljolivet> <http://xmlns.com/foaf/0.1/family_name> "Jolivet" .
+<http://purl.org/www.umr-lastig.fr/geodata#ljolivet> <http://xmlns.com/foaf/0.1/givenname> "Laurence" .
+<http://purl.org/www.umr-lastig.fr/geodata#ljolivet> <http://xmlns.com/foaf/0.1/name> "Laurence Jolivet" .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#mdvandamme
 <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
 <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
-<http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> .
 <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> <http://xmlns.com/foaf/0.1/family_name> "Van Damme" .
 <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> <http://xmlns.com/foaf/0.1/givenname> "Marie-Dominique" .
-<http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> <http://xmlns.com/foaf/0.1/member> <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> .
 <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> <http://xmlns.com/foaf/0.1/name> "Marie-Dominique Van Damme" .
-<http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> <http://xmlns.com/foaf/0.1/title> "Mme." .
 <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> <http://xmlns.com/foaf/0.1/workInfoHomepage> "https://www.umr-lastig.fr/mdvandamme/" .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#ymeneroux
 <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
 <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
-<http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://xmlns.com/foaf/0.1/family_name> "Ménéroux" .
+<http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://purl.org/www.umr-lastig.fr/geodata#ign> .
+<http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://xmlns.com/foaf/0.1/family_name> "Méneroux" .
 <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://xmlns.com/foaf/0.1/givenname> "Yann" .
-<http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://xmlns.com/foaf/0.1/member> <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> .
 <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://xmlns.com/foaf/0.1/name> "Yann Méneroux" .
 # 
-# http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/alternateName> "BD TOPO® description vectorielle 3D (" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/creator> <http://njh.me/contact.geoservices@ign.fr> .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/dateCreated> "2002-12-15"^^<http://schema.org/Date> .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/datePublished> "2025-06-15"^^<http://schema.org/Date> .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/description> "La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique.\n\n\tLes objets de la BD TOPO® sont structurés en thèmes : \n\t - l'administratif ; \n\t - le bâti ; \n\t - l'hydrographie ; \n\t - les lieux nommés ; \n\t - l'occupation du sol ; \n\t - les services et activités ; \n\t - le transport ; \n\t - les zones réglementées. \n\n\tLe processus de production 3D permet de fournir l'altimétrie des objets, ainsi que la hauteur des bâtiments. \n\n\tLe relief est décrit sous forme de modèles numériques de terrain (MNT). \n\n\tDepuis la version 3.0, tous les objets possèdent un identifiant unique et stable dans le temps.\n\n\tLe produit **BDTOPO® Express** est l’édition hebdomadaire de la BDTOPO® si vous avez besoin de travailler sur de la donnée topographique à haute fréquence (disponible depuis mai 2025). \n\n\tLe produit **Différentiel BD TOPO®** contient les différences géométriques et sémantiques sur l'ensemble du contenu BD TOPO® entre deux éditions trimestrielles successives BD TOPO®. \n\n\tPlus précisément, l'édition N du Différentiel BD TOPO® en vigueur contient tout objet de la BD TOPO® dont la date de modification, la date de création ou la date de suppression en base est postérieure à la date de prédiffusion de la précédente édition trimestrielle (N-1), équivalent à une activité de mise à jour par l'IGN d'une durée de 3 mois." .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/encodingFormat> "GPKG" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/encodingFormat> "PostGreSQL" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/encodingFormat> "SHP" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/encodingFormat> "TMS" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/encodingFormat> "WFS" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/encodingFormat> "WMS" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/encodingFormat> "WMTS" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/keywords> "Altitude" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/keywords> "Bâtiments" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/keywords> "Dénominations géographiques" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/keywords> "Hydrographie" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/keywords> "Mobilité" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/keywords> "Réseaux de transport" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/keywords> "activités" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/keywords> "données ouvertes" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/keywords> "eau" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/keywords> "forêts" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/keywords> "haies" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/keywords> "routes" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/keywords> "toponymie" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/keywords> "transports" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/keywords> "végétation" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://schema.org/name> "BD TOPO®" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://www.w3.org/ns/dcat#language> "fr-FR" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://www.w3.org/ns/dcat#title> "BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente l'ensemble des entités géographiques et administratives du territoire national. La BD TOPO® fournit une information de référence à tous les acteurs de la gestion, de l'aménagement et de l'observation du territoire pour analyser, situer, représenter des données dans leur réalité géographique"@fr .
-# 
 # https://geodata-paris.fr
-<https://geodata-paris.fr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://www.ign.fr/
-<https://www.ign.fr/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
