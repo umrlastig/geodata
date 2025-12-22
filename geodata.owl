@@ -423,6 +423,7 @@
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>An organized data acquisition activity carried out according to a defined methodology, using appropriate instruments or protocols, in order to observe, measure, or document phenomena for scientific analysis</rdfs:comment>
         <rdfs:label>Scientific survey</rdfs:label>
     </owl:Class>
