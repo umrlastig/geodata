@@ -430,40 +430,6 @@
 
 
 
-    <!-- http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey -->
-
-    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey">
-        <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey"/>
-        <rdfs:comment>A topographic survey is a detailed mapping of a site that records natural and man‑made features in both plan and elevation</rdfs:comment>
-        <rdfs:label>Topometric survey</rdfs:label>
-        <skos:altLabel>Topographical survey</skos:altLabel>
-        <skos:altLabel>Topo survey</skos:altLabel>
-    </owl:Class>
-
-
-
-    <!-- http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurvey -->
-
-    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurvey">
-        <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey"/>
-        <rdfs:comment>désigne une méthode de collecte scientifique de données qui utilise des caméras automatiques pour observer et étudier la faune sauvage. Ces caméras, souvent déclenchées par le mouvement permettent de collecter des données sur la présence, l’abondance, le comportement des animaux, sans perturber leur habitat.</rdfs:comment>
-        <rdfs:label xml:lang="en">Camera trap survey</rdfs:label>
-        <rdfs:label xml:lang="fr">Piégeage photographique</rdfs:label>
-    </owl:Class>
-
-
-
-    <!-- http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey -->
-
-    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey">
-        <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey"/>
-        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q747810</rdfs:isDefinedBy>
-        <rdfs:comment>research instrument consisting of a series of questions and other prompts for the purpose of gathering information from respondents</rdfs:comment>
-        <rdfs:label>Questionnary survey</rdfs:label>
-    </owl:Class>
-
-
-
     <!-- http://www.w3.org/ns/prov#Agent -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent"/>
