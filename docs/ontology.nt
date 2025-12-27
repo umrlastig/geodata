@@ -109,6 +109,12 @@
 # xsd:date
 <xsd:date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
+# xsd:decimal
+<xsd:decimal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# xsd:duration
+<xsd:duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
 # 
 # 
 # #################################################################
@@ -170,6 +176,13 @@
 <http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/2000/01/rdf-schema#comment> "photographic device with any type of trigger causing a photo to be taken when activity is present" .
 <http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.wikidata.org/entity/Q1723004" .
 <http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/2000/01/rdf-schema#label> "Camera trap" .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurvey
+<http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> .
+<http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "désigne une méthode de collecte scientifique de données qui utilise des caméras automatiques pour observer et étudier la faune sauvage. Ces caméras, souvent déclenchées par le mouvement permettent de collecter des données sur la présence, l’abondance, le comportement des animaux, sans perturber leur habitat." .
+<http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Camera trap survey"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Piégeage photographique"@fr .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#Collection
 <http://purl.org/www.umr-lastig.fr/geodata#Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -381,5 +394,50 @@
 # https://geodata-paris.fr
 # 
 # https://www.ign.fr
+# 
+# ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch
+<ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch> <http://www.w3.org/ns/dcat#spatialResolutionInMeters> "10.0"^^<xsd:decimal> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch> <http://www.w3.org/ns/dcat#temporalResolution> "PT6s"^^<xsd:duration> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch> <http://www.w3.org/2000/01/rdf-schema#label> "Garmin Watch"@en .
+# 
+# ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS
+<ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS> <http://www.w3.org/ns/dcat#spatialResolutionInMeters> "1.5"^^<xsd:decimal> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS> <http://www.w3.org/ns/dcat#temporalResolution> "PT1s"^^<xsd:duration> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS> <http://www.w3.org/2000/01/rdf-schema#label> "Keymaza GPS"@en .
+# 
+# ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16
+<ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#TotalStation> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16> <http://www.w3.org/2000/01/rdf-schema#label> "LeicaTS16"@en .
+# 
+# ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch
+<ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch> <http://www.w3.org/ns/dcat#spatialResolutionInMeters> "1.5"^^<xsd:decimal> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch> <http://www.w3.org/ns/dcat#temporalResolution> "PT1s"^^<xsd:duration> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch> <http://www.w3.org/2000/01/rdf-schema#label> "Polar Watch"@en .
+# 
+# ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo
+<ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo> <http://www.w3.org/2000/01/rdf-schema#label> "Pyro-Evo"@en .
+# 
+# ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS
+<ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS> <http://www.w3.org/ns/dcat#spatialResolutionInMeters> "15.0"^^<xsd:decimal> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS> <http://www.w3.org/ns/dcat#temporalResolution> "PT10s"^^<xsd:duration> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS> <http://www.w3.org/2000/01/rdf-schema#label> "Smartphone GNSS"@en .
+# 
+# ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS
+<ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> <http://www.w3.org/ns/dcat#spatialResolutionInMeters> "1.5"^^<xsd:decimal> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> <http://www.w3.org/ns/dcat#temporalResolution> "PT1s"^^<xsd:duration> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> <http://www.w3.org/2000/01/rdf-schema#label> "Ublox GPS"@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
