@@ -442,6 +442,17 @@
 
 
 
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurvey -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurvey">
+        <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey"/>
+        <rdfs:comment>désigne une méthode de collecte scientifique de données qui utilise des caméras automatiques pour observer et étudier la faune sauvage. Ces caméras, souvent déclenchées par le mouvement permettent de collecter des données sur la présence, l’abondance, le comportement des animaux, sans perturber leur habitat.</rdfs:comment>
+        <rdfs:label xml:lang="en">Camera trap survey</rdfs:label>
+        <rdfs:label xml:lang="fr">Piégeage photographique</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey -->
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey">
@@ -628,7 +639,87 @@
     
 
 
+    <!-- ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16 -->
     
+    <owl:NamedIndividual rdf:about="ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#TotalStation"/>
+        <rdfs:label xml:lang="en">LeicaTS16</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo -->
+
+    <owl:NamedIndividual rdf:about="ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#CameraTrap"/>
+        <rdfs:label xml:lang="en">Pyro-Evo</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch -->
+
+    <owl:NamedIndividual rdf:about="ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#GPSDevice"/>
+        <rdfs:label xml:lang="en">Garmin Watch</rdfs:label>
+        <dcat:spatialResolutionInMeters
+        rdf:datatype="xsd:decimal">10.0</dcat:spatialResolutionInMeters>
+        <dcat:temporalResolution
+        rdf:datatype="xsd:duration">PT6s</dcat:temporalResolution>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch -->
+
+    <owl:NamedIndividual rdf:about="ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#GPSDevice"/>
+        <rdfs:label xml:lang="en">Polar Watch</rdfs:label>
+        <dcat:spatialResolutionInMeters
+        rdf:datatype="xsd:decimal">1.5</dcat:spatialResolutionInMeters>
+        <dcat:temporalResolution
+        rdf:datatype="xsd:duration">PT1s</dcat:temporalResolution>
+    </owl:NamedIndividual>
+
+    
+
+    <!-- ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS -->
+
+    <owl:NamedIndividual rdf:about="ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#GPSDevice"/>
+        <rdfs:label xml:lang="en">Keymaza GPS</rdfs:label>
+        <dcat:spatialResolutionInMeters
+        rdf:datatype="xsd:decimal">1.5</dcat:spatialResolutionInMeters>
+        <dcat:temporalResolution
+        rdf:datatype="xsd:duration">PT1s</dcat:temporalResolution>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS -->
+
+    <owl:NamedIndividual rdf:about="ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#GPSDevice"/>
+        <rdfs:label xml:lang="en">Ublox GPS</rdfs:label>
+        <dcat:spatialResolutionInMeters
+        rdf:datatype="xsd:decimal">1.5</dcat:spatialResolutionInMeters>
+        <dcat:temporalResolution
+        rdf:datatype="xsd:duration">PT1s</dcat:temporalResolution>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS -->
+
+    <owl:NamedIndividual rdf:about="ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#GPSDevice"/>
+        <rdfs:label xml:lang="en">Smartphone GNSS</rdfs:label>
+        <dcat:spatialResolutionInMeters
+        rdf:datatype="xsd:decimal">15.0</dcat:spatialResolutionInMeters>
+        <dcat:temporalResolution
+        rdf:datatype="xsd:duration">PT10s</dcat:temporalResolution>
+    </owl:NamedIndividual>
+
 </rdf:RDF>
 
 
