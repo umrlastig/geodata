@@ -80,6 +80,22 @@
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"
   } ]
 }, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurvey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "désigne une méthode de collecte scientifique de données qui utilise des caméras automatiques pour observer et étudier la faune sauvage. Ces caméras, souvent déclenchées par le mouvement permettent de collecter des données sur la présence, l’abondance, le comportement des animaux, sans perturber leur habitat."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Camera trap survey"
+  }, {
+    "@language" : "fr",
+    "@value" : "Piégeage photographique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey"
+  } ]
+}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Collection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -608,6 +624,122 @@
   "@id" : "https://www.ign.fr",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
+  "@id" : "ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#GPSDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Garmin Watch"
+  } ],
+  "http://www.w3.org/ns/dcat#spatialResolutionInMeters" : [ {
+    "@type" : "xsd:decimal",
+    "@value" : "10.0"
+  } ],
+  "http://www.w3.org/ns/dcat#temporalResolution" : [ {
+    "@type" : "xsd:duration",
+    "@value" : "PT6s"
+  } ]
+}, {
+  "@id" : "ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#GPSDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Keymaza GPS"
+  } ],
+  "http://www.w3.org/ns/dcat#spatialResolutionInMeters" : [ {
+    "@type" : "xsd:decimal",
+    "@value" : "1.5"
+  } ],
+  "http://www.w3.org/ns/dcat#temporalResolution" : [ {
+    "@type" : "xsd:duration",
+    "@value" : "PT1s"
+  } ]
+}, {
+  "@id" : "ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#TotalStation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "LeicaTS16"
+  } ]
+}, {
+  "@id" : "ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#GPSDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Polar Watch"
+  } ],
+  "http://www.w3.org/ns/dcat#spatialResolutionInMeters" : [ {
+    "@type" : "xsd:decimal",
+    "@value" : "1.5"
+  } ],
+  "http://www.w3.org/ns/dcat#temporalResolution" : [ {
+    "@type" : "xsd:duration",
+    "@value" : "PT1s"
+  } ]
+}, {
+  "@id" : "ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#CameraTrap"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pyro-Evo"
+  } ]
+}, {
+  "@id" : "ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#GPSDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Smartphone GNSS"
+  } ],
+  "http://www.w3.org/ns/dcat#spatialResolutionInMeters" : [ {
+    "@type" : "xsd:decimal",
+    "@value" : "15.0"
+  } ],
+  "http://www.w3.org/ns/dcat#temporalResolution" : [ {
+    "@type" : "xsd:duration",
+    "@value" : "PT10s"
+  } ]
+}, {
+  "@id" : "ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#GPSDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ublox GPS"
+  } ],
+  "http://www.w3.org/ns/dcat#spatialResolutionInMeters" : [ {
+    "@type" : "xsd:decimal",
+    "@value" : "1.5"
+  } ],
+  "http://www.w3.org/ns/dcat#temporalResolution" : [ {
+    "@type" : "xsd:duration",
+    "@value" : "PT1s"
+  } ]
+}, {
   "@id" : "xsd:date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "xsd:decimal",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "xsd:duration",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 } ]
