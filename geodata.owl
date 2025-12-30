@@ -27,9 +27,9 @@
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/dcat3"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov#"/>
-        <dc:creator>Ana-Maria Raimond</dc:creator>
         <dc:creator>Bénédicte Bucher</dc:creator>
         <dc:creator>Marie-Dominique Van Damme</dc:creator>
+        <dc:creator>Ana-Maria Raimond</dc:creator>
         <terms:title xml:lang="fr">Ontologie des jeux de données géographiques pour la science ouverte</terms:title>
         <terms:title xml:lang="en">Ontology of Geospatial Datasets for Open Science</terms:title>
         <vann:preferredNamespacePrefix>geodata</vann:preferredNamespacePrefix>
