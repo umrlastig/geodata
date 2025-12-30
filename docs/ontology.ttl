@@ -9,7 +9,9 @@
 <http://purl.org/www.umr-lastig.fr/geodata> rdf:type owl:Ontology ;
                                              owl:imports <http://www.w3.org/2004/02/skos/core> ,
                                                          <http://www.w3.org/ns/dcat3> ,
-                                                         <http://www.w3.org/ns/prov#> ;
+                                                         <http://www.w3.org/ns/prov#> ,
+                                                         <http://www.w3.org/ns/sosa/> ,
+                                                         <http://www.w3.org/ns/ssn/> ;
                                              <http://purl.org/dc/elements/1.1/creator> "Ana-Maria Raimond" ,
                                                                                        "Bénédicte Bucher" ,
                                                                                        "Marie-Dominique Van Damme" ;
@@ -29,6 +31,10 @@
 
 ###  http://purl.org/dc/elements/1.1/subject
 <http://purl.org/dc/elements/1.1/subject> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/identifier
@@ -87,6 +93,10 @@ rdf:comment rdf:type owl:AnnotationProperty .
 rdf:title rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/ns/dcat#format
 <http://www.w3.org/ns/dcat#format> rdf:type owl:AnnotationProperty .
 
@@ -97,6 +107,14 @@ rdf:title rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/ns/dcat#servesDataset
 <http://www.w3.org/ns/dcat#servesDataset> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#spatialResolutionInMeters
+<http://www.w3.org/ns/dcat#spatialResolutionInMeters> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#temporalResolution
+<http://www.w3.org/ns/dcat#temporalResolution> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/ns/dcat#title
@@ -111,12 +129,20 @@ rdf:title rdf:type owl:AnnotationProperty .
 <http://xmlns.com/foaf/0.1/givenname> rdf:type owl:AnnotationProperty .
 
 
+###  http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> rdf:type owl:AnnotationProperty .
+
+
 ###  http://xmlns.com/foaf/0.1/member
 <http://xmlns.com/foaf/0.1/member> rdf:type owl:AnnotationProperty .
 
 
 ###  http://xmlns.com/foaf/0.1/title
 <http://xmlns.com/foaf/0.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/workInfoHomepage
+<http://xmlns.com/foaf/0.1/workInfoHomepage> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -184,6 +210,10 @@ xsd:date rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
+###  http://purl.org/dc/terms/MethodOfInstruction
+<http://purl.org/dc/terms/MethodOfInstruction> rdf:type owl:Class .
+
+
 ###  http://purl.org/spar/datacite/Resource
 <http://purl.org/spar/datacite/Resource> rdf:type owl:Class .
 
@@ -217,6 +247,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument
 :DataCollectionInstrument rdf:type owl:Class ;
+                          owl:equivalentClass <http://www.w3.org/ns/sosa/Sensor> ;
                           rdfs:subClassOf owl:Thing ;
                           rdfs:comment "tool used to facilitate the collection of qualitative or quantitative data" ;
                           rdfs:isDefinedBy "http://www.wikidata.org/entity/Q130941907" ;
@@ -293,6 +324,10 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.w3.org/ns/dcat#Dataset
 <http://www.w3.org/ns/dcat#Dataset> rdf:type owl:Class ;
                                     rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> .
+
+
+###  http://www.w3.org/ns/dcat#Resource
+<http://www.w3.org/ns/dcat#Resource> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/ns/prov#Agent
@@ -427,17 +462,17 @@ xsd:date rdf:type rdfs:Datatype .
 ###  ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch
 <ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch> rdf:type owl:NamedIndividual ,
                                                                 :GPSDevice ;
+                                                       rdfs:label "Garmin Watch"@en ;
                                                        <http://www.w3.org/ns/dcat#spatialResolutionInMeters> "10.0"^^<xsd:decimal> ;
-                                                       <http://www.w3.org/ns/dcat#temporalResolution> "PT6s"^^<xsd:duration> ;
-                                                       rdfs:label "Garmin Watch"@en .
+                                                       <http://www.w3.org/ns/dcat#temporalResolution> "PT6s"^^<xsd:duration> .
 
 
 ###  ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS
 <ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS> rdf:type owl:NamedIndividual ,
                                                                :GPSDevice ;
+                                                      rdfs:label "Keymaza GPS"@en ;
                                                       <http://www.w3.org/ns/dcat#spatialResolutionInMeters> "1.5"^^<xsd:decimal> ;
-                                                      <http://www.w3.org/ns/dcat#temporalResolution> "PT1s"^^<xsd:duration> ;
-                                                      rdfs:label "Keymaza GPS"@en .
+                                                      <http://www.w3.org/ns/dcat#temporalResolution> "PT1s"^^<xsd:duration> .
 
 
 ###  ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16
@@ -449,9 +484,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch
 <ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch> rdf:type owl:NamedIndividual ,
                                                                :GPSDevice ;
+                                                      rdfs:label "Polar Watch"@en ;
                                                       <http://www.w3.org/ns/dcat#spatialResolutionInMeters> "1.5"^^<xsd:decimal> ;
-                                                      <http://www.w3.org/ns/dcat#temporalResolution> "PT1s"^^<xsd:duration> ;
-                                                      rdfs:label "Polar Watch"@en .
+                                                      <http://www.w3.org/ns/dcat#temporalResolution> "PT1s"^^<xsd:duration> .
 
 
 ###  ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo
@@ -463,17 +498,17 @@ xsd:date rdf:type rdfs:Datatype .
 ###  ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS
 <ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS> rdf:type owl:NamedIndividual ,
                                                                    :GPSDevice ;
+                                                          rdfs:label "Smartphone GNSS"@en ;
                                                           <http://www.w3.org/ns/dcat#spatialResolutionInMeters> "15.0"^^<xsd:decimal> ;
-                                                          <http://www.w3.org/ns/dcat#temporalResolution> "PT10s"^^<xsd:duration> ;
-                                                          rdfs:label "Smartphone GNSS"@en .
+                                                          <http://www.w3.org/ns/dcat#temporalResolution> "PT10s"^^<xsd:duration> .
 
 
 ###  ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS
 <ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> rdf:type owl:NamedIndividual ,
                                                              :GPSDevice ;
+                                                    rdfs:label "Ublox GPS"@en ;
                                                     <http://www.w3.org/ns/dcat#spatialResolutionInMeters> "1.5"^^<xsd:decimal> ;
-                                                    <http://www.w3.org/ns/dcat#temporalResolution> "PT1s"^^<xsd:duration> ;
-                                                    rdfs:label "Ublox GPS"@en .
+                                                    <http://www.w3.org/ns/dcat#temporalResolution> "PT1s"^^<xsd:duration> .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

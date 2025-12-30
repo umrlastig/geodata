@@ -5,6 +5,12 @@
   "@id" : "http://purl.org/dc/elements/1.1/subject",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/MethodOfInstruction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/identifier",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -51,6 +57,10 @@
     "@id" : "http://www.w3.org/ns/dcat3"
   }, {
     "@id" : "http://www.w3.org/ns/prov#"
+  }, {
+    "@id" : "http://www.w3.org/ns/sosa/"
+  }, {
+    "@id" : "http://www.w3.org/ns/ssn/"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter",
@@ -111,6 +121,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#GPSDevice",
@@ -513,6 +526,9 @@
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/ns/dcat#DataService",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -525,6 +541,9 @@
     "@id" : "http://www.w3.org/ns/dcat#Resource"
   } ]
 }, {
+  "@id" : "http://www.w3.org/ns/dcat#Resource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://www.w3.org/ns/dcat#format",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -532,6 +551,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/dcat#servesDataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#spatialResolutionInMeters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#temporalResolution",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/dcat#title",
@@ -564,10 +589,16 @@
   "@id" : "http://xmlns.com/foaf/0.1/givenname",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://xmlns.com/foaf/0.1/member",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/workInfoHomepage",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://geodata-paris.fr",

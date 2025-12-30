@@ -2,6 +2,8 @@
 <http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/dcat3> .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov#> .
+<http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/sosa/> .
+<http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/ssn/> .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/dc/elements/1.1/creator> "Ana-Maria Raimond" .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/dc/elements/1.1/creator> "Bénédicte Bucher" .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/dc/elements/1.1/creator> "Marie-Dominique Van Damme" .
@@ -24,6 +26,9 @@
 # 
 # http://purl.org/dc/elements/1.1/subject
 <http://purl.org/dc/elements/1.1/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/identifier
 <http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -67,6 +72,9 @@
 # http://www.w3.org/1999/02/22-rdf-syntax-ns#title
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/ns/dcat#format
 <http://www.w3.org/ns/dcat#format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -75,6 +83,12 @@
 # 
 # http://www.w3.org/ns/dcat#servesDataset
 <http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dcat#spatialResolutionInMeters
+<http://www.w3.org/ns/dcat#spatialResolutionInMeters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dcat#temporalResolution
+<http://www.w3.org/ns/dcat#temporalResolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/ns/dcat#title
 <http://www.w3.org/ns/dcat#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -85,11 +99,17 @@
 # http://xmlns.com/foaf/0.1/givenname
 <http://xmlns.com/foaf/0.1/givenname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://xmlns.com/foaf/0.1/member
 <http://xmlns.com/foaf/0.1/member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://xmlns.com/foaf/0.1/title
 <http://xmlns.com/foaf/0.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/workInfoHomepage
+<http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -161,6 +181,9 @@
 # #################################################################
 # 
 # 
+# http://purl.org/dc/terms/MethodOfInstruction
+<http://purl.org/dc/terms/MethodOfInstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://purl.org/spar/datacite/Resource
 <http://purl.org/spar/datacite/Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
@@ -189,6 +212,7 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument
 <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/ns/sosa/Sensor> .
 <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#comment> "tool used to facilitate the collection of qualitative or quantitative data" .
 <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.wikidata.org/entity/Q130941907" .
@@ -255,6 +279,9 @@
 # http://www.w3.org/ns/dcat#Dataset
 <http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+# 
+# http://www.w3.org/ns/dcat#Resource
+<http://www.w3.org/ns/dcat#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/ns/prov#Agent
 <http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -376,16 +403,16 @@
 # ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch
 <ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch> <http://www.w3.org/2000/01/rdf-schema#label> "Garmin Watch"@en .
 <ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch> <http://www.w3.org/ns/dcat#spatialResolutionInMeters> "10.0"^^<xsd:decimal> .
 <ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch> <http://www.w3.org/ns/dcat#temporalResolution> "PT6s"^^<xsd:duration> .
-<ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch> <http://www.w3.org/2000/01/rdf-schema#label> "Garmin Watch"@en .
 # 
 # ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS
 <ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS> <http://www.w3.org/2000/01/rdf-schema#label> "Keymaza GPS"@en .
 <ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS> <http://www.w3.org/ns/dcat#spatialResolutionInMeters> "1.5"^^<xsd:decimal> .
 <ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS> <http://www.w3.org/ns/dcat#temporalResolution> "PT1s"^^<xsd:duration> .
-<ttp://purl.org/www.umr-lastig.fr/geodata#KeymazaGPS> <http://www.w3.org/2000/01/rdf-schema#label> "Keymaza GPS"@en .
 # 
 # ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16
 <ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -395,9 +422,9 @@
 # ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch
 <ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch> <http://www.w3.org/2000/01/rdf-schema#label> "Polar Watch"@en .
 <ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch> <http://www.w3.org/ns/dcat#spatialResolutionInMeters> "1.5"^^<xsd:decimal> .
 <ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch> <http://www.w3.org/ns/dcat#temporalResolution> "PT1s"^^<xsd:duration> .
-<ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch> <http://www.w3.org/2000/01/rdf-schema#label> "Polar Watch"@en .
 # 
 # ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo
 <ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -407,15 +434,15 @@
 # ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS
 <ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS> <http://www.w3.org/2000/01/rdf-schema#label> "Smartphone GNSS"@en .
 <ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS> <http://www.w3.org/ns/dcat#spatialResolutionInMeters> "15.0"^^<xsd:decimal> .
 <ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS> <http://www.w3.org/ns/dcat#temporalResolution> "PT10s"^^<xsd:duration> .
-<ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS> <http://www.w3.org/2000/01/rdf-schema#label> "Smartphone GNSS"@en .
 # 
 # ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS
 <ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> .
+<ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> <http://www.w3.org/2000/01/rdf-schema#label> "Ublox GPS"@en .
 <ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> <http://www.w3.org/ns/dcat#spatialResolutionInMeters> "1.5"^^<xsd:decimal> .
 <ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> <http://www.w3.org/ns/dcat#temporalResolution> "PT1s"^^<xsd:duration> .
-<ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> <http://www.w3.org/2000/01/rdf-schema#label> "Ublox GPS"@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
