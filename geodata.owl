@@ -29,9 +29,9 @@
         <owl:imports rdf:resource="http://www.w3.org/ns/prov#"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <dc:creator>Ana-Maria Raimond</dc:creator>
         <dc:creator>Bénédicte Bucher</dc:creator>
         <dc:creator>Marie-Dominique Van Damme</dc:creator>
-        <dc:creator>Ana-Maria Raimond</dc:creator>
         <terms:title xml:lang="fr">Ontologie des jeux de données géographiques pour la science ouverte</terms:title>
         <terms:title xml:lang="en">Ontology of Geospatial Datasets for Open Science</terms:title>
         <vann:preferredNamespacePrefix>geodata</vann:preferredNamespacePrefix>
@@ -394,6 +394,14 @@
     
 
 
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#Data -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Data">
+        <rdfs:comment>Any data</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument -->
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument">
@@ -403,6 +411,12 @@
         <rdfs:isDefinedBy>http://www.wikidata.org/entity/Q130941907</rdfs:isDefinedBy>
         <rdfs:label>Data collection instrument</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse"/>
     
 
 
@@ -683,6 +697,18 @@
         <foaf:givenname>Yann</foaf:givenname>
         <foaf:name>Yann Méneroux</foaf:name>
     </owl:NamedIndividual>
+    
+
+
+    <!-- https://geodata-paris.fr -->
+
+    <owl:NamedIndividual rdf:about="https://geodata-paris.fr"/>
+    
+
+
+    <!-- https://www.ign.fr -->
+
+    <owl:NamedIndividual rdf:about="https://www.ign.fr"/>
     
 
 
