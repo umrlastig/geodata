@@ -245,6 +245,11 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:comment "A collection item is composed of different pieces of data, usually selections from bigger datasets, associated with a proposed visualisation, and narratives that connect the visual items to the concepts of the collection. It has a spatial and temporal extent." .
 
 
+###  http://purl.org/www.umr-lastig.fr/geodata#Data
+:Data rdf:type owl:Class ;
+      rdfs:comment "Any data" .
+
+
 ###  http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument
 :DataCollectionInstrument rdf:type owl:Class ;
                           owl:equivalentClass <http://www.w3.org/ns/sosa/Sensor> ;
@@ -252,6 +257,10 @@ xsd:date rdf:type rdfs:Datatype .
                           rdfs:comment "tool used to facilitate the collection of qualitative or quantitative data" ;
                           rdfs:isDefinedBy "http://www.wikidata.org/entity/Q130941907" ;
                           rdfs:label "Data collection instrument" .
+
+
+###  http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse
+:ETL-Warehouse rdf:type owl:Class .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#GPSDevice

@@ -108,6 +108,12 @@
     "@id" : "http://www.w3.org/ns/dcat#Resource"
   } ]
 }, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any data"
+  } ]
+}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -125,6 +131,9 @@
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "http://www.w3.org/ns/sosa/Sensor"
   } ]
+}, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#GPSDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],

@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/geodata#","name":"Ontology of Geospatial Datasets for Open Science", "headline":"Document describing the ontology https://intforout.github.io/geodata#", "dateReleased":"Tue Dec 30 11:09:31 UTC 2025", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/geodata#","name":"Ontology of Geospatial Datasets for Open Science", "headline":"Document describing the ontology https://intforout.github.io/geodata#", "dateReleased":"Mon Jan 05 09:07:29 UTC 2026", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -124,6 +124,11 @@ This ontology has the following classes and properties.</span>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#CollectionItem"
          title="http://purl.org/www.umr-lastig.fr/geodata#CollectionItem">
          <span>Collection Item</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#Data" title="http://purl.org/www.umr-lastig.fr/geodata#Data">
+         <span>Data</span>
       </a>
    </li>
    <li>
@@ -336,6 +341,7 @@ This section provides details for each class and property defined by Ontology of
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#CameraTrap" title="http://purl.org/www.umr-lastig.fr/geodata#CameraTrap">Camera trap</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Collection" title="http://purl.org/www.umr-lastig.fr/geodata#Collection"> <span>Collection</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#CollectionItem" title="http://purl.org/www.umr-lastig.fr/geodata#CollectionItem"> <span>Collection Item</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Data" title="http://purl.org/www.umr-lastig.fr/geodata#Data"> <span>Data</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument" title="http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument">Data collection instrument</a></li>
   <li><a href="#http://www.w3.org/ns/dcat#DataService" title="http://www.w3.org/ns/dcat#DataService"> <span>Data Service</span> </a></li>
   <li><a href="#http://www.w3.org/ns/dcat#Dataset" title="http://www.w3.org/ns/dcat#Dataset"> <span>Dataset</span> </a></li>
@@ -436,6 +442,13 @@ This section provides details for each class and property defined by Ontology of
     <a href="#http://purl.org/www.umr-lastig.fr/geodata#has_member" title="http://purl.org/www.umr-lastig.fr/geodata#has_member">has member</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#Data">
+  <h3>Data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#Data</p>
+  <div class="comment">
+   <span class="markdown">Any data</span>
+  </div>
  </div>
  <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument">
   <h3>Data collection instrument<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
@@ -949,7 +962,7 @@ This section provides details for each class and property defined by Ontology of
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">spatial resolution (metres)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"10.0"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
+    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">prostorové rozlišení (metry)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"10.0"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#temporalResolution" target="_blank" title="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"PT6s"^^<a href="xsd:duration" target="_blank" title="xsd:duration">xsd:duration</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -1039,7 +1052,7 @@ This section provides details for each class and property defined by Ontology of
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">spatial resolution (metres)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
+    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">prostorové rozlišení (metry)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#temporalResolution" target="_blank" title="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"PT1s"^^<a href="xsd:duration" target="_blank" title="xsd:duration">xsd:duration</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -1147,7 +1160,7 @@ This section provides details for each class and property defined by Ontology of
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">spatial resolution (metres)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
+    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">prostorové rozlišení (metry)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#temporalResolution" target="_blank" title="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"PT1s"^^<a href="xsd:duration" target="_blank" title="xsd:duration">xsd:duration</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -1180,7 +1193,7 @@ This section provides details for each class and property defined by Ontology of
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">spatial resolution (metres)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"15.0"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
+    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">prostorové rozlišení (metry)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"15.0"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#temporalResolution" target="_blank" title="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"PT10s"^^<a href="xsd:duration" target="_blank" title="xsd:duration">xsd:duration</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -1240,7 +1253,7 @@ This section provides details for each class and property defined by Ontology of
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">spatial resolution (metres)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
+    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">prostorové rozlišení (metry)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#temporalResolution" target="_blank" title="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"PT1s"^^<a href="xsd:duration" target="_blank" title="xsd:duration">xsd:duration</a> <sup class="type-ep" title="external property">ep</sup> </span>
