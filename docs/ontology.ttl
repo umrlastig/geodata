@@ -203,7 +203,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://purl.org/www.umr-lastig.fr/geodata#represents
 :represents rdf:type owl:ObjectProperty ;
             rdfs:domain <http://www.w3.org/ns/dcat#Resource> ;
-            rdfs:range owl:Thing .
+            rdfs:range owl:Thing ;
+            rdfs:comment "Connect digital assets that are useful to derive meaningful representations of interests expressed with non digital concepts. It is a generic property that is inferred from the following : either a concept is present in the topicCategories, keywords, themes, application schema of a given asset."@en .
 
 
 #################################################################

@@ -171,6 +171,7 @@
 <http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Resource> .
 <http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/2000/01/rdf-schema#comment> "Connect digital assets that are useful to derive meaningful representations of interests expressed with non digital concepts. It is a generic property that is inferred from the following : either a concept is present in the topicCategories, keywords, themes, application schema of a given asset."@en .
 # 
 # 
 # 
