@@ -207,6 +207,14 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:comment "Connect digital assets that are useful to derive meaningful representations of interests expressed with non digital concepts. It is a generic property that is inferred from the following : either a concept is present in the topicCategories, keywords, themes, application schema of a given asset."@en .
 
 
+###  http://purl.org/www.umr-lastig.fr/geodata#target
+:target rdf:type owl:ObjectProperty ;
+        rdfs:domain :UserFeedback ;
+        rdfs:range :Process ,
+                   :ScientificPaper ,
+                   <http://www.w3.org/ns/dcat#Dataset> .
+
+
 #################################################################
 #    Classes
 #################################################################
