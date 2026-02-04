@@ -176,9 +176,7 @@
 # http://purl.org/www.umr-lastig.fr/geodata#target
 <http://purl.org/www.umr-lastig.fr/geodata#target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/www.umr-lastig.fr/geodata#target> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
-<http://purl.org/www.umr-lastig.fr/geodata#target> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/www.umr-lastig.fr/geodata#Process> .
-<http://purl.org/www.umr-lastig.fr/geodata#target> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> .
-<http://purl.org/www.umr-lastig.fr/geodata#target> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Dataset> .
+<http://purl.org/www.umr-lastig.fr/geodata#target> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Resource> .
 # 
 # 
 # 

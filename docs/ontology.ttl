@@ -210,9 +210,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://purl.org/www.umr-lastig.fr/geodata#target
 :target rdf:type owl:ObjectProperty ;
         rdfs:domain :UserFeedback ;
-        rdfs:range :Process ,
-                   :ScientificPaper ,
-                   <http://www.w3.org/ns/dcat#Dataset> .
+        rdfs:range <http://www.w3.org/ns/dcat#Resource> .
 
 
 #################################################################

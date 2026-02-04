@@ -491,11 +491,7 @@
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Process"
-  }, {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"
-  }, {
-    "@id" : "http://www.w3.org/ns/dcat#Dataset"
+    "@id" : "http://www.w3.org/ns/dcat#Resource"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ymeneroux",
