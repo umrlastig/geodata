@@ -474,6 +474,10 @@
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#represents",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connect digital assets that are useful to derive meaningful representations of interests expressed with non digital concepts. It is a generic property that is inferred from the following : either a concept is present in the topicCategories, keywords, themes, application schema of a given asset."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Resource"
   } ],
