@@ -266,8 +266,8 @@ xsd:date rdf:type rdfs:Datatype .
                           rdfs:label "Data collection instrument" .
 
 
-###  http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse
-:ETL-Warehouse rdf:type owl:Class .
+###  http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse
+:DataWarehouse rdf:type owl:Class .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#GPSDevice
@@ -352,7 +352,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/ns/prov#Organization
 <http://www.w3.org/ns/prov#Organization> rdf:type owl:Class ;
-                                         rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> .
+                                         rdfs:subClassOf <http://purl.org/dc/terms/Agent> ,
+                                                         <http://www.w3.org/ns/prov#Agent> .
 
 
 ###  http://www.w3.org/ns/prov#Person

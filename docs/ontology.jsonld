@@ -132,7 +132,7 @@
     "@id" : "http://www.w3.org/ns/sosa/Sensor"
   } ]
 }, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse",
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#GPSDevice",
@@ -590,6 +590,8 @@
   "@id" : "http://www.w3.org/ns/prov#Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/dc/terms/Agent"
+  }, {
     "@id" : "http://www.w3.org/ns/prov#Agent"
   } ]
 }, {
