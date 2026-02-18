@@ -93,6 +93,10 @@ rdf:comment rdf:type owl:AnnotationProperty .
 rdf:title rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2000/01/rdf-schema#description
+rdfs:description rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
 <http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
 
@@ -228,76 +232,78 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter
 :ActiveMobilityCounter rdf:type owl:Class ;
                        rdfs:subClassOf :DataCollectionInstrument ;
-                       rdfs:comment "Pedestrian and cyclist flows are measured using an active mobility counting system (automatic bicycle and pedestrian counter) installed along the study area." ;
-                       rdfs:label "Bicycle and pedestrian counter" .
+                       rdfs:comment "Pedestrian and cyclist flows are measured using an active mobility counting system (automatic bicycle and pedestrian counter) installed along the study area."@en ;
+                       rdfs:label "Bicycle and pedestrian counter"@en .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#CameraTrap
 :CameraTrap rdf:type owl:Class ;
             rdfs:subClassOf :DataCollectionInstrument ;
-            rdfs:comment "photographic device with any type of trigger causing a photo to be taken when activity is present" ;
-            rdfs:isDefinedBy "http://www.wikidata.org/entity/Q1723004" ;
-            rdfs:label "Camera trap" .
+            rdfs:comment "photographic device with any type of trigger causing a photo to be taken when activity is present"@en ;
+            rdfs:label "Camera trap"@en ;
+            rdfs:seeAlso "http://www.wikidata.org/entity/Q1723004" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#Collection
 :Collection rdf:type owl:Class ;
             rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
-            rdfs:comment "Collection of items that supports the usage of geodata for a pedagogic or learning purpose, in relationship with given concepts" .
+            rdfs:comment "Collection of items that supports the usage of geodata for a pedagogic or learning purpose, in relationship with given concepts"@en .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#CollectionItem
 :CollectionItem rdf:type owl:Class ;
                 rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
-                rdfs:comment "A collection item is composed of different pieces of data, usually selections from bigger datasets, associated with a proposed visualisation, and narratives that connect the visual items to the concepts of the collection. It has a spatial and temporal extent." .
+                rdfs:comment "A collection item is composed of different pieces of data, usually selections from bigger datasets, associated with a proposed visualisation, and narratives that connect the visual items to the concepts of the collection. It has a spatial and temporal extent."@en ;
+                rdfs:label "Collection item"@en .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#Data
 :Data rdf:type owl:Class ;
-      rdfs:comment "Any data" .
+      rdfs:comment "Any data"@en ;
+      rdfs:label "Data"@en .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument
 :DataCollectionInstrument rdf:type owl:Class ;
                           owl:equivalentClass <http://www.w3.org/ns/sosa/Sensor> ;
                           rdfs:subClassOf owl:Thing ;
-                          rdfs:comment "tool used to facilitate the collection of qualitative or quantitative data" ;
-                          rdfs:isDefinedBy "http://www.wikidata.org/entity/Q130941907" ;
-                          rdfs:label "Data collection instrument" .
+                          rdfs:comment "tool used to facilitate the collection of qualitative or quantitative data"@en ;
+                          rdfs:label "Data collection instrument"@en ;
+                          rdfs:seeAlso "http://www.wikidata.org/entity/Q130941907" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse
-:DataWarehouse rdf:type owl:Class .
+:DataWarehouse rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
+               rdfs:comment "System used for reporting and data analysis, as a core component of business intelligence"@en ;
+               rdfs:description "Un data warehouse permet de stocker des datasets, d’y accéder via requêtes et expose parfois une API."@fr ;
+               rdfs:label "Data warehouse"@en ;
+               rdfs:seeAlso "https://www.wikidata.org/wiki/Q193351" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#GPSDevice
 :GPSDevice rdf:type owl:Class ;
            rdfs:subClassOf :DataCollectionInstrument ;
-           rdfs:comment "navigation device that uses the Global Positioning System to track the device's movements and determine its geographic position" ;
-           rdfs:isDefinedBy "https://www.wikidata.org/wiki/Q253677" ;
-           rdfs:label "GPS sensor" .
+           rdfs:comment "navigation device that uses the Global Positioning System to track the device's movements and determine its geographic position"@en ;
+           rdfs:label "GPS sensor"@en ;
+           rdfs:seeAlso "https://www.wikidata.org/wiki/Q253677" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial
 :PedagogicMaterial rdf:type owl:Class ;
                    rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
-                   rdfs:comment "Ready to use material to teach a given competence, in relationship with concepts, to a given audience. For example a wikipedia page, a storymap, a GIS exercise, an outdoor educational activity." .
+                   rdfs:comment "Ready to use material to teach a given competence, in relationship with concepts, to a given audience. For example a wikipedia page, a storymap, a GIS exercise, an outdoor educational activity."@en ;
+                   rdfs:label "Pedagogic material"@en .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#Process
 :Process rdf:type owl:Class ;
          rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ,
                          <http://www.w3.org/ns/prov#Activity> ;
-         rdfs:comment "Set of operations in a technical environment to yield an output based on input" ;
+         rdfs:comment "Set of operations in a technical environment to yield an output based on input"@en ;
+         rdfs:label "Technical process"@en ;
          rdfs:seeAlso "http://eurovoc.europa.eu/3640" ,
                       "https://www.wikidata.org/wiki/Q500669" .
-
-
-###  http://purl.org/www.umr-lastig.fr/geodata#ReproductibleProcess
-:ReproductibleProcess rdf:type owl:Class ;
-                      rdfs:subClassOf :Process ;
-                      rdfs:comment "Refers to the capacity to faithfully replicate experimental and computational procedures" ;
-                      rdfs:label "Reproductible process" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper
@@ -305,22 +311,22 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:subClassOf <http://purl.org/spar/datacite/Resource> ,
                                  <http://www.w3.org/ns/dcat#Resource> ;
                  rdfs:comment "Scientific papers are for sharing your own original research work with other scientists or for reviewing the research conducted by others."@en ;
-                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Papier scientifique"@fr ,
-                                                                 "Scientific Paper"@en .
+                 rdfs:label "Papier scientifique"@fr ,
+                            "Scientific Paper"@en .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey
 :ScientificSurvey rdf:type owl:Class ;
                   rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ,
                                   <http://www.w3.org/ns/prov#Activity> ;
-                  rdfs:comment "An organized data acquisition activity carried out according to a defined methodology, using appropriate instruments or protocols, in order to observe, measure, or document phenomena for scientific analysis" ;
-                  rdfs:label "Scientific survey" .
+                  rdfs:comment "An organized data acquisition activity carried out according to a defined methodology, using appropriate instruments or protocols, in order to observe, measure, or document phenomena for scientific analysis"@en ;
+                  rdfs:label "Scientific survey"@en .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#TotalStation
 :TotalStation rdf:type owl:Class ;
               rdfs:subClassOf :DataCollectionInstrument ;
-              rdfs:comment "A total station is a theodolite coupled with a distance meter. It is used to measure vertical and horizontal angles and distances." ;
+              rdfs:comment "A total station is a theodolite coupled with a distance meter. It is used to measure vertical and horizontal angles and distances."@en ;
               rdfs:label "Tachéomètre"@fr ,
                          "Total station"@en ;
               rdfs:seeAlso "https://www.wikidata.org/wiki/Q641296" .
@@ -329,17 +335,23 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://purl.org/www.umr-lastig.fr/geodata#UserFeedback
 :UserFeedback rdf:type owl:Class ;
               rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
-              rdfs:comment "User feedback about using one or more resource" .
+              rdfs:comment "An explicit information shared by a participants relative to his own experience with one or more datasets, tools or paper."@en ;
+              rdfs:label "User feedback"@en .
 
 
 ###  http://www.w3.org/ns/dcat#DataService
 <http://www.w3.org/ns/dcat#DataService> rdf:type owl:Class ;
-                                        rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> .
+                                        rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
+                                        rdfs:comment "A collection of operations that provides access to one or more datasets or data processing functions."@en ;
+                                        rdfs:label "Data Service"@en .
 
 
 ###  http://www.w3.org/ns/dcat#Dataset
 <http://www.w3.org/ns/dcat#Dataset> rdf:type owl:Class ;
-                                    rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> .
+                                    rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
+                                    rdfs:comment "A collection of data and available for access or download in one or more representations."@en ;
+                                    rdfs:label "Dataset"@en ,
+                                               "Jeu de données"@fr .
 
 
 ###  http://www.w3.org/ns/dcat#Resource
@@ -373,6 +385,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://purl.org/www.umr-lastig.fr/geodata#LASTIG
 :LASTIG rdf:type owl:NamedIndividual ,
                  <http://www.w3.org/ns/prov#Organization> ;
+        rdfs:comment "The LASTIG lab research domain is Geographic Information sciences"@en ;
+        rdfs:label "LASTIG"@en ;
         <http://xmlns.com/foaf/0.1/name> "LAboratoire en Sciences et Technologies de l'Information Géographique pour la ville intelligente et les territoires durables" .
 
 
@@ -421,6 +435,7 @@ xsd:date rdf:type rdfs:Datatype .
 :geodata-paris rdf:type owl:NamedIndividual ,
                         <http://www.w3.org/ns/prov#Organization> ;
                <http://xmlns.com/foaf/0.1/homepage> <https://geodata-paris.fr> ;
+               rdfs:label "Géodata Paris" ;
                <http://xmlns.com/foaf/0.1/name> "Géodata Paris" .
 
 
@@ -428,6 +443,8 @@ xsd:date rdf:type rdfs:Datatype .
 :ign rdf:type owl:NamedIndividual ,
               <http://www.w3.org/ns/prov#Organization> ;
      <http://xmlns.com/foaf/0.1/homepage> <https://www.ign.fr> ;
+     rdfs:comment "Institut national de l'information géographique et forestière"@en ;
+     rdfs:label "IGN"@en ;
      <http://xmlns.com/foaf/0.1/name> "Institut national de l'information géographique et forestière" .
 
 
