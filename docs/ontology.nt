@@ -72,6 +72,9 @@
 # http://www.w3.org/1999/02/22-rdf-syntax-ns#title
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/2000/01/rdf-schema#description
+<http://www.w3.org/2000/01/rdf-schema#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2004/02/skos/core#prefLabel
 <http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -196,86 +199,89 @@
 # http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter
 <http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> .
-<http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter> <http://www.w3.org/2000/01/rdf-schema#comment> "Pedestrian and cyclist flows are measured using an active mobility counting system (automatic bicycle and pedestrian counter) installed along the study area." .
-<http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter> <http://www.w3.org/2000/01/rdf-schema#label> "Bicycle and pedestrian counter" .
+<http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter> <http://www.w3.org/2000/01/rdf-schema#comment> "Pedestrian and cyclist flows are measured using an active mobility counting system (automatic bicycle and pedestrian counter) installed along the study area."@en .
+<http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter> <http://www.w3.org/2000/01/rdf-schema#label> "Bicycle and pedestrian counter"@en .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#CameraTrap
 <http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> .
-<http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/2000/01/rdf-schema#comment> "photographic device with any type of trigger causing a photo to be taken when activity is present" .
-<http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.wikidata.org/entity/Q1723004" .
-<http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/2000/01/rdf-schema#label> "Camera trap" .
+<http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/2000/01/rdf-schema#comment> "photographic device with any type of trigger causing a photo to be taken when activity is present"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/2000/01/rdf-schema#label> "Camera trap"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#CameraTrap> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.wikidata.org/entity/Q1723004" .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#Collection
 <http://purl.org/www.umr-lastig.fr/geodata#Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#Collection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
-<http://purl.org/www.umr-lastig.fr/geodata#Collection> <http://www.w3.org/2000/01/rdf-schema#comment> "Collection of items that supports the usage of geodata for a pedagogic or learning purpose, in relationship with given concepts" .
+<http://purl.org/www.umr-lastig.fr/geodata#Collection> <http://www.w3.org/2000/01/rdf-schema#comment> "Collection of items that supports the usage of geodata for a pedagogic or learning purpose, in relationship with given concepts"@en .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#CollectionItem
 <http://purl.org/www.umr-lastig.fr/geodata#CollectionItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#CollectionItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
-<http://purl.org/www.umr-lastig.fr/geodata#CollectionItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection item is composed of different pieces of data, usually selections from bigger datasets, associated with a proposed visualisation, and narratives that connect the visual items to the concepts of the collection. It has a spatial and temporal extent." .
+<http://purl.org/www.umr-lastig.fr/geodata#CollectionItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection item is composed of different pieces of data, usually selections from bigger datasets, associated with a proposed visualisation, and narratives that connect the visual items to the concepts of the collection. It has a spatial and temporal extent."@en .
+<http://purl.org/www.umr-lastig.fr/geodata#CollectionItem> <http://www.w3.org/2000/01/rdf-schema#label> "Collection item"@en .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#Data
 <http://purl.org/www.umr-lastig.fr/geodata#Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/www.umr-lastig.fr/geodata#Data> <http://www.w3.org/2000/01/rdf-schema#comment> "Any data" .
+<http://purl.org/www.umr-lastig.fr/geodata#Data> <http://www.w3.org/2000/01/rdf-schema#comment> "Any data"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#Data> <http://www.w3.org/2000/01/rdf-schema#label> "Data"@en .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument
 <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/ns/sosa/Sensor> .
 <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#comment> "tool used to facilitate the collection of qualitative or quantitative data" .
-<http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.wikidata.org/entity/Q130941907" .
-<http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "Data collection instrument" .
+<http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#comment> "tool used to facilitate the collection of qualitative or quantitative data"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "Data collection instrument"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.wikidata.org/entity/Q130941907" .
 # 
-# http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse
-<http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse
+<http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
+<http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> <http://www.w3.org/2000/01/rdf-schema#comment> "System used for reporting and data analysis, as a core component of business intelligence"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> <http://www.w3.org/2000/01/rdf-schema#description> "Un data warehouse permet de stocker des datasets, d’y accéder via requêtes et expose parfois une API."@fr .
+<http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> <http://www.w3.org/2000/01/rdf-schema#label> "Data warehouse"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q193351" .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#GPSDevice
 <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> .
-<http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "navigation device that uses the Global Positioning System to track the device's movements and determine its geographic position" .
-<http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.wikidata.org/wiki/Q253677" .
-<http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/2000/01/rdf-schema#label> "GPS sensor" .
+<http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "navigation device that uses the Global Positioning System to track the device's movements and determine its geographic position"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/2000/01/rdf-schema#label> "GPS sensor"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q253677" .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial
 <http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
-<http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Ready to use material to teach a given competence, in relationship with concepts, to a given audience. For example a wikipedia page, a storymap, a GIS exercise, an outdoor educational activity." .
+<http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Ready to use material to teach a given competence, in relationship with concepts, to a given audience. For example a wikipedia page, a storymap, a GIS exercise, an outdoor educational activity."@en .
+<http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Pedagogic material"@en .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#Process
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
-<http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of operations in a technical environment to yield an output based on input" .
+<http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of operations in a technical environment to yield an output based on input"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#label> "Technical process"@en .
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://eurovoc.europa.eu/3640" .
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q500669" .
-# 
-# http://purl.org/www.umr-lastig.fr/geodata#ReproductibleProcess
-<http://purl.org/www.umr-lastig.fr/geodata#ReproductibleProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/www.umr-lastig.fr/geodata#ReproductibleProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#Process> .
-<http://purl.org/www.umr-lastig.fr/geodata#ReproductibleProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the capacity to faithfully replicate experimental and computational procedures" .
-<http://purl.org/www.umr-lastig.fr/geodata#ReproductibleProcess> <http://www.w3.org/2000/01/rdf-schema#label> "Reproductible process" .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/datacite/Resource> .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/2000/01/rdf-schema#comment> "Scientific papers are for sharing your own original research work with other scientists or for reviewing the research conducted by others."@en .
-<http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/2004/02/skos/core#prefLabel> "Papier scientifique"@fr .
-<http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/2004/02/skos/core#prefLabel> "Scientific Paper"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/2000/01/rdf-schema#label> "Papier scientifique"@fr .
+<http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific Paper"@en .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
-<http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "An organized data acquisition activity carried out according to a defined methodology, using appropriate instruments or protocols, in order to observe, measure, or document phenomena for scientific analysis" .
-<http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific survey" .
+<http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "An organized data acquisition activity carried out according to a defined methodology, using appropriate instruments or protocols, in order to observe, measure, or document phenomena for scientific analysis"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific survey"@en .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#TotalStation
 <http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> .
-<http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/2000/01/rdf-schema#comment> "A total station is a theodolite coupled with a distance meter. It is used to measure vertical and horizontal angles and distances." .
+<http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/2000/01/rdf-schema#comment> "A total station is a theodolite coupled with a distance meter. It is used to measure vertical and horizontal angles and distances."@en .
 <http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/2000/01/rdf-schema#label> "Tachéomètre"@fr .
 <http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/2000/01/rdf-schema#label> "Total station"@en .
 <http://purl.org/www.umr-lastig.fr/geodata#TotalStation> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q641296" .
@@ -283,15 +289,21 @@
 # http://purl.org/www.umr-lastig.fr/geodata#UserFeedback
 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
-<http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "User feedback about using one or more resource" .
+<http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "An explicit information shared by a participants relative to his own experience with one or more datasets, tools or paper."@en .
+<http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/2000/01/rdf-schema#label> "User feedback"@en .
 # 
 # http://www.w3.org/ns/dcat#DataService
 <http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of operations that provides access to one or more datasets or data processing functions."@en .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#label> "Data Service"@en .
 # 
 # http://www.w3.org/ns/dcat#Dataset
 <http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of data and available for access or download in one or more representations."@en .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@en .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Jeu de données"@fr .
 # 
 # http://www.w3.org/ns/dcat#Resource
 <http://www.w3.org/ns/dcat#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -301,6 +313,7 @@
 # 
 # http://www.w3.org/ns/prov#Organization
 <http://www.w3.org/ns/prov#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/Agent> .
 <http://www.w3.org/ns/prov#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
 # 
 # http://www.w3.org/ns/prov#Person
@@ -323,6 +336,8 @@
 # http://purl.org/www.umr-lastig.fr/geodata#LASTIG
 <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<http://purl.org/www.umr-lastig.fr/geodata#LASTIG> <http://www.w3.org/2000/01/rdf-schema#comment> "The LASTIG lab research domain is Geographic Information sciences"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#LASTIG> <http://www.w3.org/2000/01/rdf-schema#label> "LASTIG"@en .
 <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> <http://xmlns.com/foaf/0.1/name> "LAboratoire en Sciences et Technologies de l'Information Géographique pour la ville intelligente et les territoires durables" .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#Tracklib
@@ -366,12 +381,15 @@
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://xmlns.com/foaf/0.1/homepage> <https://geodata-paris.fr> .
+<http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://www.w3.org/2000/01/rdf-schema#label> "Géodata Paris" .
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://xmlns.com/foaf/0.1/name> "Géodata Paris" .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#ign
 <http://purl.org/www.umr-lastig.fr/geodata#ign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#ign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
 <http://purl.org/www.umr-lastig.fr/geodata#ign> <http://xmlns.com/foaf/0.1/homepage> <https://www.ign.fr> .
+<http://purl.org/www.umr-lastig.fr/geodata#ign> <http://www.w3.org/2000/01/rdf-schema#comment> "Institut national de l'information géographique et forestière"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#ign> <http://www.w3.org/2000/01/rdf-schema#label> "IGN"@en .
 <http://purl.org/www.umr-lastig.fr/geodata#ign> <http://xmlns.com/foaf/0.1/name> "Institut national de l'information géographique et forestière" .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#jadawson
