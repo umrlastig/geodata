@@ -228,8 +228,8 @@
 <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.wikidata.org/entity/Q130941907" .
 <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "Data collection instrument" .
 # 
-# http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse
-<http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse
+<http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#GPSDevice
 <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -301,6 +301,7 @@
 # 
 # http://www.w3.org/ns/prov#Organization
 <http://www.w3.org/ns/prov#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/Agent> .
 <http://www.w3.org/ns/prov#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
 # 
 # http://www.w3.org/ns/prov#Person
