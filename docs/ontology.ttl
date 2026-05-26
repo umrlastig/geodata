@@ -390,6 +390,12 @@ xsd:date rdf:type rdfs:Datatype .
         <http://xmlns.com/foaf/0.1/name> "LAboratoire en Sciences et Technologies de l'Information Géographique pour la ville intelligente et les territoires durables" .
 
 
+###  http://purl.org/www.umr-lastig.fr/geodata#LidarHDFrance
+:LidarHDFrance rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/ns/dcat#Dataset> ;
+               <http://xmlns.com/foaf/0.1/homepage> "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_NUAGES-DE-POINTS-LIDAR-HD" .
+
+
 ###  http://purl.org/www.umr-lastig.fr/geodata#Tracklib
 :Tracklib rdf:type owl:NamedIndividual ,
                    <http://www.w3.org/ns/prov#SoftwareAgent> ;
