@@ -340,6 +340,11 @@
 <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> <http://www.w3.org/2000/01/rdf-schema#label> "LASTIG"@en .
 <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> <http://xmlns.com/foaf/0.1/name> "LAboratoire en Sciences et Technologies de l'Information Géographique pour la ville intelligente et les territoires durables" .
 # 
+# http://purl.org/www.umr-lastig.fr/geodata#LidarHDFrance
+<http://purl.org/www.umr-lastig.fr/geodata#LidarHDFrance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#LidarHDFrance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://purl.org/www.umr-lastig.fr/geodata#LidarHDFrance> <http://xmlns.com/foaf/0.1/homepage> "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_NUAGES-DE-POINTS-LIDAR-HD" .
+# 
 # http://purl.org/www.umr-lastig.fr/geodata#Tracklib
 <http://purl.org/www.umr-lastig.fr/geodata#Tracklib> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#Tracklib> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#SoftwareAgent> .

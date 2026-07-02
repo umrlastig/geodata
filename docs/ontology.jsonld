@@ -204,6 +204,15 @@
     "@value" : "LAboratoire en Sciences et Technologies de l'Information Géographique pour la ville intelligente et les territoires durables"
   } ]
 }, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LidarHDFrance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
+  } ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@value" : "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_NUAGES-DE-POINTS-LIDAR-HD"
+  } ]
+}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {

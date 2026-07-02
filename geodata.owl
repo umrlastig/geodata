@@ -30,7 +30,7 @@
         <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
         <dc:creator>Ana-Maria Raimond</dc:creator>
-        <dc:creator>Bénédicte Bucher</dc:creator>
+        <dc:creator>Benedicte Bucher</dc:creator>
         <dc:creator>Marie-Dominique Van Damme</dc:creator>
         <terms:title xml:lang="fr">Ontologie des jeux de données géographiques pour la science ouverte</terms:title>
         <terms:title xml:lang="en">Ontology of Geospatial Datasets for Open Science</terms:title>
@@ -581,12 +581,6 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#Observation -->
-
-    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Observation"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -605,6 +599,15 @@
         <rdfs:comment xml:lang="en">The LASTIG lab research domain is Geographic Information sciences</rdfs:comment>
         <rdfs:label xml:lang="en">LASTIG</rdfs:label>
         <foaf:name>LAboratoire en Sciences et Technologies de l&apos;Information Géographique pour la ville intelligente et les territoires durables</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#LidarHDFrance -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#LidarHDFrance">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <foaf:homepage>https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_NUAGES-DE-POINTS-LIDAR-HD</foaf:homepage>
     </owl:NamedIndividual>
     
 
