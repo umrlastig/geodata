@@ -154,6 +154,12 @@
     
 
 
+    <!-- http://www.w3.org/2000/01/rdf-schema#description -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#description"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
@@ -380,8 +386,8 @@
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#CameraTrap">
         <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"/>
         <rdfs:comment xml:lang="en">photographic device with any type of trigger causing a photo to be taken when activity is present</rdfs:comment>
-        <rdfs:seeAlso>http://www.wikidata.org/entity/Q1723004</rdfs:seeAlso>
         <rdfs:label xml:lang="en">Camera trap</rdfs:label>
+        <rdfs:seeAlso>http://www.wikidata.org/entity/Q1723004</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -399,8 +405,8 @@
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#CollectionItem">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
-        <rdfs:label xml:lang="en">Collection item</rdfs:label>
         <rdfs:comment xml:lang="en">A collection item is composed of different pieces of data, usually selections from bigger datasets, associated with a proposed visualisation, and narratives that connect the visual items to the concepts of the collection. It has a spatial and temporal extent.</rdfs:comment>
+        <rdfs:label xml:lang="en">Collection item</rdfs:label>
     </owl:Class>
     
 
@@ -408,8 +414,8 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#Data -->
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Data">
-        <rdfs:label xml:lang="en">Data</rdfs:label>
         <rdfs:comment xml:lang="en">Any data</rdfs:comment>
+        <rdfs:label xml:lang="en">Data</rdfs:label>
     </owl:Class>
     
 
@@ -420,8 +426,20 @@
         <owl:equivalentClass rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment xml:lang="en">tool used to facilitate the collection of qualitative or quantitative data</rdfs:comment>
-        <rdfs:seeAlso>http://www.wikidata.org/entity/Q130941907</rdfs:seeAlso>
         <rdfs:label xml:lang="en">Data collection instrument</rdfs:label>
+        <rdfs:seeAlso>http://www.wikidata.org/entity/Q130941907</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:comment xml:lang="en">System used for reporting and data analysis, as a core component of business intelligence</rdfs:comment>
+        <rdfs:description xml:lang="fr">Un data warehouse permet de stocker des datasets, d’y accéder via requêtes et expose parfois une API.</rdfs:description>
+        <rdfs:label xml:lang="en">Data warehouse</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q193351</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -431,8 +449,8 @@
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#GPSDevice">
         <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"/>
         <rdfs:comment xml:lang="en">navigation device that uses the Global Positioning System to track the device&apos;s movements and determine its geographic position</rdfs:comment>
-        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q253677</rdfs:seeAlso>
         <rdfs:label xml:lang="en">GPS sensor</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q253677</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -441,7 +459,7 @@
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
-        <rdfs:comment  xml:lang="en">Ready to use material to teach a given competence, in relationship with concepts, to a given audience. For example a wikipedia page, a storymap, a GIS exercise, an outdoor educational activity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Ready to use material to teach a given competence, in relationship with concepts, to a given audience. For example a wikipedia page, a storymap, a GIS exercise, an outdoor educational activity.</rdfs:comment>
         <rdfs:label xml:lang="en">Pedagogic material</rdfs:label>
     </owl:Class>
     
@@ -452,22 +470,11 @@
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Process">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-        <rdfs:comment  xml:lang="en">Set of operations in a technical environment to yield an output based on input</rdfs:comment>
+        <rdfs:comment xml:lang="en">Set of operations in a technical environment to yield an output based on input</rdfs:comment>
+        <rdfs:label xml:lang="en">Technical process</rdfs:label>
         <rdfs:seeAlso>http://eurovoc.europa.eu/3640</rdfs:seeAlso>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q500669</rdfs:seeAlso>
-        <rdfs:label xml:lang="en">Technical process</rdfs:label>
     </owl:Class>
-
-
-
-<!-- http://purl.org/www.umr-lastig.fr/geodata#ReproductibleProcess -->
-<!--
-    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ReproductibleProcess">
-        <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
-        <rdfs:comment>Refers to the capacity to faithfully replicate experimental and computational procedures</rdfs:comment>
-        <rdfs:label>Reproductible process</rdfs:label>
-    </owl:Class>
--->
     
 
 
@@ -486,8 +493,8 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey -->
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#Observation"/>
         <rdfs:comment xml:lang="en">An organized data acquisition activity carried out according to a defined methodology, using appropriate instruments or protocols, in order to observe, measure, or document phenomena for scientific analysis</rdfs:comment>
         <rdfs:label xml:lang="en">Scientific survey</rdfs:label>
     </owl:Class>
@@ -510,8 +517,8 @@
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
-        <rdfs:label xml:lang="en">User feedback</rdfs:label>
         <rdfs:comment xml:lang="en">An explicit information shared by a participants relative to his own experience with one or more datasets, tools or paper.</rdfs:comment>
+        <rdfs:label xml:lang="en">User feedback</rdfs:label>
     </owl:Class>
     
 
@@ -520,8 +527,8 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/dcat#DataService">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
-        <rdfs:label xml:lang="en">Data Service</rdfs:label>
         <rdfs:comment xml:lang="en">A collection of operations that provides access to one or more datasets or data processing functions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Data Service</rdfs:label>
     </owl:Class>
     
 
@@ -530,23 +537,11 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/dcat#Dataset">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:comment xml:lang="en">A collection of data and available for access or download in one or more representations.</rdfs:comment>
         <rdfs:label xml:lang="en">Dataset</rdfs:label>
         <rdfs:label xml:lang="fr">Jeu de données</rdfs:label>
-        <rdfs:comment xml:lang="en">A collection of data and available for access or download in one or more representations.</rdfs:comment>
     </owl:Class>
-
-
-
-    <!-- http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse -->
-
-    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <rdfs:description xml:lang="fr">Un data warehouse permet de stocker des datasets, d’y accéder via requêtes et expose parfois une API.</rdfs:description>
-        <rdfs:label xml:lang="en">Data warehouse</rdfs:label>
-        <rdfs:comment xml:lang="en">System used for reporting and data analysis, as a core component of business intelligence</rdfs:comment>
-        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q193351</rdfs:seeAlso>
-    </owl:Class>
-
+    
 
 
     <!-- http://www.w3.org/ns/dcat#Resource -->
@@ -564,8 +559,8 @@
     <!-- http://www.w3.org/ns/prov#Organization -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Organization">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
     </owl:Class>
     
 
@@ -586,9 +581,9 @@
     
 
 
-    <!-- http://www.w3.org/ns/sosa/Sensor -->
+    <!-- https://intforout.github.io/outdoorPressure#Observation -->
 
-    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Sensor"/>
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Observation"/>
     
 
 
@@ -607,9 +602,9 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#LASTIG">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
-        <foaf:name>LAboratoire en Sciences et Technologies de l&apos;Information Géographique pour la ville intelligente et les territoires durables</foaf:name>
-        <rdfs:label xml:lang="en">LASTIG</rdfs:label>
         <rdfs:comment xml:lang="en">The LASTIG lab research domain is Geographic Information sciences</rdfs:comment>
+        <rdfs:label xml:lang="en">LASTIG</rdfs:label>
+        <foaf:name>LAboratoire en Sciences et Technologies de l&apos;Information Géographique pour la ville intelligente et les territoires durables</foaf:name>
     </owl:NamedIndividual>
     
 
@@ -672,8 +667,8 @@
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
         <foaf:homepage rdf:resource="https://geodata-paris.fr"/>
-        <foaf:name>Géodata Paris</foaf:name>
         <rdfs:label>Géodata Paris</rdfs:label>
+        <foaf:name>Géodata Paris</foaf:name>
     </owl:NamedIndividual>
     
 
@@ -683,9 +678,9 @@
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ign">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
         <foaf:homepage rdf:resource="https://www.ign.fr"/>
-        <foaf:name>Institut national de l&apos;information géographique et forestière</foaf:name>
-        <rdfs:label xml:lang="en">IGN</rdfs:label>
         <rdfs:comment xml:lang="en">Institut national de l&apos;information géographique et forestière</rdfs:comment>
+        <rdfs:label xml:lang="en">IGN</rdfs:label>
+        <foaf:name>Institut national de l&apos;information géographique et forestière</foaf:name>
     </owl:NamedIndividual>
     
 
@@ -825,5 +820,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
