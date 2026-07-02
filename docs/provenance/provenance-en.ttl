@@ -10,5 +10,5 @@
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 .
 :agent0 a prov:Agent; foaf:name "Ana-Maria Raimond".
-:agent1 a prov:Agent; foaf:name "Bénédicte Bucher".
+:agent1 a prov:Agent; foaf:name "Benedicte Bucher".
 :agent2 a prov:Agent; foaf:name "Marie-Dominique Van Damme".

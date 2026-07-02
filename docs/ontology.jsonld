@@ -31,7 +31,7 @@
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Ana-Maria Raimond"
   }, {
-    "@value" : "Bénédicte Bucher"
+    "@value" : "Benedicte Bucher"
   }, {
     "@value" : "Marie-Dominique Van Damme"
   } ],
@@ -278,9 +278,9 @@
     "@value" : "Scientific survey"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Resource"
-  }, {
     "@id" : "http://www.w3.org/ns/prov#Activity"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#Observation"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#TotalStation",
@@ -720,6 +720,9 @@
 }, {
   "@id" : "https://geodata-paris.fr",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Observation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://www.ign.fr",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]

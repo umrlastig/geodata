@@ -13,7 +13,7 @@
                                                          <http://www.w3.org/ns/sosa/> ,
                                                          <http://www.w3.org/ns/ssn/> ;
                                              <http://purl.org/dc/elements/1.1/creator> "Ana-Maria Raimond" ,
-                                                                                       "Bénédicte Bucher" ,
+                                                                                       "Benedicte Bucher" ,
                                                                                        "Marie-Dominique Van Damme" ;
                                              <http://purl.org/dc/terms/title> "Ontologie des jeux de données géographiques pour la science ouverte"@fr ,
                                                                               "Ontology of Geospatial Datasets for Open Science"@en ;
@@ -317,8 +317,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey
 :ScientificSurvey rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ,
-                                  <http://www.w3.org/ns/prov#Activity> ;
+                  rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ,
+                                  <https://intforout.github.io/outdoorPressure#Observation> ;
                   rdfs:comment "An organized data acquisition activity carried out according to a defined methodology, using appropriate instruments or protocols, in order to observe, measure, or document phenomena for scientific analysis"@en ;
                   rdfs:label "Scientific survey"@en .
 
@@ -376,6 +376,10 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.w3.org/ns/prov#SoftwareAgent
 <http://www.w3.org/ns/prov#SoftwareAgent> rdf:type owl:Class ;
                                           rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> .
+
+
+###  https://intforout.github.io/outdoorPressure#Observation
+<https://intforout.github.io/outdoorPressure#Observation> rdf:type owl:Class .
 
 
 #################################################################
