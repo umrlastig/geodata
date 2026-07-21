@@ -193,8 +193,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#has_member
 :has_member rdf:type owl:ObjectProperty ;
-            rdfs:domain :Collection ;
-            rdfs:range :CollectionItem .
+            rdfs:domain :Collection .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy
@@ -248,13 +247,6 @@ xsd:date rdf:type rdfs:Datatype .
 :Collection rdf:type owl:Class ;
             rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
             rdfs:comment "Collection of items that supports the usage of geodata for a pedagogic or learning purpose, in relationship with given concepts"@en .
-
-
-###  http://purl.org/www.umr-lastig.fr/geodata#CollectionItem
-:CollectionItem rdf:type owl:Class ;
-                rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
-                rdfs:comment "A collection item is composed of different pieces of data, usually selections from bigger datasets, associated with a proposed visualisation, and narratives that connect the visual items to the concepts of the collection. It has a spatial and temporal extent."@en ;
-                rdfs:label "Collection item"@en .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#Data

@@ -162,7 +162,6 @@
 # http://purl.org/www.umr-lastig.fr/geodata#has_member
 <http://purl.org/www.umr-lastig.fr/geodata#has_member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/www.umr-lastig.fr/geodata#has_member> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/www.umr-lastig.fr/geodata#Collection> .
-<http://purl.org/www.umr-lastig.fr/geodata#has_member> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/www.umr-lastig.fr/geodata#CollectionItem> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy
 <http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -213,12 +212,6 @@
 <http://purl.org/www.umr-lastig.fr/geodata#Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#Collection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
 <http://purl.org/www.umr-lastig.fr/geodata#Collection> <http://www.w3.org/2000/01/rdf-schema#comment> "Collection of items that supports the usage of geodata for a pedagogic or learning purpose, in relationship with given concepts"@en .
-# 
-# http://purl.org/www.umr-lastig.fr/geodata#CollectionItem
-<http://purl.org/www.umr-lastig.fr/geodata#CollectionItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/www.umr-lastig.fr/geodata#CollectionItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
-<http://purl.org/www.umr-lastig.fr/geodata#CollectionItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection item is composed of different pieces of data, usually selections from bigger datasets, associated with a proposed visualisation, and narratives that connect the visual items to the concepts of the collection. It has a spatial and temporal extent."@en .
-<http://purl.org/www.umr-lastig.fr/geodata#CollectionItem> <http://www.w3.org/2000/01/rdf-schema#label> "Collection item"@en .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#Data
 <http://purl.org/www.umr-lastig.fr/geodata#Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -275,7 +268,6 @@
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Observation> .
-<https://intforout.github.io/outdoorPressure#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "An organized data acquisition activity carried out according to a defined methodology, using appropriate instruments or protocols, in order to observe, measure, or document phenomena for scientific analysis"@en .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific survey"@en .
 # 
@@ -326,6 +318,7 @@
 <http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
 # 
 # https://intforout.github.io/outdoorPressure#Observation
+<https://intforout.github.io/outdoorPressure#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # 
 # 

@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/geodata#","name":"Ontology of Geospatial Datasets for Open Science", "headline":"Document describing the ontology https://intforout.github.io/geodata#", "dateReleased":"Thu Jul 02 07:56:25 UTC 2026", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Benedicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/geodata#","name":"Ontology of Geospatial Datasets for Open Science", "headline":"Document describing the ontology https://intforout.github.io/geodata#", "dateReleased":"Tue Jul 21 16:08:24 UTC 2026", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Benedicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -119,10 +119,6 @@ This ontology has the following classes and properties.</span>
          title="http://purl.org/www.umr-lastig.fr/geodata#Collection">
          <span>Collection</span>
       </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/www.umr-lastig.fr/geodata#CollectionItem"
-         title="http://purl.org/www.umr-lastig.fr/geodata#CollectionItem">Collection item</a>
    </li>
    <li>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#Data" title="http://purl.org/www.umr-lastig.fr/geodata#Data">Data</a>
@@ -331,7 +327,6 @@ This section provides details for each class and property defined by Ontology of
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter" title="http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter">Bicycle and pedestrian counter</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#CameraTrap" title="http://purl.org/www.umr-lastig.fr/geodata#CameraTrap">Camera trap</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Collection" title="http://purl.org/www.umr-lastig.fr/geodata#Collection"> <span>Collection</span> </a></li>
-  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#CollectionItem" title="http://purl.org/www.umr-lastig.fr/geodata#CollectionItem">Collection item</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Data" title="http://purl.org/www.umr-lastig.fr/geodata#Data">Data</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument" title="http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument">Data collection instrument</a></li>
   <li><a href="#http://www.w3.org/ns/dcat#DataService" title="http://www.w3.org/ns/dcat#DataService">Data Service</a></li>
@@ -402,27 +397,6 @@ This section provides details for each class and property defined by Ontology of
    </dt>
    <dd>
     <a href="#http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction" title="http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction">has Method Of Instruction</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/www.umr-lastig.fr/geodata#has_member" title="http://purl.org/www.umr-lastig.fr/geodata#has_member">has member</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#CollectionItem">
-  <h3>Collection item<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#CollectionItem</p>
-  <div class="comment">
-   <span class="markdown">A collection item is composed of different pieces of data, usually selections from bigger datasets, associated with a proposed visualisation, and narratives that connect the visual items to the concepts of the collection. It has a spatial and temporal extent.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#http://purl.org/www.umr-lastig.fr/geodata#has_member" title="http://purl.org/www.umr-lastig.fr/geodata#has_member">has member</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -749,12 +723,6 @@ This section provides details for each class and property defined by Ontology of
     </dt>
     <dd>
      <a href="#http://purl.org/www.umr-lastig.fr/geodata#Collection" title="http://purl.org/www.umr-lastig.fr/geodata#Collection">Collection</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#http://purl.org/www.umr-lastig.fr/geodata#CollectionItem" title="http://purl.org/www.umr-lastig.fr/geodata#CollectionItem">Collection item</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>

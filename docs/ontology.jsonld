@@ -104,20 +104,6 @@
     "@id" : "http://www.w3.org/ns/dcat#Resource"
   } ]
 }, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#CollectionItem",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A collection item is composed of different pieces of data, usually selections from bigger datasets, associated with a proposed visualisation, and narratives that connect the visual items to the concepts of the collection. It has a spatial and temporal extent."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Collection item"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Resource"
-  } ]
-}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Data",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -449,9 +435,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Collection"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#CollectionItem"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ign",
