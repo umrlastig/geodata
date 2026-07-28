@@ -2,10 +2,12 @@
 <rdf:RDF xmlns="http://purl.org/www.umr-lastig.fr/geodata/"
      xml:base="http://purl.org/www.umr-lastig.fr/geodata/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:org="http://www.w3.org/ns/org#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:pav="http://purl.org/pav/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:adms="http://www.w3.org/ns/adms#"
@@ -24,11 +26,13 @@
      xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
      xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="http://purl.org/www.umr-lastig.fr/geodata">
+        <owl:imports rdf:resource="http://purl.org/dc/dcmitype/"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/dcat3"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov#"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <dc:creator>Ana-Maria Raimond</dc:creator>
         <dc:creator>Benedicte Bucher</dc:creator>
         <dc:creator>Marie-Dominique Van Damme</dc:creator>
@@ -607,7 +611,7 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#LASTIG -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#LASTIG">
-        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:comment xml:lang="en">The LASTIG lab research domain is Geographic Information sciences</rdfs:comment>
         <rdfs:label xml:lang="en">LASTIG</rdfs:label>
         <foaf:name>LAboratoire en Sciences et Technologies de l&apos;Information Géographique pour la ville intelligente et les territoires durables</foaf:name>
@@ -627,7 +631,7 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#Tracklib -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Tracklib">
-        <rdf:type rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+        <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Software"/>
         <terms:contributor rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
         <terms:contributor rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"/>
         <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#LASTIG"/>
@@ -644,7 +648,7 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#aleguicher -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#aleguicher">
-        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
         <prov:actedOnBehalfOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris"/>
         <foaf:family_name>Le Guilcher</foaf:family_name>
         <foaf:givenname>Arnaud</foaf:givenname>
@@ -656,7 +660,7 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#amraimond -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#amraimond">
-        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
         <prov:actedOnBehalfOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris"/>
         <foaf:family_name>Olteanu-Raimond</foaf:family_name>
         <foaf:givenname>Ana-Maria</foaf:givenname>
@@ -668,7 +672,7 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#bbucher -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#bbucher">
-        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
         <prov:actedOnBehalfOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris"/>
         <foaf:family_name>Bucher</foaf:family_name>
         <foaf:givenname>Bénédicte</foaf:givenname>
@@ -680,7 +684,7 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#geodata-paris -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris">
-        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:label>Géodata Paris</rdfs:label>
         <foaf:homepage rdf:resource="https://geodata-paris.fr"/>
         <foaf:name>Géodata Paris</foaf:name>
@@ -691,7 +695,7 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#ign -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ign">
-        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:comment xml:lang="en">Institut national de l&apos;information géographique et forestière</rdfs:comment>
         <rdfs:label xml:lang="en">IGN</rdfs:label>
         <foaf:homepage rdf:resource="https://www.ign.fr"/>
@@ -703,7 +707,7 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#jadawson -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#jadawson">
-        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
         <prov:actedOnBehalfOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris"/>
         <foaf:family_name>Dawson</foaf:family_name>
         <foaf:givenname>John-Andrew</foaf:givenname>
@@ -715,7 +719,7 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#ljolivet -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ljolivet">
-        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
         <prov:actedOnBehalfOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris"/>
         <foaf:family_name>Jolivet</foaf:family_name>
         <foaf:givenname>Laurence</foaf:givenname>
@@ -727,7 +731,7 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#mdvandamme -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme">
-        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
         <prov:actedOnBehalfOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris"/>
         <foaf:family_name>Van Damme</foaf:family_name>
         <foaf:givenname>Marie-Dominique</foaf:givenname>
@@ -740,7 +744,7 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#ymeneroux -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ymeneroux">
-        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
         <prov:actedOnBehalfOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ign"/>
         <foaf:family_name>Méneroux</foaf:family_name>
         <foaf:givenname>Yann</foaf:givenname>
