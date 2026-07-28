@@ -5,6 +5,9 @@
   "@id" : "http://purl.org/dc/elements/1.1/subject",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://purl.org/dc/terms/MethodOfInstruction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -25,6 +28,12 @@
 }, {
   "@id" : "http://purl.org/spar/datacite/Resource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -215,18 +224,13 @@
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Process",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Set of operations in a technical environment to yield an output based on input"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Technical process"
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Series of events which occur over an extended period of time, a particular type of processes can be sets of operations to yield an output based on an input"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@value" : "http://eurovoc.europa.eu/3640"
   }, {
-    "@value" : "https://www.wikidata.org/wiki/Q500669"
+    "@value" : "https://www.wikidata.org/wiki/Q3249551"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Resource"

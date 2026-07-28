@@ -53,6 +53,14 @@
 <http://purl.org/dc/terms/type> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
 ###  http://schema.org/alternateName
 <http://schema.org/alternateName> rdf:type owl:AnnotationProperty .
 
@@ -220,6 +228,10 @@ xsd:date rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
+###  http://purl.org/dc/terms/Agent
+<http://purl.org/dc/terms/Agent> rdf:type owl:Class .
+
+
 ###  http://purl.org/dc/terms/MethodOfInstruction
 <http://purl.org/dc/terms/MethodOfInstruction> rdf:type owl:Class .
 
@@ -292,10 +304,9 @@ xsd:date rdf:type rdfs:Datatype .
 :Process rdf:type owl:Class ;
          rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ,
                          <http://www.w3.org/ns/prov#Activity> ;
-         rdfs:comment "Set of operations in a technical environment to yield an output based on input"@en ;
-         rdfs:label "Technical process"@en ;
+         <http://purl.org/dc/terms/description> "Series of events which occur over an extended period of time, a particular type of processes can be sets of operations to yield an output based on an input" ;
          rdfs:seeAlso "http://eurovoc.europa.eu/3640" ,
-                      "https://www.wikidata.org/wiki/Q500669" .
+                      "https://www.wikidata.org/wiki/Q3249551" .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper

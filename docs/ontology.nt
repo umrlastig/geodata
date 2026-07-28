@@ -42,6 +42,12 @@
 # http://purl.org/dc/terms/type
 <http://purl.org/dc/terms/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://schema.org/alternateName
 <http://schema.org/alternateName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -189,6 +195,9 @@
 # #################################################################
 # 
 # 
+# http://purl.org/dc/terms/Agent
+<http://purl.org/dc/terms/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://purl.org/dc/terms/MethodOfInstruction
 <http://purl.org/dc/terms/MethodOfInstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
@@ -251,10 +260,9 @@
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
-<http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of operations in a technical environment to yield an output based on input"@en .
-<http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#label> "Technical process"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#Process> <http://purl.org/dc/terms/description> "Series of events which occur over an extended period of time, a particular type of processes can be sets of operations to yield an output based on an input" .
 <http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://eurovoc.europa.eu/3640" .
-<http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q500669" .
+<http://purl.org/www.umr-lastig.fr/geodata#Process> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q3249551" .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
