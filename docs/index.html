@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/geodata#","name":"Ontology of Geospatial Datasets for Open Science", "headline":"Document describing the ontology https://intforout.github.io/geodata#", "dateReleased":"Tue Jul 28 13:42:42 UTC 2026", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Benedicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/geodata#","name":"Ontology of Geospatial Datasets for Open Science", "headline":"Document describing the ontology https://intforout.github.io/geodata#", "dateReleased":"Tue Jul 28 14:17:02 UTC 2026", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Benedicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -73,7 +73,7 @@ $(function(){
 <dd>Ana-Maria Raimond</dd><dd>Benedicte Bucher</dd><dd>Marie-Dominique Van Damme</dd>
 
 <dt>Imported Ontologies:</dt>
-<dd><a href="http://www.w3.org/2004/02/skos/core">core</a></dd><dd><a href="http://www.w3.org/ns/dcat">dcat</a></dd><dd><a href="http://www.w3.org/ns/prov-o#">prov-o#</a></dd><dd><a href="http://www.w3.org/ns/sosa/">&lt;http://www.w3.org/ns/sosa/&gt;</a></dd><dd><a href="http://www.w3.org/ns/ssn/">&lt;http://www.w3.org/ns/ssn/&gt;</a></dd>
+<dd><a href="http://www.w3.org/2004/02/skos/core">core</a></dd><dd><a href="http://www.w3.org/ns/dcat">dcat</a></dd><dd><a href="http://www.w3.org/ns/prov-o#">prov-o#</a></dd><dd><a href="http://www.w3.org/ns/sosa/">&lt;http://www.w3.org/ns/sosa/&gt;</a></dd><dd><a href="http://www.w3.org/ns/ssn/">&lt;http://www.w3.org/ns/ssn/&gt;</a></dd><dd><a href="http://xmlns.com/foaf/0.1/">&lt;http://xmlns.com/foaf/0.1/&gt;</a></dd>
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.example.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.example.org" /></a>
 </dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
@@ -115,6 +115,9 @@ This ontology has the following classes and properties.</span>
          title="http://purl.org/www.umr-lastig.fr/geodata#CameraTrap">Camera trap</a>
    </li>
    <li>
+      <a href="#http://purl.org/dc/dcmitype/Collection" title="http://purl.org/dc/dcmitype/Collection">Collection</a>
+   </li>
+   <li>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#Collection"
          title="http://purl.org/www.umr-lastig.fr/geodata#Collection">
          <span>Collection</span>
@@ -135,11 +138,26 @@ This ontology has the following classes and properties.</span>
          title="http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse">Data warehouse</a>
    </li>
    <li>
+      <a href="#http://purl.org/dc/dcmitype/Dataset" title="http://purl.org/dc/dcmitype/Dataset">Dataset</a>
+   </li>
+   <li>
       <a href="#http://www.w3.org/ns/dcat#Dataset" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/dcmitype/Event" title="http://purl.org/dc/dcmitype/Event">Event</a>
    </li>
    <li>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#GPSDevice"
          title="http://purl.org/www.umr-lastig.fr/geodata#GPSDevice">GPS sensor</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/dcmitype/Image" title="http://purl.org/dc/dcmitype/Image">Image</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/dcmitype/InteractiveResource" title="http://purl.org/dc/dcmitype/InteractiveResource">Interactive Resource</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/dcmitype/MovingImage" title="http://purl.org/dc/dcmitype/MovingImage">Moving Image</a>
    </li>
    <li>
       <a href="#http://www.w3.org/ns/prov#Organization" title="http://www.w3.org/ns/prov#Organization">
@@ -156,6 +174,9 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#http://purl.org/dc/dcmitype/PhysicalObject" title="http://purl.org/dc/dcmitype/PhysicalObject">Physical Object</a>
+   </li>
+   <li>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#Process"
          title="http://purl.org/www.umr-lastig.fr/geodata#Process">
          <span>Process</span>
@@ -170,9 +191,24 @@ This ontology has the following classes and properties.</span>
          title="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey">Scientific survey</a>
    </li>
    <li>
+      <a href="#http://purl.org/dc/dcmitype/Service" title="http://purl.org/dc/dcmitype/Service">Service</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/dcmitype/Software" title="http://purl.org/dc/dcmitype/Software">Software</a>
+   </li>
+   <li>
       <a href="#http://www.w3.org/ns/prov#SoftwareAgent" title="http://www.w3.org/ns/prov#SoftwareAgent">
          <span>Software Agent</span>
       </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/dcmitype/Sound" title="http://purl.org/dc/dcmitype/Sound">Sound</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/dcmitype/StillImage" title="http://purl.org/dc/dcmitype/StillImage">Still Image</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/dcmitype/Text" title="http://purl.org/dc/dcmitype/Text">Text</a>
    </li>
    <li>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#TotalStation"
@@ -290,7 +326,8 @@ This ontology has the following classes and properties.</span>
          title="ttp://purl.org/www.umr-lastig.fr/geodata#PolarWatch">Polar Watch</a>
    </li>
    <li>
-      <a href="#ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo" title="ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo">Pyro-Evo</a>
+      <a href="#ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo"
+         title="ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo">Pyro-Evo</a>
    </li>
    <li>
       <a href="#ttp://purl.org/www.umr-lastig.fr/geodata#SmartphoneGNSS"
@@ -328,20 +365,32 @@ This section provides details for each class and property defined by Ontology of
  <ul class="hlist">
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter" title="http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter">Bicycle and pedestrian counter</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#CameraTrap" title="http://purl.org/www.umr-lastig.fr/geodata#CameraTrap">Camera trap</a></li>
+  <li><a href="#http://purl.org/dc/dcmitype/Collection" title="http://purl.org/dc/dcmitype/Collection">Collection</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Collection" title="http://purl.org/www.umr-lastig.fr/geodata#Collection"> <span>Collection</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Data" title="http://purl.org/www.umr-lastig.fr/geodata#Data">Data</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument" title="http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument">Data collection instrument</a></li>
   <li><a href="#http://www.w3.org/ns/dcat#DataService" title="http://www.w3.org/ns/dcat#DataService">Data Service</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse" title="http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse">Data warehouse</a></li>
+  <li><a href="#http://purl.org/dc/dcmitype/Dataset" title="http://purl.org/dc/dcmitype/Dataset">Dataset</a></li>
   <li><a href="#http://www.w3.org/ns/dcat#Dataset" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a></li>
+  <li><a href="#http://purl.org/dc/dcmitype/Event" title="http://purl.org/dc/dcmitype/Event">Event</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#GPSDevice" title="http://purl.org/www.umr-lastig.fr/geodata#GPSDevice">GPS sensor</a></li>
+  <li><a href="#http://purl.org/dc/dcmitype/Image" title="http://purl.org/dc/dcmitype/Image">Image</a></li>
+  <li><a href="#http://purl.org/dc/dcmitype/InteractiveResource" title="http://purl.org/dc/dcmitype/InteractiveResource">Interactive Resource</a></li>
+  <li><a href="#http://purl.org/dc/dcmitype/MovingImage" title="http://purl.org/dc/dcmitype/MovingImage">Moving Image</a></li>
   <li><a href="#http://www.w3.org/ns/prov#Organization" title="http://www.w3.org/ns/prov#Organization"> <span>Organization</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial" title="http://purl.org/www.umr-lastig.fr/geodata#PedagogicMaterial">Pedagogic material</a></li>
   <li><a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person"> <span>Person</span> </a></li>
+  <li><a href="#http://purl.org/dc/dcmitype/PhysicalObject" title="http://purl.org/dc/dcmitype/PhysicalObject">Physical Object</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Process" title="http://purl.org/www.umr-lastig.fr/geodata#Process"> <span>Process</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper" title="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper">Scientific Paper</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey" title="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey">Scientific survey</a></li>
+  <li><a href="#http://purl.org/dc/dcmitype/Service" title="http://purl.org/dc/dcmitype/Service">Service</a></li>
+  <li><a href="#http://purl.org/dc/dcmitype/Software" title="http://purl.org/dc/dcmitype/Software">Software</a></li>
   <li><a href="#http://www.w3.org/ns/prov#SoftwareAgent" title="http://www.w3.org/ns/prov#SoftwareAgent"> <span>Software Agent</span> </a></li>
+  <li><a href="#http://purl.org/dc/dcmitype/Sound" title="http://purl.org/dc/dcmitype/Sound">Sound</a></li>
+  <li><a href="#http://purl.org/dc/dcmitype/StillImage" title="http://purl.org/dc/dcmitype/StillImage">Still Image</a></li>
+  <li><a href="#http://purl.org/dc/dcmitype/Text" title="http://purl.org/dc/dcmitype/Text">Text</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#TotalStation" title="http://purl.org/www.umr-lastig.fr/geodata#TotalStation">Total station</a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" title="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback">User feedback</a></li>
  </ul>
@@ -378,6 +427,21 @@ This section provides details for each class and property defined by Ontology of
    </dt>
    <dd>
     <a href="#ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo" title="ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo">Pyro-Evo</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/dc/dcmitype/Collection">
+  <h3>Collection<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/dcmitype/Collection</p>
+  <div class="comment">
+   <span class="markdown">An aggregation of resources.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/dcmitype/">http://purl.org/dc/dcmitype/</a>
    </dd>
   </dl>
  </div>
@@ -466,6 +530,21 @@ This section provides details for each class and property defined by Ontology of
    </dd>
   </dl>
  </div>
+ <div class="entity" id="http://purl.org/dc/dcmitype/Dataset">
+  <h3>Dataset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/dcmitype/Dataset</p>
+  <div class="comment">
+   <span class="markdown">Data encoded in a defined structure.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/dcmitype/">http://purl.org/dc/dcmitype/</a>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="http://www.w3.org/ns/dcat#Dataset">
   <h3>Dataset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#Dataset</p>
@@ -505,6 +584,21 @@ This section provides details for each class and property defined by Ontology of
    </dd>
   </dl>
  </div>
+ <div class="entity" id="http://purl.org/dc/dcmitype/Event">
+  <h3>Event<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/dcmitype/Event</p>
+  <div class="comment">
+   <span class="markdown">A non-persistent, time-based occurrence.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/dcmitype/">http://purl.org/dc/dcmitype/</a>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#GPSDevice">
   <h3>GPS sensor<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#GPSDevice</p>
@@ -526,6 +620,67 @@ This section provides details for each class and property defined by Ontology of
    </dd>
   </dl>
  </div>
+ <div class="entity" id="http://purl.org/dc/dcmitype/Image">
+  <h3>Image<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/dcmitype/Image</p>
+  <div class="comment">
+   <span class="markdown">A visual representation other than text.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/dcmitype/">http://purl.org/dc/dcmitype/</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#http://purl.org/dc/dcmitype/MovingImage" title="http://purl.org/dc/dcmitype/MovingImage">Moving Image</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/dc/dcmitype/StillImage" title="http://purl.org/dc/dcmitype/StillImage">Still Image</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/dc/dcmitype/InteractiveResource">
+  <h3>Interactive Resource<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/dcmitype/InteractiveResource</p>
+  <div class="comment">
+   <span class="markdown">A resource requiring interaction from the user to be understood, executed, or experienced.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/dcmitype/">http://purl.org/dc/dcmitype/</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/dc/dcmitype/MovingImage">
+  <h3>Moving Image<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/dcmitype/MovingImage</p>
+  <div class="comment">
+   <span class="markdown">A series of visual representations imparting an impression of motion when shown in succession.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/dcmitype/">http://purl.org/dc/dcmitype/</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://purl.org/dc/dcmitype/Image" title="http://purl.org/dc/dcmitype/Image">Image</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="http://www.w3.org/ns/prov#Organization">
   <h3>Organization<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/prov#Organization</p>
@@ -535,12 +690,6 @@ This section provides details for each class and property defined by Ontology of
    </dt>
    <dd>
     <a href="http://purl.org/dc/terms/Agent" target="_blank" title="http://purl.org/dc/terms/Agent">Agent</a> <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#http://purl.org/www.umr-lastig.fr/geodata#geodata-paris" title="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris">Géodata Paris</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.org/www.umr-lastig.fr/geodata#ign" title="http://purl.org/www.umr-lastig.fr/geodata#ign">IGN</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.org/www.umr-lastig.fr/geodata#LASTIG" title="http://purl.org/www.umr-lastig.fr/geodata#LASTIG">LASTIG</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -569,11 +718,20 @@ This section provides details for each class and property defined by Ontology of
    <dd>
     <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
    </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/dc/dcmitype/PhysicalObject">
+  <h3>Physical Object<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/dcmitype/PhysicalObject</p>
+  <div class="comment">
+   <span class="markdown">An inanimate, three-dimensional object or substance.</span>
+  </div>
+  <dl class="definedBy">
    <dt>
-    has members
+    Is defined by
    </dt>
    <dd>
-    <a href="#http://purl.org/www.umr-lastig.fr/geodata#aleguicher" title="http://purl.org/www.umr-lastig.fr/geodata#aleguicher">aleguicher</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.org/www.umr-lastig.fr/geodata#amraimond" title="http://purl.org/www.umr-lastig.fr/geodata#amraimond">amraimond</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.org/www.umr-lastig.fr/geodata#bbucher" title="http://purl.org/www.umr-lastig.fr/geodata#bbucher">bbucher</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.org/www.umr-lastig.fr/geodata#jadawson" title="http://purl.org/www.umr-lastig.fr/geodata#jadawson">jadawson</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.org/www.umr-lastig.fr/geodata#ljolivet" title="http://purl.org/www.umr-lastig.fr/geodata#ljolivet">ljolivet</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.org/www.umr-lastig.fr/geodata#mdvandamme" title="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme">mdvandamme</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.org/www.umr-lastig.fr/geodata#ymeneroux" title="http://purl.org/www.umr-lastig.fr/geodata#ymeneroux">ymeneroux</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://purl.org/dc/dcmitype/">http://purl.org/dc/dcmitype/</a>
    </dd>
   </dl>
  </div>
@@ -619,6 +777,44 @@ This section provides details for each class and property defined by Ontology of
    </dd>
   </dl>
  </div>
+ <div class="entity" id="http://purl.org/dc/dcmitype/Service">
+  <h3>Service<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/dcmitype/Service</p>
+  <div class="comment">
+   <span class="markdown">A system that provides one or more functions.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/dcmitype/">http://purl.org/dc/dcmitype/</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/dc/dcmitype/Software">
+  <h3>Software<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/dcmitype/Software</p>
+  <div class="comment">
+   <span class="markdown">A computer program in source or compiled form.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/dcmitype/">http://purl.org/dc/dcmitype/</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#http://purl.org/www.umr-lastig.fr/geodata#Tracklib" title="http://purl.org/www.umr-lastig.fr/geodata#Tracklib">Tracklib</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="http://www.w3.org/ns/prov#SoftwareAgent">
   <h3>Software Agent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/prov#SoftwareAgent</p>
@@ -629,11 +825,58 @@ This section provides details for each class and property defined by Ontology of
    <dd>
     <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
    </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/dc/dcmitype/Sound">
+  <h3>Sound<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/dcmitype/Sound</p>
+  <div class="comment">
+   <span class="markdown">A resource primarily intended to be heard.</span>
+  </div>
+  <dl class="definedBy">
    <dt>
-    has members
+    Is defined by
    </dt>
    <dd>
-    <a href="#http://purl.org/www.umr-lastig.fr/geodata#Tracklib" title="http://purl.org/www.umr-lastig.fr/geodata#Tracklib">Tracklib</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://purl.org/dc/dcmitype/">http://purl.org/dc/dcmitype/</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/dc/dcmitype/StillImage">
+  <h3>Still Image<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/dcmitype/StillImage</p>
+  <div class="comment">
+   <span class="markdown">A static visual representation.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/dcmitype/">http://purl.org/dc/dcmitype/</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://purl.org/dc/dcmitype/Image" title="http://purl.org/dc/dcmitype/Image">Image</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/dc/dcmitype/Text">
+  <h3>Text<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/dcmitype/Text</p>
+  <div class="comment">
+   <span class="markdown">A resource consisting primarily of words for reading.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/dcmitype/">http://purl.org/dc/dcmitype/</a>
    </dd>
   </dl>
  </div>
@@ -852,7 +1095,7 @@ This section provides details for each class and property defined by Ontology of
     belongs to
    </dt>
    <dd>
-    <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://www.w3.org/2000/10/swap/pim/contact#Person" target="_blank" title="http://www.w3.org/2000/10/swap/pim/contact#Person">Person</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -861,13 +1104,13 @@ This section provides details for each class and property defined by Ontology of
     <a href="http://www.w3.org/ns/prov#actedOnBehalfOf" target="_blank" title="http://www.w3.org/ns/prov#actedOnBehalfOf">acted On Behalf Of</a> <sup class="type-op" title="object property">op</sup> <a href="#http://purl.org/www.umr-lastig.fr/geodata#geodata-paris" title="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris">Géodata Paris</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/family_name" target="_blank" title="http://xmlns.com/foaf/0.1/family_name">family name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Le Guilcher"</span>
+    <a href="http://xmlns.com/foaf/0.1/family_name" target="_blank" title="http://xmlns.com/foaf/0.1/family_name">family_name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Le Guilcher"</span>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/givenname" target="_blank" title="http://xmlns.com/foaf/0.1/givenname">givenname</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Arnaud"</span>
+    <a href="http://xmlns.com/foaf/0.1/givenname" target="_blank" title="http://xmlns.com/foaf/0.1/givenname">Given name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Arnaud"</span>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Arnaud Le Guilcher"</span>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Arnaud Le Guilcher"</span>
    </dd>
   </dl>
  </div>
@@ -879,7 +1122,7 @@ This section provides details for each class and property defined by Ontology of
     belongs to
    </dt>
    <dd>
-    <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://www.w3.org/2000/10/swap/pim/contact#Person" target="_blank" title="http://www.w3.org/2000/10/swap/pim/contact#Person">Person</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -888,13 +1131,13 @@ This section provides details for each class and property defined by Ontology of
     <a href="http://www.w3.org/ns/prov#actedOnBehalfOf" target="_blank" title="http://www.w3.org/ns/prov#actedOnBehalfOf">acted On Behalf Of</a> <sup class="type-op" title="object property">op</sup> <a href="#http://purl.org/www.umr-lastig.fr/geodata#geodata-paris" title="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris">Géodata Paris</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/family_name" target="_blank" title="http://xmlns.com/foaf/0.1/family_name">family name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Olteanu-Raimond"</span>
+    <a href="http://xmlns.com/foaf/0.1/family_name" target="_blank" title="http://xmlns.com/foaf/0.1/family_name">family_name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Olteanu-Raimond"</span>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/givenname" target="_blank" title="http://xmlns.com/foaf/0.1/givenname">givenname</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Ana-Maria"</span>
+    <a href="http://xmlns.com/foaf/0.1/givenname" target="_blank" title="http://xmlns.com/foaf/0.1/givenname">Given name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Ana-Maria"</span>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Ana-Maria Olteanu-Raimond"</span>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Ana-Maria Olteanu-Raimond"</span>
    </dd>
   </dl>
  </div>
@@ -906,7 +1149,7 @@ This section provides details for each class and property defined by Ontology of
     belongs to
    </dt>
    <dd>
-    <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://www.w3.org/2000/10/swap/pim/contact#Person" target="_blank" title="http://www.w3.org/2000/10/swap/pim/contact#Person">Person</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -915,13 +1158,13 @@ This section provides details for each class and property defined by Ontology of
     <a href="http://www.w3.org/ns/prov#actedOnBehalfOf" target="_blank" title="http://www.w3.org/ns/prov#actedOnBehalfOf">acted On Behalf Of</a> <sup class="type-op" title="object property">op</sup> <a href="#http://purl.org/www.umr-lastig.fr/geodata#geodata-paris" title="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris">Géodata Paris</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/family_name" target="_blank" title="http://xmlns.com/foaf/0.1/family_name">family name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Bucher"</span>
+    <a href="http://xmlns.com/foaf/0.1/family_name" target="_blank" title="http://xmlns.com/foaf/0.1/family_name">family_name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Bucher"</span>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/givenname" target="_blank" title="http://xmlns.com/foaf/0.1/givenname">givenname</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Bénédicte"</span>
+    <a href="http://xmlns.com/foaf/0.1/givenname" target="_blank" title="http://xmlns.com/foaf/0.1/givenname">Given name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Bénédicte"</span>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Bénédicte Bucher"</span>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Bénédicte Bucher"</span>
    </dd>
   </dl>
  </div>
@@ -939,7 +1182,7 @@ This section provides details for each class and property defined by Ontology of
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">geografisk opløsning (meter)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"10.0"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
+    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">resolución espacial (metros)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"10.0"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#temporalResolution" target="_blank" title="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"PT6s"^^<a href="xsd:duration" target="_blank" title="xsd:duration">xsd:duration</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -954,7 +1197,7 @@ This section provides details for each class and property defined by Ontology of
     belongs to
    </dt>
    <dd>
-    <a href="#http://www.w3.org/ns/prov#Organization" title="http://www.w3.org/ns/prov#Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://xmlns.com/foaf/0.1/Organization" target="_blank" title="http://xmlns.com/foaf/0.1/Organization">Organization</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -963,7 +1206,7 @@ This section provides details for each class and property defined by Ontology of
     <a href="http://xmlns.com/foaf/0.1/homepage" target="_blank" title="http://xmlns.com/foaf/0.1/homepage">homepage</a> <sup class="type-op" title="object property">op</sup> <a href="https://geodata-paris.fr" target="_blank" title="https://geodata-paris.fr">https://geodata-paris.fr</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Géodata Paris"</span>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Géodata Paris"</span>
    </dd>
   </dl>
  </div>
@@ -978,7 +1221,7 @@ This section provides details for each class and property defined by Ontology of
     belongs to
    </dt>
    <dd>
-    <a href="#http://www.w3.org/ns/prov#Organization" title="http://www.w3.org/ns/prov#Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://xmlns.com/foaf/0.1/Organization" target="_blank" title="http://xmlns.com/foaf/0.1/Organization">Organization</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -987,7 +1230,7 @@ This section provides details for each class and property defined by Ontology of
     <a href="http://xmlns.com/foaf/0.1/homepage" target="_blank" title="http://xmlns.com/foaf/0.1/homepage">homepage</a> <sup class="type-op" title="object property">op</sup> <a href="https://www.ign.fr" target="_blank" title="https://www.ign.fr">https://www.ign.fr</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Institut national de l'information géographique et forestière"</span>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Institut national de l'information géographique et forestière"</span>
    </dd>
   </dl>
  </div>
@@ -999,7 +1242,7 @@ This section provides details for each class and property defined by Ontology of
     belongs to
    </dt>
    <dd>
-    <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://www.w3.org/2000/10/swap/pim/contact#Person" target="_blank" title="http://www.w3.org/2000/10/swap/pim/contact#Person">Person</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -1008,13 +1251,13 @@ This section provides details for each class and property defined by Ontology of
     <a href="http://www.w3.org/ns/prov#actedOnBehalfOf" target="_blank" title="http://www.w3.org/ns/prov#actedOnBehalfOf">acted On Behalf Of</a> <sup class="type-op" title="object property">op</sup> <a href="#http://purl.org/www.umr-lastig.fr/geodata#geodata-paris" title="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris">Géodata Paris</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/family_name" target="_blank" title="http://xmlns.com/foaf/0.1/family_name">family name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Dawson"</span>
+    <a href="http://xmlns.com/foaf/0.1/family_name" target="_blank" title="http://xmlns.com/foaf/0.1/family_name">family_name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Dawson"</span>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/givenname" target="_blank" title="http://xmlns.com/foaf/0.1/givenname">givenname</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"John-Andrew"</span>
+    <a href="http://xmlns.com/foaf/0.1/givenname" target="_blank" title="http://xmlns.com/foaf/0.1/givenname">Given name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"John-Andrew"</span>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"John-Andrew Dawson"</span>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"John-Andrew Dawson"</span>
    </dd>
   </dl>
  </div>
@@ -1032,7 +1275,7 @@ This section provides details for each class and property defined by Ontology of
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">geografisk opløsning (meter)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
+    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">resolución espacial (metros)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#temporalResolution" target="_blank" title="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"PT1s"^^<a href="xsd:duration" target="_blank" title="xsd:duration">xsd:duration</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -1050,13 +1293,13 @@ This section provides details for each class and property defined by Ontology of
     belongs to
    </dt>
    <dd>
-    <a href="#http://www.w3.org/ns/prov#Organization" title="http://www.w3.org/ns/prov#Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://xmlns.com/foaf/0.1/Organization" target="_blank" title="http://xmlns.com/foaf/0.1/Organization">Organization</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"LAboratoire en Sciences et Technologies de l'Information Géographique pour la ville intelligente et les territoires durables"</span>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"LAboratoire en Sciences et Technologies de l'Information Géographique pour la ville intelligente et les territoires durables"</span>
    </dd>
   </dl>
  </div>
@@ -1098,7 +1341,7 @@ This section provides details for each class and property defined by Ontology of
     belongs to
    </dt>
    <dd>
-    <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://www.w3.org/2000/10/swap/pim/contact#Person" target="_blank" title="http://www.w3.org/2000/10/swap/pim/contact#Person">Person</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -1107,13 +1350,13 @@ This section provides details for each class and property defined by Ontology of
     <a href="http://www.w3.org/ns/prov#actedOnBehalfOf" target="_blank" title="http://www.w3.org/ns/prov#actedOnBehalfOf">acted On Behalf Of</a> <sup class="type-op" title="object property">op</sup> <a href="#http://purl.org/www.umr-lastig.fr/geodata#geodata-paris" title="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris">Géodata Paris</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/family_name" target="_blank" title="http://xmlns.com/foaf/0.1/family_name">family name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Jolivet"</span>
+    <a href="http://xmlns.com/foaf/0.1/family_name" target="_blank" title="http://xmlns.com/foaf/0.1/family_name">family_name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Jolivet"</span>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/givenname" target="_blank" title="http://xmlns.com/foaf/0.1/givenname">givenname</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Laurence"</span>
+    <a href="http://xmlns.com/foaf/0.1/givenname" target="_blank" title="http://xmlns.com/foaf/0.1/givenname">Given name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Laurence"</span>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Laurence Jolivet"</span>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Laurence Jolivet"</span>
    </dd>
   </dl>
  </div>
@@ -1125,7 +1368,7 @@ This section provides details for each class and property defined by Ontology of
     belongs to
    </dt>
    <dd>
-    <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://www.w3.org/2000/10/swap/pim/contact#Person" target="_blank" title="http://www.w3.org/2000/10/swap/pim/contact#Person">Person</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -1134,16 +1377,16 @@ This section provides details for each class and property defined by Ontology of
     <a href="http://www.w3.org/ns/prov#actedOnBehalfOf" target="_blank" title="http://www.w3.org/ns/prov#actedOnBehalfOf">acted On Behalf Of</a> <sup class="type-op" title="object property">op</sup> <a href="#http://purl.org/www.umr-lastig.fr/geodata#geodata-paris" title="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris">Géodata Paris</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/family_name" target="_blank" title="http://xmlns.com/foaf/0.1/family_name">family name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Van Damme"</span>
+    <a href="http://xmlns.com/foaf/0.1/family_name" target="_blank" title="http://xmlns.com/foaf/0.1/family_name">family_name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Van Damme"</span>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/givenname" target="_blank" title="http://xmlns.com/foaf/0.1/givenname">givenname</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Marie-Dominique"</span>
+    <a href="http://xmlns.com/foaf/0.1/givenname" target="_blank" title="http://xmlns.com/foaf/0.1/givenname">Given name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Marie-Dominique"</span>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Marie-Dominique Van Damme"</span>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Marie-Dominique Van Damme"</span>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/workInfoHomepage" target="_blank" title="http://xmlns.com/foaf/0.1/workInfoHomepage">work Info Homepage</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"https://www.umr-lastig.fr/mdvandamme/"</span>
+    <a href="http://xmlns.com/foaf/0.1/workInfoHomepage" target="_blank" title="http://xmlns.com/foaf/0.1/workInfoHomepage">work info homepage</a> <sup class="type-op" title="object property">op</sup> <span class="literal">"https://www.umr-lastig.fr/mdvandamme/"</span>
    </dd>
   </dl>
  </div>
@@ -1161,7 +1404,7 @@ This section provides details for each class and property defined by Ontology of
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">geografisk opløsning (meter)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
+    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">resolución espacial (metros)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#temporalResolution" target="_blank" title="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"PT1s"^^<a href="xsd:duration" target="_blank" title="xsd:duration">xsd:duration</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -1194,7 +1437,7 @@ This section provides details for each class and property defined by Ontology of
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">geografisk opløsning (meter)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"15.0"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
+    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">resolución espacial (metros)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"15.0"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#temporalResolution" target="_blank" title="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"PT10s"^^<a href="xsd:duration" target="_blank" title="xsd:duration">xsd:duration</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -1209,7 +1452,7 @@ This section provides details for each class and property defined by Ontology of
     belongs to
    </dt>
    <dd>
-    <a href="#http://www.w3.org/ns/prov#SoftwareAgent" title="http://www.w3.org/ns/prov#SoftwareAgent">Software Agent</a> <sup class="type-c" title="class">c</sup>
+    <a href="#http://purl.org/dc/dcmitype/Software" title="http://purl.org/dc/dcmitype/Software">Software</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -1254,7 +1497,7 @@ This section provides details for each class and property defined by Ontology of
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">geografisk opløsning (meter)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
+    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">resolución espacial (metros)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#temporalResolution" target="_blank" title="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"PT1s"^^<a href="xsd:duration" target="_blank" title="xsd:duration">xsd:duration</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -1269,7 +1512,7 @@ This section provides details for each class and property defined by Ontology of
     belongs to
    </dt>
    <dd>
-    <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://www.w3.org/2000/10/swap/pim/contact#Person" target="_blank" title="http://www.w3.org/2000/10/swap/pim/contact#Person">Person</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -1278,13 +1521,13 @@ This section provides details for each class and property defined by Ontology of
     <a href="http://www.w3.org/ns/prov#actedOnBehalfOf" target="_blank" title="http://www.w3.org/ns/prov#actedOnBehalfOf">acted On Behalf Of</a> <sup class="type-op" title="object property">op</sup> <a href="#http://purl.org/www.umr-lastig.fr/geodata#ign" title="http://purl.org/www.umr-lastig.fr/geodata#ign">IGN</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/family_name" target="_blank" title="http://xmlns.com/foaf/0.1/family_name">family name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Méneroux"</span>
+    <a href="http://xmlns.com/foaf/0.1/family_name" target="_blank" title="http://xmlns.com/foaf/0.1/family_name">family_name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Méneroux"</span>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/givenname" target="_blank" title="http://xmlns.com/foaf/0.1/givenname">givenname</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Yann"</span>
+    <a href="http://xmlns.com/foaf/0.1/givenname" target="_blank" title="http://xmlns.com/foaf/0.1/givenname">Given name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Yann"</span>
    </dd>
    <dd>
-    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Yann Méneroux"</span>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Yann Méneroux"</span>
    </dd>
   </dl>
  </div>

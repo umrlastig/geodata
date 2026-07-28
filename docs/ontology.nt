@@ -4,6 +4,7 @@
 <http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov#> .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/sosa/> .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/ssn/> .
+<http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/dc/elements/1.1/creator> "Ana-Maria Raimond" .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/dc/elements/1.1/creator> "Benedicte Bucher" .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/dc/elements/1.1/creator> "Marie-Dominique Van Damme" .
@@ -20,6 +21,9 @@
 # #
 # #################################################################
 # 
+# 
+# http://purl.org/dc/dcam/memberOf
+<http://purl.org/dc/dcam/memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/elements/1.1/creator
 <http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -195,6 +199,116 @@
 # #################################################################
 # 
 # 
+# http://purl.org/dc/dcmitype/Collection
+<http://purl.org/dc/dcmitype/Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/dcmitype/Collection> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
+<http://purl.org/dc/dcmitype/Collection> <http://purl.org/dc/terms/description> "A collection is described as a group; its parts may also be separately described."@en .
+<http://purl.org/dc/dcmitype/Collection> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/dcmitype/Collection> <http://www.w3.org/2000/01/rdf-schema#comment> "An aggregation of resources."@en .
+<http://purl.org/dc/dcmitype/Collection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
+<http://purl.org/dc/dcmitype/Collection> <http://www.w3.org/2000/01/rdf-schema#label> "Collection"@en .
+# 
+# http://purl.org/dc/dcmitype/Dataset
+<http://purl.org/dc/dcmitype/Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/dcmitype/Dataset> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
+<http://purl.org/dc/dcmitype/Dataset> <http://purl.org/dc/terms/description> "Examples include lists, tables, and databases.  A dataset may be useful for direct machine processing."@en .
+<http://purl.org/dc/dcmitype/Dataset> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/dcmitype/Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Data encoded in a defined structure."@en .
+<http://purl.org/dc/dcmitype/Dataset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
+<http://purl.org/dc/dcmitype/Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@en .
+# 
+# http://purl.org/dc/dcmitype/Event
+<http://purl.org/dc/dcmitype/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/dcmitype/Event> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
+<http://purl.org/dc/dcmitype/Event> <http://purl.org/dc/terms/description> "Metadata for an event provides descriptive information that is the basis for discovery of the purpose, location, duration, and responsible agents associated with an event. Examples include an exhibition, webcast, conference, workshop, open day, performance, battle, trial, wedding, tea party, conflagration."@en .
+<http://purl.org/dc/dcmitype/Event> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/dcmitype/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "A non-persistent, time-based occurrence."@en .
+<http://purl.org/dc/dcmitype/Event> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
+<http://purl.org/dc/dcmitype/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+# 
+# http://purl.org/dc/dcmitype/Image
+<http://purl.org/dc/dcmitype/Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/dcmitype/Image> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
+<http://purl.org/dc/dcmitype/Image> <http://purl.org/dc/terms/description> "Examples include images and photographs of physical objects, paintings, prints, drawings, other images and graphics, animations and moving pictures, film, diagrams, maps, musical notation.  Note that Image may include both electronic and physical representations."@en .
+<http://purl.org/dc/dcmitype/Image> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/dcmitype/Image> <http://www.w3.org/2000/01/rdf-schema#comment> "A visual representation other than text."@en .
+<http://purl.org/dc/dcmitype/Image> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
+<http://purl.org/dc/dcmitype/Image> <http://www.w3.org/2000/01/rdf-schema#label> "Image"@en .
+# 
+# http://purl.org/dc/dcmitype/InteractiveResource
+<http://purl.org/dc/dcmitype/InteractiveResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/dcmitype/InteractiveResource> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
+<http://purl.org/dc/dcmitype/InteractiveResource> <http://purl.org/dc/terms/description> "Examples include forms on Web pages, applets, multimedia learning objects, chat services, or virtual reality environments."@en .
+<http://purl.org/dc/dcmitype/InteractiveResource> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/dcmitype/InteractiveResource> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource requiring interaction from the user to be understood, executed, or experienced."@en .
+<http://purl.org/dc/dcmitype/InteractiveResource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
+<http://purl.org/dc/dcmitype/InteractiveResource> <http://www.w3.org/2000/01/rdf-schema#label> "Interactive Resource"@en .
+# 
+# http://purl.org/dc/dcmitype/MovingImage
+<http://purl.org/dc/dcmitype/MovingImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/dcmitype/MovingImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/dcmitype/Image> .
+<http://purl.org/dc/dcmitype/MovingImage> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
+<http://purl.org/dc/dcmitype/MovingImage> <http://purl.org/dc/terms/description> "Examples include animations, movies, television programs, videos, zoetropes, or visual output from a simulation.  Instances of the type Moving Image must also be describable as instances of the broader type Image."@en .
+<http://purl.org/dc/dcmitype/MovingImage> <http://purl.org/dc/terms/issued> "2003-11-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/dcmitype/MovingImage> <http://www.w3.org/2000/01/rdf-schema#comment> "A series of visual representations imparting an impression of motion when shown in succession."@en .
+<http://purl.org/dc/dcmitype/MovingImage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
+<http://purl.org/dc/dcmitype/MovingImage> <http://www.w3.org/2000/01/rdf-schema#label> "Moving Image"@en .
+# 
+# http://purl.org/dc/dcmitype/PhysicalObject
+<http://purl.org/dc/dcmitype/PhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/dcmitype/PhysicalObject> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
+<http://purl.org/dc/dcmitype/PhysicalObject> <http://purl.org/dc/terms/description> "Note that digital representations of, or surrogates for, these objects should use Image, Text or one of the other types."@en .
+<http://purl.org/dc/dcmitype/PhysicalObject> <http://purl.org/dc/terms/issued> "2002-07-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/dcmitype/PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "An inanimate, three-dimensional object or substance."@en .
+<http://purl.org/dc/dcmitype/PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
+<http://purl.org/dc/dcmitype/PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Physical Object"@en .
+# 
+# http://purl.org/dc/dcmitype/Service
+<http://purl.org/dc/dcmitype/Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/dcmitype/Service> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
+<http://purl.org/dc/dcmitype/Service> <http://purl.org/dc/terms/description> "Examples include a photocopying service, a banking service, an authentication service, interlibrary loans, a Z39.50 or Web server."@en .
+<http://purl.org/dc/dcmitype/Service> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/dcmitype/Service> <http://www.w3.org/2000/01/rdf-schema#comment> "A system that provides one or more functions."@en .
+<http://purl.org/dc/dcmitype/Service> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
+<http://purl.org/dc/dcmitype/Service> <http://www.w3.org/2000/01/rdf-schema#label> "Service"@en .
+# 
+# http://purl.org/dc/dcmitype/Software
+<http://purl.org/dc/dcmitype/Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/dcmitype/Software> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
+<http://purl.org/dc/dcmitype/Software> <http://purl.org/dc/terms/description> "Examples include a C source file, MS-Windows .exe executable, or Perl script."@en .
+<http://purl.org/dc/dcmitype/Software> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/dcmitype/Software> <http://www.w3.org/2000/01/rdf-schema#comment> "A computer program in source or compiled form."@en .
+<http://purl.org/dc/dcmitype/Software> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
+<http://purl.org/dc/dcmitype/Software> <http://www.w3.org/2000/01/rdf-schema#label> "Software"@en .
+# 
+# http://purl.org/dc/dcmitype/Sound
+<http://purl.org/dc/dcmitype/Sound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/dcmitype/Sound> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
+<http://purl.org/dc/dcmitype/Sound> <http://purl.org/dc/terms/description> "Examples include a music playback file format, an audio compact disc, and recorded speech or sounds."@en .
+<http://purl.org/dc/dcmitype/Sound> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/dcmitype/Sound> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource primarily intended to be heard."@en .
+<http://purl.org/dc/dcmitype/Sound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
+<http://purl.org/dc/dcmitype/Sound> <http://www.w3.org/2000/01/rdf-schema#label> "Sound"@en .
+# 
+# http://purl.org/dc/dcmitype/StillImage
+<http://purl.org/dc/dcmitype/StillImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/dcmitype/StillImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/dcmitype/Image> .
+<http://purl.org/dc/dcmitype/StillImage> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
+<http://purl.org/dc/dcmitype/StillImage> <http://purl.org/dc/terms/description> "Examples include paintings, drawings, graphic designs, plans and maps. Recommended best practice is to assign the type Text to images of textual materials. Instances of the type Still Image must also be describable as instances of the broader type Image."@en .
+<http://purl.org/dc/dcmitype/StillImage> <http://purl.org/dc/terms/issued> "2003-11-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/dcmitype/StillImage> <http://www.w3.org/2000/01/rdf-schema#comment> "A static visual representation."@en .
+<http://purl.org/dc/dcmitype/StillImage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
+<http://purl.org/dc/dcmitype/StillImage> <http://www.w3.org/2000/01/rdf-schema#label> "Still Image"@en .
+# 
+# http://purl.org/dc/dcmitype/Text
+<http://purl.org/dc/dcmitype/Text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/dcmitype/Text> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
+<http://purl.org/dc/dcmitype/Text> <http://purl.org/dc/terms/description> "Examples include books, letters, dissertations, poems, newspapers, articles, archives of mailing lists. Note that facsimiles or images of texts are still of the genre Text."@en .
+<http://purl.org/dc/dcmitype/Text> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/dcmitype/Text> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource consisting primarily of words for reading."@en .
+<http://purl.org/dc/dcmitype/Text> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
+<http://purl.org/dc/dcmitype/Text> <http://www.w3.org/2000/01/rdf-schema#label> "Text"@en .
+# 
 # http://purl.org/dc/terms/Agent
 <http://purl.org/dc/terms/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
@@ -339,7 +453,7 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#LASTIG
 <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#LASTIG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<http://purl.org/www.umr-lastig.fr/geodata#LASTIG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
 <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> <http://www.w3.org/2000/01/rdf-schema#comment> "The LASTIG lab research domain is Geographic Information sciences"@en .
 <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> <http://www.w3.org/2000/01/rdf-schema#label> "LASTIG"@en .
 <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> <http://xmlns.com/foaf/0.1/name> "LAboratoire en Sciences et Technologies de l'Information Géographique pour la ville intelligente et les territoires durables" .
@@ -351,7 +465,7 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#Tracklib
 <http://purl.org/www.umr-lastig.fr/geodata#Tracklib> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#Tracklib> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#SoftwareAgent> .
+<http://purl.org/www.umr-lastig.fr/geodata#Tracklib> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/dcmitype/Software> .
 <http://purl.org/www.umr-lastig.fr/geodata#Tracklib> <http://purl.org/dc/terms/contributor> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
 <http://purl.org/www.umr-lastig.fr/geodata#Tracklib> <http://purl.org/dc/terms/contributor> <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> .
 <http://purl.org/www.umr-lastig.fr/geodata#Tracklib> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> .
@@ -364,7 +478,7 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#aleguicher
 <http://purl.org/www.umr-lastig.fr/geodata#aleguicher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#aleguicher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<http://purl.org/www.umr-lastig.fr/geodata#aleguicher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/10/swap/pim/contact#Person> .
 <http://purl.org/www.umr-lastig.fr/geodata#aleguicher> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> .
 <http://purl.org/www.umr-lastig.fr/geodata#aleguicher> <http://xmlns.com/foaf/0.1/family_name> "Le Guilcher" .
 <http://purl.org/www.umr-lastig.fr/geodata#aleguicher> <http://xmlns.com/foaf/0.1/givenname> "Arnaud" .
@@ -372,7 +486,7 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#amraimond
 <http://purl.org/www.umr-lastig.fr/geodata#amraimond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#amraimond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<http://purl.org/www.umr-lastig.fr/geodata#amraimond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/10/swap/pim/contact#Person> .
 <http://purl.org/www.umr-lastig.fr/geodata#amraimond> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> .
 <http://purl.org/www.umr-lastig.fr/geodata#amraimond> <http://xmlns.com/foaf/0.1/family_name> "Olteanu-Raimond" .
 <http://purl.org/www.umr-lastig.fr/geodata#amraimond> <http://xmlns.com/foaf/0.1/givenname> "Ana-Maria" .
@@ -380,7 +494,7 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#bbucher
 <http://purl.org/www.umr-lastig.fr/geodata#bbucher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#bbucher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<http://purl.org/www.umr-lastig.fr/geodata#bbucher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/10/swap/pim/contact#Person> .
 <http://purl.org/www.umr-lastig.fr/geodata#bbucher> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> .
 <http://purl.org/www.umr-lastig.fr/geodata#bbucher> <http://xmlns.com/foaf/0.1/family_name> "Bucher" .
 <http://purl.org/www.umr-lastig.fr/geodata#bbucher> <http://xmlns.com/foaf/0.1/givenname> "Bénédicte" .
@@ -388,14 +502,14 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#geodata-paris
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://xmlns.com/foaf/0.1/homepage> <https://geodata-paris.fr> .
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://www.w3.org/2000/01/rdf-schema#label> "Géodata Paris" .
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://xmlns.com/foaf/0.1/name> "Géodata Paris" .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#ign
 <http://purl.org/www.umr-lastig.fr/geodata#ign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#ign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<http://purl.org/www.umr-lastig.fr/geodata#ign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
 <http://purl.org/www.umr-lastig.fr/geodata#ign> <http://xmlns.com/foaf/0.1/homepage> <https://www.ign.fr> .
 <http://purl.org/www.umr-lastig.fr/geodata#ign> <http://www.w3.org/2000/01/rdf-schema#comment> "Institut national de l'information géographique et forestière"@en .
 <http://purl.org/www.umr-lastig.fr/geodata#ign> <http://www.w3.org/2000/01/rdf-schema#label> "IGN"@en .
@@ -403,7 +517,7 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#jadawson
 <http://purl.org/www.umr-lastig.fr/geodata#jadawson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#jadawson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<http://purl.org/www.umr-lastig.fr/geodata#jadawson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/10/swap/pim/contact#Person> .
 <http://purl.org/www.umr-lastig.fr/geodata#jadawson> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> .
 <http://purl.org/www.umr-lastig.fr/geodata#jadawson> <http://xmlns.com/foaf/0.1/family_name> "Dawson" .
 <http://purl.org/www.umr-lastig.fr/geodata#jadawson> <http://xmlns.com/foaf/0.1/givenname> "John-Andrew" .
@@ -411,7 +525,7 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#ljolivet
 <http://purl.org/www.umr-lastig.fr/geodata#ljolivet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#ljolivet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<http://purl.org/www.umr-lastig.fr/geodata#ljolivet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/10/swap/pim/contact#Person> .
 <http://purl.org/www.umr-lastig.fr/geodata#ljolivet> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> .
 <http://purl.org/www.umr-lastig.fr/geodata#ljolivet> <http://xmlns.com/foaf/0.1/family_name> "Jolivet" .
 <http://purl.org/www.umr-lastig.fr/geodata#ljolivet> <http://xmlns.com/foaf/0.1/givenname> "Laurence" .
@@ -419,7 +533,7 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#mdvandamme
 <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/10/swap/pim/contact#Person> .
 <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> .
 <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> <http://xmlns.com/foaf/0.1/family_name> "Van Damme" .
 <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> <http://xmlns.com/foaf/0.1/givenname> "Marie-Dominique" .
@@ -428,7 +542,7 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#ymeneroux
 <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/10/swap/pim/contact#Person> .
 <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://purl.org/www.umr-lastig.fr/geodata#ign> .
 <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://xmlns.com/foaf/0.1/family_name> "Méneroux" .
 <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://xmlns.com/foaf/0.1/givenname> "Yann" .
@@ -484,5 +598,18 @@
 <ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> <http://www.w3.org/2000/01/rdf-schema#label> "Ublox GPS"@en .
 <ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> <http://www.w3.org/ns/dcat#spatialResolutionInMeters> "1.5"^^<xsd:decimal> .
 <ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> <http://www.w3.org/ns/dcat#temporalResolution> "PT1s"^^<xsd:duration> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://purl.org/dc/dcmitype/> <http://purl.org/dc/terms/modified> "2012-06-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/dcmitype/> <http://purl.org/dc/terms/publisher> <http://purl.org/dc/aboutdcmi#DCMI> .
+<http://purl.org/dc/dcmitype/> <http://purl.org/dc/terms/title> "DCMI Type Vocabulary"@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
