@@ -94,6 +94,18 @@
     
 
 
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
     <!-- http://schema.org/alternateName -->
 
     <owl:AnnotationProperty rdf:about="http://schema.org/alternateName"/>
@@ -358,6 +370,12 @@
     
 
 
+    <!-- http://purl.org/dc/terms/Agent -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Agent"/>
+    
+
+
     <!-- http://purl.org/dc/terms/MethodOfInstruction -->
 
     <owl:Class rdf:about="http://purl.org/dc/terms/MethodOfInstruction"/>
@@ -459,10 +477,9 @@
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Process">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-        <rdfs:comment xml:lang="en">Set of operations in a technical environment to yield an output based on input</rdfs:comment>
-        <rdfs:label xml:lang="en">Technical process</rdfs:label>
+        <terms:description>Series of events which occur over an extended period of time, a particular type of processes can be sets of operations to yield an output based on an input</terms:description>
         <rdfs:seeAlso>http://eurovoc.europa.eu/3640</rdfs:seeAlso>
-        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q500669</rdfs:seeAlso>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q3249551</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -664,8 +681,8 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
-        <foaf:homepage rdf:resource="https://geodata-paris.fr"/>
         <rdfs:label>Géodata Paris</rdfs:label>
+        <foaf:homepage rdf:resource="https://geodata-paris.fr"/>
         <foaf:name>Géodata Paris</foaf:name>
     </owl:NamedIndividual>
     
@@ -675,9 +692,9 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ign">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
-        <foaf:homepage rdf:resource="https://www.ign.fr"/>
         <rdfs:comment xml:lang="en">Institut national de l&apos;information géographique et forestière</rdfs:comment>
         <rdfs:label xml:lang="en">IGN</rdfs:label>
+        <foaf:homepage rdf:resource="https://www.ign.fr"/>
         <foaf:name>Institut national de l&apos;information géographique et forestière</foaf:name>
     </owl:NamedIndividual>
     
