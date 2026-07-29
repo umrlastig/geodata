@@ -19,7 +19,7 @@
                                              <http://purl.org/dc/terms/title> "Ontologie des jeux de données géographiques pour la science ouverte"@fr ,
                                                                               "Ontology of Geospatial Datasets for Open Science"@en ;
                                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "geodata" ;
-                                             <http://purl.org/vocab/vann/preferredNamespaceUri> <https://intforout.github.io/geodata#> ;
+                                             <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.umr-lastig.fr/geodata#> ;
                                              rdfs:comment "A knowledge graph, including a vocabulary and instances, that represents datasets, papers, storymaps, pedagogic material and processes, altogether referred to as catalogued resources, that need to be shared, discovered or reused in order to produce new knowledge or to produce pedagogic material to disseminate knowledge. The object property \"represents\" connects a catalogued resource with a concept. Specific concepts are introduced in projects that use Geodata to describe more precisely the knowledge at stake." .
 
 #################################################################
