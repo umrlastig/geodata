@@ -468,27 +468,6 @@
     "@id" : "http://www.w3.org/ns/sosa/Sensor"
   } ]
 }, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "System used for reporting and data analysis, as a core component of business intelligence"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
-    "@language" : "fr",
-    "@value" : "Un data warehouse permet de stocker des datasets, d’y accéder via requêtes et expose parfois une API."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Data warehouse"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@value" : "https://www.wikidata.org/wiki/Q193351"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Dataset"
-  } ]
-}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#GPSDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
