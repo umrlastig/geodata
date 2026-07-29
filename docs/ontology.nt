@@ -349,14 +349,6 @@
 <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "Data collection instrument"@en .
 <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.wikidata.org/entity/Q130941907" .
 # 
-# http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse
-<http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
-<http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> <http://www.w3.org/2000/01/rdf-schema#comment> "System used for reporting and data analysis, as a core component of business intelligence"@en .
-<http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> <http://www.w3.org/2000/01/rdf-schema#description> "Un data warehouse permet de stocker des datasets, d’y accéder via requêtes et expose parfois une API."@fr .
-<http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> <http://www.w3.org/2000/01/rdf-schema#label> "Data warehouse"@en .
-<http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q193351" .
-# 
 # http://purl.org/www.umr-lastig.fr/geodata#GPSDevice
 <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> .

@@ -403,15 +403,6 @@ xsd:date rdf:type rdfs:Datatype .
                           rdfs:seeAlso "http://www.wikidata.org/entity/Q130941907" .
 
 
-###  http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse
-:DataWarehouse rdf:type owl:Class ;
-               rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
-               rdfs:comment "System used for reporting and data analysis, as a core component of business intelligence"@en ;
-               rdfs:description "Un data warehouse permet de stocker des datasets, d’y accéder via requêtes et expose parfois une API."@fr ;
-               rdfs:label "Data warehouse"@en ;
-               rdfs:seeAlso "https://www.wikidata.org/wiki/Q193351" .
-
-
 ###  http://purl.org/www.umr-lastig.fr/geodata#GPSDevice
 :GPSDevice rdf:type owl:Class ;
            rdfs:subClassOf :DataCollectionInstrument ;
