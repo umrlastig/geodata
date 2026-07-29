@@ -33,9 +33,9 @@
         <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <dc:creator>Ana-Maria Raimond</dc:creator>
         <dc:creator>Benedicte Bucher</dc:creator>
         <dc:creator>Marie-Dominique Van Damme</dc:creator>
+        <dc:creator>Ana-Maria Raimond</dc:creator>
         <terms:title xml:lang="fr">Ontologie des jeux de données géographiques pour la science ouverte</terms:title>
         <terms:title xml:lang="en">Ontology of Geospatial Datasets for Open Science</terms:title>
         <vann:preferredNamespacePrefix>geodata</vann:preferredNamespacePrefix>
@@ -443,18 +443,6 @@
     
 
 
-    <!-- http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse -->
-
-    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <rdfs:comment xml:lang="en">System used for reporting and data analysis, as a core component of business intelligence</rdfs:comment>
-        <rdfs:description xml:lang="fr">Un data warehouse permet de stocker des datasets, d’y accéder via requêtes et expose parfois une API.</rdfs:description>
-        <rdfs:label xml:lang="en">Data warehouse</rdfs:label>
-        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q193351</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/www.umr-lastig.fr/geodata#GPSDevice -->
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#GPSDevice">
@@ -626,6 +614,8 @@
         <foaf:homepage>https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_NUAGES-DE-POINTS-LIDAR-HD</foaf:homepage>
     </owl:NamedIndividual>
     
+
+
 
 
     <!-- http://purl.org/www.umr-lastig.fr/geodata#Tracklib -->
