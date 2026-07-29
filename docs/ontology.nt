@@ -88,6 +88,18 @@
 # http://www.w3.org/2004/02/skos/core#prefLabel
 <http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/2006/vcard/ns#fn
+<http://www.w3.org/2006/vcard/ns#fn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2006/vcard/ns#hasAddress
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2006/vcard/ns#hasEmail
+<http://www.w3.org/2006/vcard/ns#hasEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2006/vcard/ns#street-address
+<http://www.w3.org/2006/vcard/ns#street-address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/ns/dcat#format
 <http://www.w3.org/ns/dcat#format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -399,6 +411,12 @@
 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "An explicit information shared by a participants relative to his own experience with one or more datasets, tools or paper."@en .
 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/2000/01/rdf-schema#label> "User feedback"@en .
 # 
+# http://www.w3.org/2006/vcard/ns#Address
+<http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2006/vcard/ns#Organization
+<http://www.w3.org/2006/vcard/ns#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://www.w3.org/ns/dcat#DataService
 <http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
@@ -442,6 +460,24 @@
 # #
 # #################################################################
 # 
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DatasetSeries> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#contactPoint> _:genid1 .
+_:genid1 <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:contact.geoservices@ign.fr> .
+_:genid1 <http://www.w3.org/2006/vcard/ns#hasAddress> _:genid2 .
+_:genid2 <http://www.w3.org/2006/vcard/ns#street-address> "IGN - Support utilisateurs, SAINT-MANDÉ CÉDEX, 94165, FRANCE" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/vcard/ns#Address> .
+_:genid1 <http://www.w3.org/2006/vcard/ns#fn> "Institut national de l'information géographique et forestière (IGN)" .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/vcard/ns#Organization> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://purl.org/dc/terms/created> "2002-12-15T01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://purl.org/dc/terms/description> "La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique.\n\n            Les objets de la BD TOPO® sont structurés en thèmes : \n            - l'administratif ; \n            - le bâti ; \n            - l'hydrographie ; \n            - les lieux nommés ; \n            - l'occupation du sol ; \n            - les services et activités ; \n            - le transport ; \n            - les zones réglementées. \n\n            Le processus de production 3D permet de fournir l'altimétrie des objets, ainsi que la hauteur des bâtiments. \n\n            Le relief est décrit sous forme de modèles numériques de terrain (MNT). \n\n            Depuis la version 3.0, tous les objets possèdent un identifiant unique et stable dans le temps.\n\n            Le produit BDTOPO® Express est l’édition hebdomadaire de la BDTOPO® si vous avez besoin de travailler sur de la donnée topographique à haute fréquence (disponible depuis mai 2025). \n\n            Le produit Différentiel BD TOPO® contient les différences géométriques et sémantiques sur l'ensemble du contenu BD TOPO® entre deux éditions trimestrielles successives BD TOPO®. \n\n            Plus précisément, l'édition N du Différentiel BD TOPO® en vigueur contient tout objet de la BD TOPO® dont la date de modification, la date de création ou la date de suppression en base est postérieure à la date de prédiffusion de la précédente édition trimestrielle (N-1), équivalent à une activité de mise à jour par l'IGN d'une durée de 3 mois." .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://purl.org/dc/terms/identifier> "IGNF_BD-TOPO" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://purl.org/dc/terms/issued> "2025-09-15T02:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://purl.org/dc/terms/modified> "2026-07-03T02:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://purl.org/dc/terms/modified> "2026-07-03T11:26:44"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://purl.org/dc/terms/title> "BD TOPO®" .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#LASTIG
 <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

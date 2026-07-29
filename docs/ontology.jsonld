@@ -1,4 +1,26 @@
 [ {
+  "@id" : "_:genid1",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2006/vcard/ns#Organization"
+  } ],
+  "http://www.w3.org/2006/vcard/ns#fn" : [ {
+    "@value" : "Institut national de l'information géographique et forestière (IGN)"
+  } ],
+  "http://www.w3.org/2006/vcard/ns#hasAddress" : [ {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2006/vcard/ns#hasEmail" : [ {
+    "@id" : "mailto:contact.geoservices@ign.fr"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2006/vcard/ns#Address"
+  } ],
+  "http://www.w3.org/2006/vcard/ns#street-address" : [ {
+    "@value" : "IGN - Support utilisateurs, SAINT-MANDÉ CÉDEX, 94165, FRANCE"
+  } ]
+}, {
   "@id" : "http://purl.org/dc/dcam/memberOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -408,6 +430,36 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"
+  } ]
+}, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DatasetSeries" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2002-12-15T01:00:00"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique.\n\n            Les objets de la BD TOPO® sont structurés en thèmes : \n            - l'administratif ; \n            - le bâti ; \n            - l'hydrographie ; \n            - les lieux nommés ; \n            - l'occupation du sol ; \n            - les services et activités ; \n            - le transport ; \n            - les zones réglementées. \n\n            Le processus de production 3D permet de fournir l'altimétrie des objets, ainsi que la hauteur des bâtiments. \n\n            Le relief est décrit sous forme de modèles numériques de terrain (MNT). \n\n            Depuis la version 3.0, tous les objets possèdent un identifiant unique et stable dans le temps.\n\n            Le produit BDTOPO® Express est l’édition hebdomadaire de la BDTOPO® si vous avez besoin de travailler sur de la donnée topographique à haute fréquence (disponible depuis mai 2025). \n\n            Le produit Différentiel BD TOPO® contient les différences géométriques et sémantiques sur l'ensemble du contenu BD TOPO® entre deux éditions trimestrielles successives BD TOPO®. \n\n            Plus précisément, l'édition N du Différentiel BD TOPO® en vigueur contient tout objet de la BD TOPO® dont la date de modification, la date de création ou la date de suppression en base est postérieure à la date de prédiffusion de la précédente édition trimestrielle (N-1), équivalent à une activité de mise à jour par l'IGN d'une durée de 3 mois."
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "IGNF_BD-TOPO"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-09-15T02:00:00"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-07-03T02:00:00"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-07-03T11:26:44"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "BD TOPO®"
+  } ],
+  "http://www.w3.org/ns/dcat#contactPoint" : [ {
+    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#CameraTrap",
@@ -883,6 +935,24 @@
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2006/vcard/ns#Address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2006/vcard/ns#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2006/vcard/ns#fn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2006/vcard/ns#hasAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2006/vcard/ns#hasEmail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2006/vcard/ns#street-address",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/dcat#DataService",
