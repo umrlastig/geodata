@@ -17,331 +17,64 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2006/vcard/ns#Address"
   } ],
+  "http://www.w3.org/2006/vcard/ns#country-name" : [ {
+    "@value" : "France"
+  } ],
+  "http://www.w3.org/2006/vcard/ns#locality" : [ {
+    "@value" : "Saint-Mandé"
+  } ],
+  "http://www.w3.org/2006/vcard/ns#postal-code" : [ {
+    "@value" : "94165"
+  } ],
   "http://www.w3.org/2006/vcard/ns#street-address" : [ {
-    "@value" : "IGN - Support utilisateurs, SAINT-MANDÉ CÉDEX, 94165, FRANCE"
+    "@value" : "73 Avenue de Paris"
   } ]
 }, {
-  "@id" : "http://purl.org/dc/dcam/memberOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/dcmitype/",
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2012-06-14"
+  "@id" : "_:genid3",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2006/vcard/ns#Organization"
   } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "http://purl.org/dc/aboutdcmi#DCMI"
+  "http://www.w3.org/2006/vcard/ns#fn" : [ {
+    "@value" : "Institut national de l'information géographique et forestière (IGN)"
   } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "DCMI Type Vocabulary"
+  "http://www.w3.org/2006/vcard/ns#hasAddress" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2006/vcard/ns#hasEmail" : [ {
+    "@id" : "mailto:contact.geoservices@ign.fr"
   } ]
 }, {
-  "@id" : "http://purl.org/dc/dcmitype/Collection",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/dcam/memberOf" : [ {
-    "@id" : "http://purl.org/dc/terms/DCMIType"
+  "@id" : "_:genid4",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2006/vcard/ns#Address"
   } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "A collection is described as a group; its parts may also be separately described."
+  "http://www.w3.org/2006/vcard/ns#country-name" : [ {
+    "@value" : "France"
   } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2000-07-11"
+  "http://www.w3.org/2006/vcard/ns#locality" : [ {
+    "@value" : "Saint-Mandé"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "An aggregation of resources."
+  "http://www.w3.org/2006/vcard/ns#postal-code" : [ {
+    "@value" : "94165"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://purl.org/dc/dcmitype/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Collection"
+  "http://www.w3.org/2006/vcard/ns#street-address" : [ {
+    "@value" : "73 Avenue de Paris"
   } ]
 }, {
-  "@id" : "http://purl.org/dc/dcmitype/Dataset",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/dcam/memberOf" : [ {
-    "@id" : "http://purl.org/dc/terms/DCMIType"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "Examples include lists, tables, and databases.  A dataset may be useful for direct machine processing."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2000-07-11"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Data encoded in a defined structure."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://purl.org/dc/dcmitype/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Dataset"
-  } ]
+  "@id" : "http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
-  "@id" : "http://purl.org/dc/dcmitype/Event",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/dcam/memberOf" : [ {
-    "@id" : "http://purl.org/dc/terms/DCMIType"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "Metadata for an event provides descriptive information that is the basis for discovery of the purpose, location, duration, and responsible agents associated with an event. Examples include an exhibition, webcast, conference, workshop, open day, performance, battle, trial, wedding, tea party, conflagration."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2000-07-11"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A non-persistent, time-based occurrence."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://purl.org/dc/dcmitype/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Event"
-  } ]
+  "@id" : "http://publications.europa.eu/resource/authority/high-value-dataset-category/ENVI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
-  "@id" : "http://purl.org/dc/dcmitype/Image",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/dcam/memberOf" : [ {
-    "@id" : "http://purl.org/dc/terms/DCMIType"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "Examples include images and photographs of physical objects, paintings, prints, drawings, other images and graphics, animations and moving pictures, film, diagrams, maps, musical notation.  Note that Image may include both electronic and physical representations."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2000-07-11"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A visual representation other than text."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://purl.org/dc/dcmitype/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Image"
-  } ]
+  "@id" : "http://publications.europa.eu/resource/authority/high-value-dataset-category/GEO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
-  "@id" : "http://purl.org/dc/dcmitype/InteractiveResource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/dcam/memberOf" : [ {
-    "@id" : "http://purl.org/dc/terms/DCMIType"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "Examples include forms on Web pages, applets, multimedia learning objects, chat services, or virtual reality environments."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2000-07-11"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A resource requiring interaction from the user to be understood, executed, or experienced."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://purl.org/dc/dcmitype/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Interactive Resource"
-  } ]
-}, {
-  "@id" : "http://purl.org/dc/dcmitype/MovingImage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/dcam/memberOf" : [ {
-    "@id" : "http://purl.org/dc/terms/DCMIType"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "Examples include animations, movies, television programs, videos, zoetropes, or visual output from a simulation.  Instances of the type Moving Image must also be describable as instances of the broader type Image."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2003-11-18"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A series of visual representations imparting an impression of motion when shown in succession."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://purl.org/dc/dcmitype/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Moving Image"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/dc/dcmitype/Image"
-  } ]
-}, {
-  "@id" : "http://purl.org/dc/dcmitype/PhysicalObject",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/dcam/memberOf" : [ {
-    "@id" : "http://purl.org/dc/terms/DCMIType"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "Note that digital representations of, or surrogates for, these objects should use Image, Text or one of the other types."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2002-07-13"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "An inanimate, three-dimensional object or substance."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://purl.org/dc/dcmitype/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Physical Object"
-  } ]
-}, {
-  "@id" : "http://purl.org/dc/dcmitype/Service",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/dcam/memberOf" : [ {
-    "@id" : "http://purl.org/dc/terms/DCMIType"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "Examples include a photocopying service, a banking service, an authentication service, interlibrary loans, a Z39.50 or Web server."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2000-07-11"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A system that provides one or more functions."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://purl.org/dc/dcmitype/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Service"
-  } ]
+  "@id" : "http://publications.europa.eu/resource/authority/high-value-dataset-category/MOBI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "http://purl.org/dc/dcmitype/Software",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/dcam/memberOf" : [ {
-    "@id" : "http://purl.org/dc/terms/DCMIType"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "Examples include a C source file, MS-Windows .exe executable, or Perl script."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2000-07-11"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A computer program in source or compiled form."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://purl.org/dc/dcmitype/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Software"
-  } ]
-}, {
-  "@id" : "http://purl.org/dc/dcmitype/Sound",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/dcam/memberOf" : [ {
-    "@id" : "http://purl.org/dc/terms/DCMIType"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "Examples include a music playback file format, an audio compact disc, and recorded speech or sounds."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2000-07-11"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A resource primarily intended to be heard."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://purl.org/dc/dcmitype/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Sound"
-  } ]
-}, {
-  "@id" : "http://purl.org/dc/dcmitype/StillImage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/dcam/memberOf" : [ {
-    "@id" : "http://purl.org/dc/terms/DCMIType"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "Examples include paintings, drawings, graphic designs, plans and maps. Recommended best practice is to assign the type Text to images of textual materials. Instances of the type Still Image must also be describable as instances of the broader type Image."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2003-11-18"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A static visual representation."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://purl.org/dc/dcmitype/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Still Image"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/dc/dcmitype/Image"
-  } ]
-}, {
-  "@id" : "http://purl.org/dc/dcmitype/Text",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/dcam/memberOf" : [ {
-    "@id" : "http://purl.org/dc/terms/DCMIType"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "Examples include books, letters, dissertations, poems, newspapers, articles, archives of mailing lists. Note that facsimiles or images of texts are still of the genre Text."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2000-07-11"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A resource consisting primarily of words for reading."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://purl.org/dc/dcmitype/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Text"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -365,6 +98,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/provenance",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/type",
@@ -405,8 +141,6 @@
     "@value" : "A knowledge graph, including a vocabulary and instances, that represents datasets, papers, storymaps, pedagogic material and processes, altogether referred to as catalogued resources, that need to be shared, discovered or reused in order to produce new knowledge or to produce pedagogic material to disseminate knowledge. The object property \"represents\" connects a catalogued resource with a concept. Specific concepts are introduced in projects that use Geodata to describe more precisely the knowledge at stake."
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core"
-  }, {
     "@id" : "http://www.w3.org/ns/dcat3"
   }, {
     "@id" : "http://www.w3.org/ns/prov#"
@@ -414,8 +148,6 @@
     "@id" : "http://www.w3.org/ns/sosa/"
   }, {
     "@id" : "http://www.w3.org/ns/ssn/"
-  }, {
-    "@id" : "http://xmlns.com/foaf/0.1/"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ActiveMobilityCounter",
@@ -455,11 +187,114 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2026-07-03T11:26:44"
   } ],
+  "http://purl.org/dc/terms/temporal" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDTopo"
+  } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "BD TOPO®"
   } ],
+  "http://schema.org/encodingFormat" : [ {
+    "@value" : "GPKG"
+  }, {
+    "@value" : "PostGreSQL"
+  }, {
+    "@value" : "SHP"
+  }, {
+    "@value" : "TMS"
+  }, {
+    "@value" : "WFS"
+  }, {
+    "@value" : "WMS"
+  }, {
+    "@value" : "WMTS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "\n\t\t\tBD TOPO covers whole French territory, is captured at scale 1/ 10 000, exists since 1990 \n\t\t\tand aims to provide reference data for mapping and spatial analysis."
+  }, {
+    "@language" : "fr",
+    "@value" : "BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente \n\t\t\tl'ensemble des entités géographiques et administratives du territoire national. \n\t\t\tLa BD TOPO® fournit une information de référence à tous les acteurs de la gestion, \n\t\t\tde l'aménagement et de l'observation du territoire pour analyser, situer, \n\t\t\treprésenter des données dans leur réalité géographique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BD TOPO® V3."
+  } ],
   "http://www.w3.org/ns/dcat#contactPoint" : [ {
     "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/ns/dcat#keyword" : [ {
+    "@value" : "Géospatiales"
+  }, {
+    "@value" : "Mobilité"
+  }, {
+    "@value" : "Observation de la terre et environnement"
+  }, {
+    "@value" : "activités"
+  }, {
+    "@value" : "aspects militaires"
+  }, {
+    "@value" : "données ouvertes"
+  }, {
+    "@value" : "eau"
+  }, {
+    "@value" : "forêts"
+  }, {
+    "@value" : "haies"
+  }, {
+    "@value" : "historique"
+  }, {
+    "@value" : "hvd"
+  }, {
+    "@value" : "routes"
+  }, {
+    "@value" : "toponymie"
+  }, {
+    "@value" : "transports"
+  }, {
+    "@value" : "végétation"
+  }, {
+    "@value" : "énergies"
+  } ],
+  "http://www.w3.org/ns/dcat#language" : [ {
+    "@value" : "fr-FR"
+  } ],
+  "http://www.w3.org/ns/dcat#publisher" : [ {
+    "@id" : "https://ign.fr"
+  } ],
+  "http://www.w3.org/ns/dcat#theme" : [ {
+    "@id" : "http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national"
+  }, {
+    "@id" : "http://publications.europa.eu/resource/authority/high-value-dataset-category/ENVI"
+  }, {
+    "@id" : "http://publications.europa.eu/resource/authority/high-value-dataset-category/GEO"
+  }, {
+    "@id" : "http://publications.europa.eu/resource/authority/high-value-dataset-category/MOBI"
+  }, {
+    "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/af"
+  }, {
+    "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/au"
+  }, {
+    "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/bu"
+  }, {
+    "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/el"
+  }, {
+    "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/gn"
+  }, {
+    "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/hy"
+  }, {
+    "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/lc"
+  }, {
+    "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/lu"
+  }, {
+    "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/pd"
+  }, {
+    "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/pf"
+  }, {
+    "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs"
+  }, {
+    "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn"
+  }, {
+    "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/us"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#CameraTrap",
@@ -537,8 +372,74 @@
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument"
   } ]
 }, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DatasetSeries" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Le produit La BD Haie est une couche nationale de référence des haies linéaires en France métropolitaine, élaborée dans le cadre du dispositif de suivi des bocages (DSB), OFB-IGN initié en 2017. Les objets linéaires de la BD Haie ont été obtenus à partir de données existantes sur les haies au format surfacique (polygones). La production de la BD Haie suit une logique départementale.\n            \n            Il existe à ce jour deux versions de la BD Haie :\n\n            •\t Une version initiale « BD Haie V1 2020 » élaborée à partir de deux sources de données : \n\n            o\tLes haies et les bosquets du thème végétation de la base de données topographique de l’IGN, BD TOPO®, obtenus par segmentation automatique d’images aériennes et classés par photo-interprétation sur images de 2004 à 2015, selon les départements ;\n\n            o\tLes haies arborées ou non, les arbres alignés et les bosquets issus des surfaces non agricoles du Registre Parcellaire Graphique (RPG) photo-interprétées à partir d’images aériennes datant de 2011 à 2014, selon les départements. Le RPG est un système d’information géographique permettant l’identification des parcelles agricoles, géré par l’ASP (Agence de service et de paiement).\n\n            •\t Une version 2 mise à jour en 2024 « BD Haie V2 mars 2024 ». \n\n            Cette version constitue une version mise à jour et millésimée de la « BD Haie V1 2020 ». Elle n’a pas été élaborée selon la même méthode. Deux sources de données ont été utilisées pour la mise à jour :\n\n            o\tLes haies arborées ou non, les arbres alignés et les bosquets issus des surfaces non agricoles du Registre Parcellaire Graphique (RPG) photo-interprétées à partir d’images aériennes datant de 2020 à 2022, selon les départements ;\n\n            o\tLes modèles numériques de surface produit par « corrélation des images aériennes » datant de 2020 à 2022, selon les départements.  \n\n            Dans cette version 2 sont présentes : (i) les haies présentes dans la BD Haie V1 confirmées par les données utilisées, (ii) des haies ajoutées à partir des données du RPG utilisées pour la mise à jour."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2020-01-01T01:00:00"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-04-27T02:00:00"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-04-27T16:20:32"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ProvBDHaie"
+  } ],
+  "http://purl.org/dc/terms/temporal" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDHaie"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "BD HAIE"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BD Haie v2"
+  } ],
+  "http://www.w3.org/ns/dcat#contactPoint" : [ {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/ns/dcat#keyword" : [ {
+    "@value" : "arbres"
+  }, {
+    "@value" : "biodiversité"
+  }, {
+    "@value" : "bocages"
+  }, {
+    "@value" : "bosquets"
+  }, {
+    "@value" : "données ouvertes"
+  }, {
+    "@value" : "environnement"
+  }, {
+    "@value" : "haies"
+  } ],
+  "http://www.w3.org/ns/dcat#language" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/language/FRA"
+  } ],
+  "http://www.w3.org/ns/dcat#publisher" : [ {
+    "@id" : "https://ign.fr"
+  } ],
+  "http://www.w3.org/ns/dcat#theme" : [ {
+    "@id" : "http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national"
+  }, {
+    "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb"
+  }, {
+    "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/so"
+  } ]
+}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LASTIG",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Organization" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The LASTIG lab research domain is Geographic Information sciences"
@@ -590,6 +491,13 @@
     "@id" : "http://www.w3.org/ns/prov#Activity"
   } ]
 }, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ProvBDHaie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/dc/terms/ProvenanceStatement" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "La BD HAIE a été publiée dans une première version (« BD HAIE V1 2020 »),\n            puis dans une version 2 mise à jour à partir de 2024 (« BD HAIE V2 »).\n            Dernière mise à jour des services WFS, WMS Vecteur et WMTS :\n            édition de mars 2026."
+  } ]
+}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -621,8 +529,28 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#Activity"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#Observation"
+  } ]
+}, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDHaie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/dc/terms/PeriodOfTime" ],
+  "http://www.w3.org/ns/dcat#endDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-03-15"
+  } ],
+  "http://www.w3.org/ns/dcat#startDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-01-01"
+  } ]
+}, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDTopo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/dc/terms/PeriodOfTime" ],
+  "http://www.w3.org/ns/dcat#endDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-06-15"
+  } ],
+  "http://www.w3.org/ns/dcat#startDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2008-03-18"
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#TotalStation",
@@ -694,7 +622,10 @@
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#aleguicher",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2000/10/swap/pim/contact#Person" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/10/swap/pim/contact#Person"
+  } ],
   "http://www.w3.org/ns/prov#actedOnBehalfOf" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#geodata-paris"
   } ],
@@ -709,7 +640,10 @@
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#amraimond",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2000/10/swap/pim/contact#Person" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/10/swap/pim/contact#Person"
+  } ],
   "http://www.w3.org/ns/prov#actedOnBehalfOf" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#geodata-paris"
   } ],
@@ -740,7 +674,10 @@
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#bbucher",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2000/10/swap/pim/contact#Person" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/10/swap/pim/contact#Person"
+  } ],
   "http://www.w3.org/ns/prov#actedOnBehalfOf" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#geodata-paris"
   } ],
@@ -755,8 +692,12 @@
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#geodata-paris",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Organization" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
     "@value" : "Géodata Paris"
   } ],
   "http://xmlns.com/foaf/0.1/homepage" : [ {
@@ -782,7 +723,10 @@
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ign",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Organization" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Institut national de l'information géographique et forestière"
@@ -811,7 +755,10 @@
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#jadawson",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2000/10/swap/pim/contact#Person" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/10/swap/pim/contact#Person"
+  } ],
   "http://www.w3.org/ns/prov#actedOnBehalfOf" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#geodata-paris"
   } ],
@@ -826,7 +773,10 @@
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ljolivet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2000/10/swap/pim/contact#Person" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/10/swap/pim/contact#Person"
+  } ],
   "http://www.w3.org/ns/prov#actedOnBehalfOf" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#geodata-paris"
   } ],
@@ -841,7 +791,10 @@
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2000/10/swap/pim/contact#Person" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/10/swap/pim/contact#Person"
+  } ],
   "http://www.w3.org/ns/prov#actedOnBehalfOf" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#geodata-paris"
   } ],
@@ -881,7 +834,10 @@
   } ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ymeneroux",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2000/10/swap/pim/contact#Person" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/10/swap/pim/contact#Person"
+  } ],
   "http://www.w3.org/ns/prov#actedOnBehalfOf" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ign"
   } ],
@@ -931,6 +887,9 @@
   "@id" : "http://www.w3.org/2000/01/rdf-schema#description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.w3.org/2000/10/swap/pim/contact#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
@@ -943,6 +902,9 @@
   "@id" : "http://www.w3.org/2006/vcard/ns#Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://www.w3.org/2006/vcard/ns#country-name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/2006/vcard/ns#fn",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -950,6 +912,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2006/vcard/ns#hasEmail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2006/vcard/ns#locality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2006/vcard/ns#postal-code",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2006/vcard/ns#street-address",
@@ -995,6 +963,9 @@
   "@id" : "http://www.w3.org/ns/dcat#language",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.w3.org/ns/dcat#publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/ns/dcat#servesDataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -1030,6 +1001,9 @@
     "@id" : "http://www.w3.org/ns/prov#Agent"
   } ]
 }, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://xmlns.com/foaf/0.1/family_name",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -1051,8 +1025,158 @@
   "@id" : "https://geodata-paris.fr",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Observation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "https://www.eionet.europa.eu/gemet/en/inspire-themes/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/af",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.eionet.europa.eu/gemet/en/inspire-themes/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Installations agricoles et aquacoles"
+  } ]
+}, {
+  "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/au",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.eionet.europa.eu/gemet/en/inspire-themes/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Unités administratives"
+  } ]
+}, {
+  "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/bu",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.eionet.europa.eu/gemet/en/inspire-themes/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Bâtiments"
+  } ]
+}, {
+  "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/el",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.eionet.europa.eu/gemet/en/inspire-themes/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Altitude"
+  } ]
+}, {
+  "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/gn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.eionet.europa.eu/gemet/en/inspire-themes/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Dénominations géographiques"
+  } ]
+}, {
+  "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.eionet.europa.eu/gemet/en/inspire-themes/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Habitats et biotopes"
+  } ]
+}, {
+  "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/hy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.eionet.europa.eu/gemet/en/inspire-themes/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Hydrographie"
+  } ]
+}, {
+  "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/lc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.eionet.europa.eu/gemet/en/inspire-themes/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Occupation des terres"
+  } ]
+}, {
+  "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/lu",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.eionet.europa.eu/gemet/en/inspire-themes/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Usage des sols"
+  } ]
+}, {
+  "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/pd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.eionet.europa.eu/gemet/en/inspire-themes/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Répartition de la population - démographie"
+  } ]
+}, {
+  "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/pf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.eionet.europa.eu/gemet/en/inspire-themes/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Lieux de production et sites industriels"
+  } ]
+}, {
+  "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.eionet.europa.eu/gemet/en/inspire-themes/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Référentiels de coordonnées"
+  } ]
+}, {
+  "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/so",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.eionet.europa.eu/gemet/en/inspire-themes/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Sols"
+  } ]
+}, {
+  "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.eionet.europa.eu/gemet/en/inspire-themes/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Réseaux de transport"
+  } ]
+}, {
+  "@id" : "https://www.eionet.europa.eu/gemet/fr/inspire-theme/us",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://www.eionet.europa.eu/gemet/en/inspire-themes/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Services d'utilité publique et services publics"
+  } ]
 }, {
   "@id" : "https://www.ign.fr",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]

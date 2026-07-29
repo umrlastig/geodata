@@ -1,10 +1,8 @@
 <http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/dcat3> .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov#> .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/sosa/> .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/ssn/> .
-<http://purl.org/www.umr-lastig.fr/geodata> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/dc/elements/1.1/creator> "Ana-Maria Raimond" .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/dc/elements/1.1/creator> "Benedicte Bucher" .
 <http://purl.org/www.umr-lastig.fr/geodata> <http://purl.org/dc/elements/1.1/creator> "Marie-Dominique Van Damme" .
@@ -21,9 +19,6 @@
 # #
 # #################################################################
 # 
-# 
-# http://purl.org/dc/dcam/memberOf
-<http://purl.org/dc/dcam/memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/elements/1.1/creator
 <http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -42,6 +37,9 @@
 # 
 # http://purl.org/dc/terms/language
 <http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/provenance
+<http://purl.org/dc/terms/provenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/type
 <http://purl.org/dc/terms/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -88,6 +86,9 @@
 # http://www.w3.org/2004/02/skos/core#prefLabel
 <http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/2006/vcard/ns#country-name
+<http://www.w3.org/2006/vcard/ns#country-name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2006/vcard/ns#fn
 <http://www.w3.org/2006/vcard/ns#fn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -97,6 +98,12 @@
 # http://www.w3.org/2006/vcard/ns#hasEmail
 <http://www.w3.org/2006/vcard/ns#hasEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/2006/vcard/ns#locality
+<http://www.w3.org/2006/vcard/ns#locality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2006/vcard/ns#postal-code
+<http://www.w3.org/2006/vcard/ns#postal-code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2006/vcard/ns#street-address
 <http://www.w3.org/2006/vcard/ns#street-address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -105,6 +112,9 @@
 # 
 # http://www.w3.org/ns/dcat#language
 <http://www.w3.org/ns/dcat#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dcat#publisher
+<http://www.w3.org/ns/dcat#publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/ns/dcat#servesDataset
 <http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -211,115 +221,8 @@
 # #################################################################
 # 
 # 
-# http://purl.org/dc/dcmitype/Collection
-<http://purl.org/dc/dcmitype/Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/dcmitype/Collection> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
-<http://purl.org/dc/dcmitype/Collection> <http://purl.org/dc/terms/description> "A collection is described as a group; its parts may also be separately described."@en .
-<http://purl.org/dc/dcmitype/Collection> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/dcmitype/Collection> <http://www.w3.org/2000/01/rdf-schema#comment> "An aggregation of resources."@en .
-<http://purl.org/dc/dcmitype/Collection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
-<http://purl.org/dc/dcmitype/Collection> <http://www.w3.org/2000/01/rdf-schema#label> "Collection"@en .
-# 
-# http://purl.org/dc/dcmitype/Dataset
-<http://purl.org/dc/dcmitype/Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/dcmitype/Dataset> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
-<http://purl.org/dc/dcmitype/Dataset> <http://purl.org/dc/terms/description> "Examples include lists, tables, and databases.  A dataset may be useful for direct machine processing."@en .
-<http://purl.org/dc/dcmitype/Dataset> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/dcmitype/Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Data encoded in a defined structure."@en .
-<http://purl.org/dc/dcmitype/Dataset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
-<http://purl.org/dc/dcmitype/Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@en .
-# 
-# http://purl.org/dc/dcmitype/Event
-<http://purl.org/dc/dcmitype/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/dcmitype/Event> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
-<http://purl.org/dc/dcmitype/Event> <http://purl.org/dc/terms/description> "Metadata for an event provides descriptive information that is the basis for discovery of the purpose, location, duration, and responsible agents associated with an event. Examples include an exhibition, webcast, conference, workshop, open day, performance, battle, trial, wedding, tea party, conflagration."@en .
-<http://purl.org/dc/dcmitype/Event> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/dcmitype/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "A non-persistent, time-based occurrence."@en .
-<http://purl.org/dc/dcmitype/Event> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
-<http://purl.org/dc/dcmitype/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
-# 
-# http://purl.org/dc/dcmitype/Image
-<http://purl.org/dc/dcmitype/Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/dcmitype/Image> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
-<http://purl.org/dc/dcmitype/Image> <http://purl.org/dc/terms/description> "Examples include images and photographs of physical objects, paintings, prints, drawings, other images and graphics, animations and moving pictures, film, diagrams, maps, musical notation.  Note that Image may include both electronic and physical representations."@en .
-<http://purl.org/dc/dcmitype/Image> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/dcmitype/Image> <http://www.w3.org/2000/01/rdf-schema#comment> "A visual representation other than text."@en .
-<http://purl.org/dc/dcmitype/Image> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
-<http://purl.org/dc/dcmitype/Image> <http://www.w3.org/2000/01/rdf-schema#label> "Image"@en .
-# 
-# http://purl.org/dc/dcmitype/InteractiveResource
-<http://purl.org/dc/dcmitype/InteractiveResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/dcmitype/InteractiveResource> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
-<http://purl.org/dc/dcmitype/InteractiveResource> <http://purl.org/dc/terms/description> "Examples include forms on Web pages, applets, multimedia learning objects, chat services, or virtual reality environments."@en .
-<http://purl.org/dc/dcmitype/InteractiveResource> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/dcmitype/InteractiveResource> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource requiring interaction from the user to be understood, executed, or experienced."@en .
-<http://purl.org/dc/dcmitype/InteractiveResource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
-<http://purl.org/dc/dcmitype/InteractiveResource> <http://www.w3.org/2000/01/rdf-schema#label> "Interactive Resource"@en .
-# 
-# http://purl.org/dc/dcmitype/MovingImage
-<http://purl.org/dc/dcmitype/MovingImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/dcmitype/MovingImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/dcmitype/Image> .
-<http://purl.org/dc/dcmitype/MovingImage> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
-<http://purl.org/dc/dcmitype/MovingImage> <http://purl.org/dc/terms/description> "Examples include animations, movies, television programs, videos, zoetropes, or visual output from a simulation.  Instances of the type Moving Image must also be describable as instances of the broader type Image."@en .
-<http://purl.org/dc/dcmitype/MovingImage> <http://purl.org/dc/terms/issued> "2003-11-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/dcmitype/MovingImage> <http://www.w3.org/2000/01/rdf-schema#comment> "A series of visual representations imparting an impression of motion when shown in succession."@en .
-<http://purl.org/dc/dcmitype/MovingImage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
-<http://purl.org/dc/dcmitype/MovingImage> <http://www.w3.org/2000/01/rdf-schema#label> "Moving Image"@en .
-# 
-# http://purl.org/dc/dcmitype/PhysicalObject
-<http://purl.org/dc/dcmitype/PhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/dcmitype/PhysicalObject> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
-<http://purl.org/dc/dcmitype/PhysicalObject> <http://purl.org/dc/terms/description> "Note that digital representations of, or surrogates for, these objects should use Image, Text or one of the other types."@en .
-<http://purl.org/dc/dcmitype/PhysicalObject> <http://purl.org/dc/terms/issued> "2002-07-13"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/dcmitype/PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "An inanimate, three-dimensional object or substance."@en .
-<http://purl.org/dc/dcmitype/PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
-<http://purl.org/dc/dcmitype/PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Physical Object"@en .
-# 
-# http://purl.org/dc/dcmitype/Service
-<http://purl.org/dc/dcmitype/Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/dcmitype/Service> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
-<http://purl.org/dc/dcmitype/Service> <http://purl.org/dc/terms/description> "Examples include a photocopying service, a banking service, an authentication service, interlibrary loans, a Z39.50 or Web server."@en .
-<http://purl.org/dc/dcmitype/Service> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/dcmitype/Service> <http://www.w3.org/2000/01/rdf-schema#comment> "A system that provides one or more functions."@en .
-<http://purl.org/dc/dcmitype/Service> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
-<http://purl.org/dc/dcmitype/Service> <http://www.w3.org/2000/01/rdf-schema#label> "Service"@en .
-# 
 # http://purl.org/dc/dcmitype/Software
 <http://purl.org/dc/dcmitype/Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/dcmitype/Software> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
-<http://purl.org/dc/dcmitype/Software> <http://purl.org/dc/terms/description> "Examples include a C source file, MS-Windows .exe executable, or Perl script."@en .
-<http://purl.org/dc/dcmitype/Software> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/dcmitype/Software> <http://www.w3.org/2000/01/rdf-schema#comment> "A computer program in source or compiled form."@en .
-<http://purl.org/dc/dcmitype/Software> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
-<http://purl.org/dc/dcmitype/Software> <http://www.w3.org/2000/01/rdf-schema#label> "Software"@en .
-# 
-# http://purl.org/dc/dcmitype/Sound
-<http://purl.org/dc/dcmitype/Sound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/dcmitype/Sound> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
-<http://purl.org/dc/dcmitype/Sound> <http://purl.org/dc/terms/description> "Examples include a music playback file format, an audio compact disc, and recorded speech or sounds."@en .
-<http://purl.org/dc/dcmitype/Sound> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/dcmitype/Sound> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource primarily intended to be heard."@en .
-<http://purl.org/dc/dcmitype/Sound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
-<http://purl.org/dc/dcmitype/Sound> <http://www.w3.org/2000/01/rdf-schema#label> "Sound"@en .
-# 
-# http://purl.org/dc/dcmitype/StillImage
-<http://purl.org/dc/dcmitype/StillImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/dcmitype/StillImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/dcmitype/Image> .
-<http://purl.org/dc/dcmitype/StillImage> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
-<http://purl.org/dc/dcmitype/StillImage> <http://purl.org/dc/terms/description> "Examples include paintings, drawings, graphic designs, plans and maps. Recommended best practice is to assign the type Text to images of textual materials. Instances of the type Still Image must also be describable as instances of the broader type Image."@en .
-<http://purl.org/dc/dcmitype/StillImage> <http://purl.org/dc/terms/issued> "2003-11-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/dcmitype/StillImage> <http://www.w3.org/2000/01/rdf-schema#comment> "A static visual representation."@en .
-<http://purl.org/dc/dcmitype/StillImage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
-<http://purl.org/dc/dcmitype/StillImage> <http://www.w3.org/2000/01/rdf-schema#label> "Still Image"@en .
-# 
-# http://purl.org/dc/dcmitype/Text
-<http://purl.org/dc/dcmitype/Text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/dcmitype/Text> <http://purl.org/dc/dcam/memberOf> <http://purl.org/dc/terms/DCMIType> .
-<http://purl.org/dc/dcmitype/Text> <http://purl.org/dc/terms/description> "Examples include books, letters, dissertations, poems, newspapers, articles, archives of mailing lists. Note that facsimiles or images of texts are still of the genre Text."@en .
-<http://purl.org/dc/dcmitype/Text> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/dcmitype/Text> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource consisting primarily of words for reading."@en .
-<http://purl.org/dc/dcmitype/Text> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
-<http://purl.org/dc/dcmitype/Text> <http://www.w3.org/2000/01/rdf-schema#label> "Text"@en .
 # 
 # http://purl.org/dc/terms/Agent
 <http://purl.org/dc/terms/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -393,7 +296,6 @@
 # http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
-<http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Observation> .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "An organized data acquisition activity carried out according to a defined methodology, using appropriate instruments or protocols, in order to observe, measure, or document phenomena for scientific analysis"@en .
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific survey"@en .
 # 
@@ -410,6 +312,9 @@
 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "An explicit information shared by a participants relative to his own experience with one or more datasets, tools or paper."@en .
 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> <http://www.w3.org/2000/01/rdf-schema#label> "User feedback"@en .
+# 
+# http://www.w3.org/2000/10/swap/pim/contact#Person
+<http://www.w3.org/2000/10/swap/pim/contact#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/2006/vcard/ns#Address
 <http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -449,8 +354,8 @@
 <http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
 # 
-# https://intforout.github.io/outdoorPressure#Observation
-<https://intforout.github.io/outdoorPressure#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # 
 # 
@@ -461,23 +366,134 @@
 # #################################################################
 # 
 # 
+# http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national
+<http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://publications.europa.eu/resource/authority/high-value-dataset-category/ENVI
+<http://publications.europa.eu/resource/authority/high-value-dataset-category/ENVI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://publications.europa.eu/resource/authority/high-value-dataset-category/GEO
+<http://publications.europa.eu/resource/authority/high-value-dataset-category/GEO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://publications.europa.eu/resource/authority/high-value-dataset-category/MOBI
+<http://publications.europa.eu/resource/authority/high-value-dataset-category/MOBI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
 # http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DatasetSeries> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#contactPoint> _:genid1 .
 _:genid1 <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:contact.geoservices@ign.fr> .
 _:genid1 <http://www.w3.org/2006/vcard/ns#hasAddress> _:genid2 .
-_:genid2 <http://www.w3.org/2006/vcard/ns#street-address> "IGN - Support utilisateurs, SAINT-MANDÉ CÉDEX, 94165, FRANCE" .
+_:genid2 <http://www.w3.org/2006/vcard/ns#street-address> "73 Avenue de Paris" .
+_:genid2 <http://www.w3.org/2006/vcard/ns#postal-code> "94165" .
+_:genid2 <http://www.w3.org/2006/vcard/ns#locality> "Saint-Mandé" .
+_:genid2 <http://www.w3.org/2006/vcard/ns#country-name> "France" .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/vcard/ns#Address> .
 _:genid1 <http://www.w3.org/2006/vcard/ns#fn> "Institut national de l'information géographique et forestière (IGN)" .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/vcard/ns#Organization> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/high-value-dataset-category/ENVI> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/high-value-dataset-category/GEO> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/high-value-dataset-category/MOBI> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/af> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/af> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/au> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/au> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/bu> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/bu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/el> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/el> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/gn> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/gn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/hy> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/hy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/lc> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/lc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/lu> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/lu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/pd> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/pd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/pf> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/pf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/us> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/us> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "Géospatiales" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "Mobilité" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "Observation de la terre et environnement" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "activités" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "aspects militaires" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "données ouvertes" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "eau" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "forêts" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "haies" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "historique" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "hvd" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "routes" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "toponymie" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "transports" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "végétation" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "énergies" .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://purl.org/dc/terms/created> "2002-12-15T01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://purl.org/dc/terms/description> "La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique.\n\n            Les objets de la BD TOPO® sont structurés en thèmes : \n            - l'administratif ; \n            - le bâti ; \n            - l'hydrographie ; \n            - les lieux nommés ; \n            - l'occupation du sol ; \n            - les services et activités ; \n            - le transport ; \n            - les zones réglementées. \n\n            Le processus de production 3D permet de fournir l'altimétrie des objets, ainsi que la hauteur des bâtiments. \n\n            Le relief est décrit sous forme de modèles numériques de terrain (MNT). \n\n            Depuis la version 3.0, tous les objets possèdent un identifiant unique et stable dans le temps.\n\n            Le produit BDTOPO® Express est l’édition hebdomadaire de la BDTOPO® si vous avez besoin de travailler sur de la donnée topographique à haute fréquence (disponible depuis mai 2025). \n\n            Le produit Différentiel BD TOPO® contient les différences géométriques et sémantiques sur l'ensemble du contenu BD TOPO® entre deux éditions trimestrielles successives BD TOPO®. \n\n            Plus précisément, l'édition N du Différentiel BD TOPO® en vigueur contient tout objet de la BD TOPO® dont la date de modification, la date de création ou la date de suppression en base est postérieure à la date de prédiffusion de la précédente édition trimestrielle (N-1), équivalent à une activité de mise à jour par l'IGN d'une durée de 3 mois." .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://purl.org/dc/terms/identifier> "IGNF_BD-TOPO" .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://purl.org/dc/terms/issued> "2025-09-15T02:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://purl.org/dc/terms/modified> "2026-07-03T02:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://purl.org/dc/terms/modified> "2026-07-03T11:26:44"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://purl.org/dc/terms/temporal> <http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDTopo> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://purl.org/dc/terms/title> "BD TOPO®" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://schema.org/encodingFormat> "GPKG" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://schema.org/encodingFormat> "PostGreSQL" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://schema.org/encodingFormat> "SHP" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://schema.org/encodingFormat> "TMS" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://schema.org/encodingFormat> "WFS" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://schema.org/encodingFormat> "WMS" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://schema.org/encodingFormat> "WMTS" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\t\t\tBD TOPO covers whole French territory, is captured at scale 1/ 10 000, exists since 1990 \n\t\t\tand aims to provide reference data for mapping and spatial analysis."@en .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/2000/01/rdf-schema#comment> "BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente \n\t\t\tl'ensemble des entités géographiques et administratives du territoire national. \n\t\t\tLa BD TOPO® fournit une information de référence à tous les acteurs de la gestion, \n\t\t\tde l'aménagement et de l'observation du territoire pour analyser, situer, \n\t\t\treprésenter des données dans leur réalité géographique"@fr .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/2000/01/rdf-schema#label> "BD TOPO® V3."@en .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#language> "fr-FR" .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#publisher> <https://ign.fr> .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DatasetSeries> .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#contactPoint> _:genid3 .
+_:genid3 <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:contact.geoservices@ign.fr> .
+_:genid3 <http://www.w3.org/2006/vcard/ns#hasAddress> _:genid4 .
+_:genid4 <http://www.w3.org/2006/vcard/ns#street-address> "73 Avenue de Paris" .
+_:genid4 <http://www.w3.org/2006/vcard/ns#postal-code> "94165" .
+_:genid4 <http://www.w3.org/2006/vcard/ns#locality> "Saint-Mandé" .
+_:genid4 <http://www.w3.org/2006/vcard/ns#country-name> "France" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/vcard/ns#Address> .
+_:genid3 <http://www.w3.org/2006/vcard/ns#fn> "Institut national de l'information géographique et forestière (IGN)" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/vcard/ns#Organization> .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#contactPoint> _:genid5 .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#theme> <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/so> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/so> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#keyword> "arbres" .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#keyword> "biodiversité" .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#keyword> "bocages" .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#keyword> "bosquets" .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#keyword> "données ouvertes" .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#keyword> "environnement" .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#keyword> "haies" .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://purl.org/dc/terms/description> "Le produit La BD Haie est une couche nationale de référence des haies linéaires en France métropolitaine, élaborée dans le cadre du dispositif de suivi des bocages (DSB), OFB-IGN initié en 2017. Les objets linéaires de la BD Haie ont été obtenus à partir de données existantes sur les haies au format surfacique (polygones). La production de la BD Haie suit une logique départementale.\n            \n            Il existe à ce jour deux versions de la BD Haie :\n\n            •\t Une version initiale « BD Haie V1 2020 » élaborée à partir de deux sources de données : \n\n            o\tLes haies et les bosquets du thème végétation de la base de données topographique de l’IGN, BD TOPO®, obtenus par segmentation automatique d’images aériennes et classés par photo-interprétation sur images de 2004 à 2015, selon les départements ;\n\n            o\tLes haies arborées ou non, les arbres alignés et les bosquets issus des surfaces non agricoles du Registre Parcellaire Graphique (RPG) photo-interprétées à partir d’images aériennes datant de 2011 à 2014, selon les départements. Le RPG est un système d’information géographique permettant l’identification des parcelles agricoles, géré par l’ASP (Agence de service et de paiement).\n\n            •\t Une version 2 mise à jour en 2024 « BD Haie V2 mars 2024 ». \n\n            Cette version constitue une version mise à jour et millésimée de la « BD Haie V1 2020 ». Elle n’a pas été élaborée selon la même méthode. Deux sources de données ont été utilisées pour la mise à jour :\n\n            o\tLes haies arborées ou non, les arbres alignés et les bosquets issus des surfaces non agricoles du Registre Parcellaire Graphique (RPG) photo-interprétées à partir d’images aériennes datant de 2020 à 2022, selon les départements ;\n\n            o\tLes modèles numériques de surface produit par « corrélation des images aériennes » datant de 2020 à 2022, selon les départements.  \n\n            Dans cette version 2 sont présentes : (i) les haies présentes dans la BD Haie V1 confirmées par les données utilisées, (ii) des haies ajoutées à partir des données du RPG utilisées pour la mise à jour." .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://purl.org/dc/terms/issued> "2020-01-01T01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://purl.org/dc/terms/modified> "2026-04-27T02:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://purl.org/dc/terms/modified> "2026-04-27T16:20:32"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://purl.org/dc/terms/provenance> <http://purl.org/www.umr-lastig.fr/geodata#ProvBDHaie> .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://purl.org/dc/terms/temporal> <http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDHaie> .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://purl.org/dc/terms/title> "BD HAIE" .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/2000/01/rdf-schema#label> "BD Haie v2"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#publisher> <https://ign.fr> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#LASTIG
 <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -490,6 +506,23 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/www.umr-lastig.fr/geodata#LidarHDFrance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#LidarHDFrance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <http://purl.org/www.umr-lastig.fr/geodata#LidarHDFrance> <http://xmlns.com/foaf/0.1/homepage> "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_NUAGES-DE-POINTS-LIDAR-HD" .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#ProvBDHaie
+<http://purl.org/www.umr-lastig.fr/geodata#ProvBDHaie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#ProvBDHaie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/ProvenanceStatement> .
+<http://purl.org/www.umr-lastig.fr/geodata#ProvBDHaie> <http://www.w3.org/2000/01/rdf-schema#comment> "La BD HAIE a été publiée dans une première version (« BD HAIE V1 2020 »),\n            puis dans une version 2 mise à jour à partir de 2024 (« BD HAIE V2 »).\n            Dernière mise à jour des services WFS, WMS Vecteur et WMTS :\n            édition de mars 2026."@fr .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDHaie
+<http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDHaie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDHaie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/PeriodOfTime> .
+<http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDHaie> <http://www.w3.org/ns/dcat#endDate> "2026-03-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDHaie> <http://www.w3.org/ns/dcat#startDate> "2020-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDTopo
+<http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDTopo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDTopo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/PeriodOfTime> .
+<http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDTopo> <http://www.w3.org/ns/dcat#endDate> "2026-06-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDTopo> <http://www.w3.org/ns/dcat#startDate> "2008-03-18"^^<http://www.w3.org/2001/XMLSchema#date> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#Tracklib
 <http://purl.org/www.umr-lastig.fr/geodata#Tracklib> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -532,7 +565,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://xmlns.com/foaf/0.1/homepage> <https://geodata-paris.fr> .
-<http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://www.w3.org/2000/01/rdf-schema#label> "Géodata Paris" .
+<http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://www.w3.org/2000/01/rdf-schema#label> "Géodata Paris"@fr .
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://xmlns.com/foaf/0.1/name> "Géodata Paris" .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#ign
@@ -582,6 +615,84 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://www.ign.fr
 <https://www.ign.fr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
+# https://www.eionet.europa.eu/gemet/en/inspire-themes/
+<https://www.eionet.europa.eu/gemet/en/inspire-themes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://www.eionet.europa.eu/gemet/fr/inspire-theme/af
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/af> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/af> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/af> <http://www.w3.org/2004/02/skos/core#prefLabel> "Installations agricoles et aquacoles"@fr .
+# 
+# https://www.eionet.europa.eu/gemet/fr/inspire-theme/au
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/au> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/au> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/au> <http://www.w3.org/2004/02/skos/core#prefLabel> "Unités administratives"@fr .
+# 
+# https://www.eionet.europa.eu/gemet/fr/inspire-theme/bu
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/bu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/bu> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/bu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Bâtiments"@fr .
+# 
+# https://www.eionet.europa.eu/gemet/fr/inspire-theme/el
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/el> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/el> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/el> <http://www.w3.org/2004/02/skos/core#prefLabel> "Altitude"@fr .
+# 
+# https://www.eionet.europa.eu/gemet/fr/inspire-theme/gn
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/gn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/gn> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/gn> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dénominations géographiques"@fr .
+# 
+# https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb> <http://www.w3.org/2004/02/skos/core#prefLabel> "Habitats et biotopes"@fr .
+# 
+# https://www.eionet.europa.eu/gemet/fr/inspire-theme/hy
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/hy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/hy> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/hy> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hydrographie"@fr .
+# 
+# https://www.eionet.europa.eu/gemet/fr/inspire-theme/lc
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/lc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/lc> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/lc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Occupation des terres"@fr .
+# 
+# https://www.eionet.europa.eu/gemet/fr/inspire-theme/lu
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/lu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/lu> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/lu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Usage des sols"@fr .
+# 
+# https://www.eionet.europa.eu/gemet/fr/inspire-theme/pd
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/pd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/pd> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/pd> <http://www.w3.org/2004/02/skos/core#prefLabel> "Répartition de la population - démographie"@fr .
+# 
+# https://www.eionet.europa.eu/gemet/fr/inspire-theme/pf
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/pf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/pf> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/pf> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lieux de production et sites industriels"@fr .
+# 
+# https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs> <http://www.w3.org/2004/02/skos/core#prefLabel> "Référentiels de coordonnées"@fr .
+# 
+# https://www.eionet.europa.eu/gemet/fr/inspire-theme/so
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/so> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/so> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/so> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sols"@fr .
+# 
+# https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn> <http://www.w3.org/2004/02/skos/core#prefLabel> "Réseaux de transport"@fr .
+# 
+# https://www.eionet.europa.eu/gemet/fr/inspire-theme/us
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/us> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/us> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/us> <http://www.w3.org/2004/02/skos/core#prefLabel> "Services d'utilité publique et services publics"@fr .
+# 
 # ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch
 <ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <ttp://purl.org/www.umr-lastig.fr/geodata#GarminWatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#GPSDevice> .
@@ -626,18 +737,5 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> <http://www.w3.org/2000/01/rdf-schema#label> "Ublox GPS"@en .
 <ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> <http://www.w3.org/ns/dcat#spatialResolutionInMeters> "1.5"^^<xsd:decimal> .
 <ttp://purl.org/www.umr-lastig.fr/geodata#UbloxGPS> <http://www.w3.org/ns/dcat#temporalResolution> "PT1s"^^<xsd:duration> .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Annotations
-# #
-# #################################################################
-# 
-# 
-<http://purl.org/dc/dcmitype/> <http://purl.org/dc/terms/modified> "2012-06-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/dcmitype/> <http://purl.org/dc/terms/publisher> <http://purl.org/dc/aboutdcmi#DCMI> .
-<http://purl.org/dc/dcmitype/> <http://purl.org/dc/terms/title> "DCMI Type Vocabulary"@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
