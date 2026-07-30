@@ -681,7 +681,6 @@ _:genid4 rdf:type <http://www.w3.org/2006/vcard/ns#Address> ;
 ###  http://purl.org/www.umr-lastig.fr/geodata#geodata-paris
 :geodata-paris rdf:type owl:NamedIndividual ,
                         <http://xmlns.com/foaf/0.1/Organization> ;
-               <http://xmlns.com/foaf/0.1/homepage> <https://geodata-paris.fr> ;
                rdfs:label "Géodata Paris"@fr ;
                <http://xmlns.com/foaf/0.1/name> "Géodata Paris" .
 
@@ -730,10 +729,6 @@ _:genid4 rdf:type <http://www.w3.org/2006/vcard/ns#Address> ;
            <http://xmlns.com/foaf/0.1/family_name> "Méneroux" ;
            <http://xmlns.com/foaf/0.1/givenname> "Yann" ;
            <http://xmlns.com/foaf/0.1/name> "Yann Méneroux" .
-
-
-###  https://geodata-paris.fr
-<https://geodata-paris.fr> rdf:type owl:NamedIndividual .
 
 
 ###  https://www.ign.fr

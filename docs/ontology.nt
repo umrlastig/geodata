@@ -396,31 +396,18 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/high-value-dataset-category/GEO> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/high-value-dataset-category/MOBI> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/af> .
-<https://www.eionet.europa.eu/gemet/fr/inspire-theme/af> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/au> .
-<https://www.eionet.europa.eu/gemet/fr/inspire-theme/au> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/bu> .
-<https://www.eionet.europa.eu/gemet/fr/inspire-theme/bu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/el> .
-<https://www.eionet.europa.eu/gemet/fr/inspire-theme/el> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/gn> .
-<https://www.eionet.europa.eu/gemet/fr/inspire-theme/gn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/hy> .
-<https://www.eionet.europa.eu/gemet/fr/inspire-theme/hy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/lc> .
-<https://www.eionet.europa.eu/gemet/fr/inspire-theme/lc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/lu> .
-<https://www.eionet.europa.eu/gemet/fr/inspire-theme/lu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/pd> .
-<https://www.eionet.europa.eu/gemet/fr/inspire-theme/pd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/pf> .
-<https://www.eionet.europa.eu/gemet/fr/inspire-theme/pf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs> .
-<https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn> .
-<https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/us> .
-<https://www.eionet.europa.eu/gemet/fr/inspire-theme/us> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "Géospatiales" .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "Mobilité" .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#keyword> "Observation de la terre et environnement" .
@@ -474,9 +461,7 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#contactPoint> _:genid5 .
 <http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#theme> <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> .
 <http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb> .
-<https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/fr/inspire-theme/so> .
-<https://www.eionet.europa.eu/gemet/fr/inspire-theme/so> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#keyword> "arbres" .
 <http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#keyword> "biodiversité" .
 <http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#keyword> "bocages" .
@@ -564,7 +549,6 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://purl.org/www.umr-lastig.fr/geodata#geodata-paris
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
-<http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://xmlns.com/foaf/0.1/homepage> <https://geodata-paris.fr> .
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://www.w3.org/2000/01/rdf-schema#label> "Géodata Paris"@fr .
 <http://purl.org/www.umr-lastig.fr/geodata#geodata-paris> <http://xmlns.com/foaf/0.1/name> "Géodata Paris" .
 # 
@@ -609,9 +593,6 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://xmlns.com/foaf/0.1/givenname> "Yann" .
 <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> <http://xmlns.com/foaf/0.1/name> "Yann Méneroux" .
 # 
-# https://geodata-paris.fr
-<https://geodata-paris.fr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
 # https://www.ign.fr
 <https://www.ign.fr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
@@ -619,76 +600,91 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://www.eionet.europa.eu/gemet/en/inspire-themes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://www.eionet.europa.eu/gemet/fr/inspire-theme/af
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/af> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/af> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/af> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/af> <http://www.w3.org/2004/02/skos/core#prefLabel> "Installations agricoles et aquacoles"@fr .
 # 
 # https://www.eionet.europa.eu/gemet/fr/inspire-theme/au
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/au> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/au> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/au> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/au> <http://www.w3.org/2004/02/skos/core#prefLabel> "Unités administratives"@fr .
 # 
 # https://www.eionet.europa.eu/gemet/fr/inspire-theme/bu
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/bu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/bu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/bu> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/bu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Bâtiments"@fr .
 # 
 # https://www.eionet.europa.eu/gemet/fr/inspire-theme/el
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/el> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/el> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/el> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/el> <http://www.w3.org/2004/02/skos/core#prefLabel> "Altitude"@fr .
 # 
 # https://www.eionet.europa.eu/gemet/fr/inspire-theme/gn
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/gn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/gn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/gn> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/gn> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dénominations géographiques"@fr .
 # 
 # https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb> <http://www.w3.org/2004/02/skos/core#prefLabel> "Habitats et biotopes"@fr .
 # 
 # https://www.eionet.europa.eu/gemet/fr/inspire-theme/hy
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/hy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/hy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/hy> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/hy> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hydrographie"@fr .
 # 
 # https://www.eionet.europa.eu/gemet/fr/inspire-theme/lc
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/lc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/lc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/lc> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/lc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Occupation des terres"@fr .
 # 
 # https://www.eionet.europa.eu/gemet/fr/inspire-theme/lu
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/lu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/lu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/lu> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/lu> <http://www.w3.org/2004/02/skos/core#prefLabel> "Usage des sols"@fr .
 # 
 # https://www.eionet.europa.eu/gemet/fr/inspire-theme/pd
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/pd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/pd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/pd> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/pd> <http://www.w3.org/2004/02/skos/core#prefLabel> "Répartition de la population - démographie"@fr .
 # 
 # https://www.eionet.europa.eu/gemet/fr/inspire-theme/pf
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/pf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/pf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/pf> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/pf> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lieux de production et sites industriels"@fr .
 # 
 # https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs> <http://www.w3.org/2004/02/skos/core#prefLabel> "Référentiels de coordonnées"@fr .
 # 
 # https://www.eionet.europa.eu/gemet/fr/inspire-theme/so
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/so> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/so> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/so> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/so> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sols"@fr .
 # 
 # https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn> <http://www.w3.org/2004/02/skos/core#prefLabel> "Réseaux de transport"@fr .
 # 
 # https://www.eionet.europa.eu/gemet/fr/inspire-theme/us
+<https://www.eionet.europa.eu/gemet/fr/inspire-theme/us> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/us> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/us> <http://www.w3.org/2004/02/skos/core#inScheme> <https://www.eionet.europa.eu/gemet/en/inspire-themes/> .
 <https://www.eionet.europa.eu/gemet/fr/inspire-theme/us> <http://www.w3.org/2004/02/skos/core#prefLabel> "Services d'utilité publique et services publics"@fr .

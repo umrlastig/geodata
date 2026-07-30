@@ -700,9 +700,6 @@
     "@language" : "fr",
     "@value" : "Géodata Paris"
   } ],
-  "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://geodata-paris.fr"
-  } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Géodata Paris"
   } ]
@@ -1021,9 +1018,6 @@
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/workInfoHomepage",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://geodata-paris.fr",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://www.eionet.europa.eu/gemet/en/inspire-themes/",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
