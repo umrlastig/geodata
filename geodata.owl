@@ -559,6 +559,14 @@
     
 
 
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#DataClass -->
+
+    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#DataClass">
+        <terms:description>Class of objects in a Dataset, e.g. BDTopo Buildings</terms:description>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument -->
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument">
