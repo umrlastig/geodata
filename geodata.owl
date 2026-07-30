@@ -96,6 +96,12 @@
     
 
 
+    <!-- http://purl.org/dc/terms/temporal -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/temporal"/>
+    
+
+
     <!-- http://purl.org/dc/terms/type -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/type"/>
@@ -180,6 +186,12 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
@@ -228,9 +240,27 @@
     
 
 
+    <!-- http://www.w3.org/ns/dcat#contactPoint -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#endDate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#endDate"/>
+    
+
+
     <!-- http://www.w3.org/ns/dcat#format -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#format"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#keyword -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
     
 
 
@@ -258,9 +288,21 @@
     
 
 
+    <!-- http://www.w3.org/ns/dcat#startDate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#startDate"/>
+    
+
+
     <!-- http://www.w3.org/ns/dcat#temporalResolution -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#temporalResolution"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#theme -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
     
 
 
@@ -415,6 +457,22 @@
     
 
 
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/dcat#Dataset"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <terms:description xml:lang="en">Class of some features that belong to the dataset (or to the dataset computed by the process)</terms:description>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -441,6 +499,18 @@
     <!-- http://purl.org/dc/terms/MethodOfInstruction -->
 
     <owl:Class rdf:about="http://purl.org/dc/terms/MethodOfInstruction"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/PeriodOfTime -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/PeriodOfTime"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/ProvenanceStatement -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/ProvenanceStatement"/>
     
 
 
@@ -584,6 +654,12 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
     <!-- http://www.w3.org/2006/vcard/ns#Address -->
 
     <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Address"/>
@@ -614,6 +690,12 @@
         <rdfs:label xml:lang="en">Dataset</rdfs:label>
         <rdfs:label xml:lang="fr">Jeu de données</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#DatasetSeries -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#DatasetSeries"/>
     
 
 
@@ -699,55 +781,6 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DatasetSeries"/>
-        <dcat:contactPoint>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
-                <vcard:fn>Institut national de l&apos;information géographique et forestière (IGN)</vcard:fn>
-                <vcard:hasAddress>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
-                        <vcard:country-name>France</vcard:country-name>
-                        <vcard:locality>Saint-Mandé</vcard:locality>
-                        <vcard:postal-code>94165</vcard:postal-code>
-                        <vcard:street-address>73 Avenue de Paris</vcard:street-address>
-                    </rdf:Description>
-                </vcard:hasAddress>
-                <vcard:hasEmail rdf:resource="mailto:contact.geoservices@ign.fr"/>
-            </rdf:Description>
-        </dcat:contactPoint>
-        <dcat:theme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national"/>
-        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/high-value-dataset-category/ENVI"/>
-        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/high-value-dataset-category/GEO"/>
-        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/high-value-dataset-category/MOBI"/>
-        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/af"/>
-        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/au"/>
-        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/bu"/>
-        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/el"/>
-        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/gn"/>
-        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/hy"/>
-        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/lc"/>
-        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/lu"/>
-        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/pd"/>
-        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/pf"/>
-        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs"/>
-        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn"/>
-        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/us"/>
-        <dcat:keyword>Géospatiales</dcat:keyword>
-        <dcat:keyword>Mobilité</dcat:keyword>
-        <dcat:keyword>Observation de la terre et environnement</dcat:keyword>
-        <dcat:keyword>activités</dcat:keyword>
-        <dcat:keyword>aspects militaires</dcat:keyword>
-        <dcat:keyword>données ouvertes</dcat:keyword>
-        <dcat:keyword>eau</dcat:keyword>
-        <dcat:keyword>forêts</dcat:keyword>
-        <dcat:keyword>haies</dcat:keyword>
-        <dcat:keyword>historique</dcat:keyword>
-        <dcat:keyword>hvd</dcat:keyword>
-        <dcat:keyword>routes</dcat:keyword>
-        <dcat:keyword>toponymie</dcat:keyword>
-        <dcat:keyword>transports</dcat:keyword>
-        <dcat:keyword>végétation</dcat:keyword>
-        <dcat:keyword>énergies</dcat:keyword>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2002-12-15T01:00:00</terms:created>
         <terms:description>La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique.
 
@@ -794,16 +827,6 @@
 			de l&apos;aménagement et de l&apos;observation du territoire pour analyser, situer, 
 			représenter des données dans leur réalité géographique</rdfs:comment>
         <rdfs:label xml:lang="en">BD TOPO® V3.</rdfs:label>
-        <dcat:language>fr-FR</dcat:language>
-        <dcat:publisher rdf:resource="https://ign.fr"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE">
-        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DatasetSeries"/>
         <dcat:contactPoint>
             <rdf:Description>
                 <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
@@ -820,19 +843,49 @@
                 <vcard:hasEmail rdf:resource="mailto:contact.geoservices@ign.fr"/>
             </rdf:Description>
         </dcat:contactPoint>
-        <dcat:contactPoint>
-            <rdf:Description/>
-        </dcat:contactPoint>
-        <dcat:theme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national"/>
-        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb"/>
-        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/so"/>
-        <dcat:keyword>arbres</dcat:keyword>
-        <dcat:keyword>biodiversité</dcat:keyword>
-        <dcat:keyword>bocages</dcat:keyword>
-        <dcat:keyword>bosquets</dcat:keyword>
+        <dcat:keyword>Géospatiales</dcat:keyword>
+        <dcat:keyword>Mobilité</dcat:keyword>
+        <dcat:keyword>Observation de la terre et environnement</dcat:keyword>
+        <dcat:keyword>activités</dcat:keyword>
+        <dcat:keyword>aspects militaires</dcat:keyword>
         <dcat:keyword>données ouvertes</dcat:keyword>
-        <dcat:keyword>environnement</dcat:keyword>
+        <dcat:keyword>eau</dcat:keyword>
+        <dcat:keyword>forêts</dcat:keyword>
         <dcat:keyword>haies</dcat:keyword>
+        <dcat:keyword>historique</dcat:keyword>
+        <dcat:keyword>hvd</dcat:keyword>
+        <dcat:keyword>routes</dcat:keyword>
+        <dcat:keyword>toponymie</dcat:keyword>
+        <dcat:keyword>transports</dcat:keyword>
+        <dcat:keyword>végétation</dcat:keyword>
+        <dcat:keyword>énergies</dcat:keyword>
+        <dcat:language>fr-FR</dcat:language>
+        <dcat:publisher rdf:resource="https://ign.fr"/>
+        <dcat:theme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/high-value-dataset-category/ENVI"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/high-value-dataset-category/GEO"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/high-value-dataset-category/MOBI"/>
+        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/af"/>
+        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/au"/>
+        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/bu"/>
+        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/el"/>
+        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/gn"/>
+        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/hy"/>
+        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/lc"/>
+        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/lu"/>
+        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/pd"/>
+        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/pf"/>
+        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs"/>
+        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn"/>
+        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/us"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DatasetSeries"/>
         <terms:description>Le produit La BD Haie est une couche nationale de référence des haies linéaires en France métropolitaine, élaborée dans le cadre du dispositif de suivi des bocages (DSB), OFB-IGN initié en 2017. Les objets linéaires de la BD Haie ont été obtenus à partir de données existantes sur les haies au format surfacique (polygones). La production de la BD Haie suit une logique départementale.
             
             Il existe à ce jour deux versions de la BD Haie :
@@ -859,8 +912,37 @@
         <terms:temporal rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDHaie"/>
         <terms:title>BD HAIE</terms:title>
         <rdfs:label xml:lang="en">BD Haie v2</rdfs:label>
+        <dcat:contactPoint>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+                <vcard:fn>Institut national de l&apos;information géographique et forestière (IGN)</vcard:fn>
+                <vcard:hasAddress>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+                        <vcard:country-name>France</vcard:country-name>
+                        <vcard:locality>Saint-Mandé</vcard:locality>
+                        <vcard:postal-code>94165</vcard:postal-code>
+                        <vcard:street-address>73 Avenue de Paris</vcard:street-address>
+                    </rdf:Description>
+                </vcard:hasAddress>
+                <vcard:hasEmail rdf:resource="mailto:contact.geoservices@ign.fr"/>
+            </rdf:Description>
+        </dcat:contactPoint>
+        <dcat:contactPoint>
+            <rdf:Description/>
+        </dcat:contactPoint>
+        <dcat:keyword>arbres</dcat:keyword>
+        <dcat:keyword>biodiversité</dcat:keyword>
+        <dcat:keyword>bocages</dcat:keyword>
+        <dcat:keyword>bosquets</dcat:keyword>
+        <dcat:keyword>données ouvertes</dcat:keyword>
+        <dcat:keyword>environnement</dcat:keyword>
+        <dcat:keyword>haies</dcat:keyword>
         <dcat:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA"/>
         <dcat:publisher rdf:resource="https://ign.fr"/>
+        <dcat:theme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national"/>
+        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb"/>
+        <dcat:theme rdf:resource="https://www.eionet.europa.eu/gemet/fr/inspire-theme/so"/>
     </owl:NamedIndividual>
     
 
@@ -984,9 +1066,9 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ign">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <foaf:homepage rdf:resource="https://www.ign.fr"/>
         <rdfs:comment xml:lang="en">Institut national de l&apos;information géographique et forestière</rdfs:comment>
         <rdfs:label xml:lang="en">IGN</rdfs:label>
+        <foaf:homepage rdf:resource="https://www.ign.fr"/>
         <foaf:name>Institut national de l&apos;information géographique et forestière</foaf:name>
     </owl:NamedIndividual>
     
