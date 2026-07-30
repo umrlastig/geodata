@@ -296,6 +296,10 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/www.umr-lastig.fr/geodata#Data> <http://www.w3.org/2000/01/rdf-schema#comment> "Any data"@en .
 <http://purl.org/www.umr-lastig.fr/geodata#Data> <http://www.w3.org/2000/01/rdf-schema#label> "Data"@en .
 # 
+# http://purl.org/www.umr-lastig.fr/geodata#DataClass
+<http://purl.org/www.umr-lastig.fr/geodata#DataClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/www.umr-lastig.fr/geodata#DataClass> <http://purl.org/dc/terms/description> "Class of objects in a Dataset, e.g. BDTopo Buildings" .
+# 
 # http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument
 <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#DataCollectionInstrument> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/ns/sosa/Sensor> .
