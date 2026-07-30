@@ -52,6 +52,10 @@
 <http://purl.org/dc/terms/provenance> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/temporal
+<http://purl.org/dc/terms/temporal> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/type
 <http://purl.org/dc/terms/type> rdf:type owl:AnnotationProperty .
 
@@ -108,6 +112,10 @@ rdf:title rdf:type owl:AnnotationProperty .
 rdfs:description rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
 <http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
 
@@ -140,8 +148,20 @@ rdfs:description rdf:type owl:AnnotationProperty .
 <http://www.w3.org/2006/vcard/ns#street-address> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/ns/dcat#contactPoint
+<http://www.w3.org/ns/dcat#contactPoint> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#endDate
+<http://www.w3.org/ns/dcat#endDate> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/ns/dcat#format
 <http://www.w3.org/ns/dcat#format> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#keyword
+<http://www.w3.org/ns/dcat#keyword> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/ns/dcat#language
@@ -160,8 +180,16 @@ rdfs:description rdf:type owl:AnnotationProperty .
 <http://www.w3.org/ns/dcat#spatialResolutionInMeters> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/ns/dcat#startDate
+<http://www.w3.org/ns/dcat#startDate> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/ns/dcat#temporalResolution
 <http://www.w3.org/ns/dcat#temporalResolution> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#theme
+<http://www.w3.org/ns/dcat#theme> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/ns/dcat#title
@@ -259,6 +287,16 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:range <http://www.w3.org/ns/dcat#Resource> .
 
 
+###  http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures
+:typeOfProvidedFeatures rdf:type owl:ObjectProperty ;
+                        rdfs:domain [ rdf:type owl:Class ;
+                                      owl:unionOf ( :Process
+                                                    <http://www.w3.org/ns/dcat#Dataset>
+                                                  )
+                                    ] ;
+                        <http://purl.org/dc/terms/description> "Class of some features that belong to the dataset (or to the dataset computed by the process)"@en .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -273,6 +311,14 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/dc/terms/MethodOfInstruction
 <http://purl.org/dc/terms/MethodOfInstruction> rdf:type owl:Class .
+
+
+###  http://purl.org/dc/terms/PeriodOfTime
+<http://purl.org/dc/terms/PeriodOfTime> rdf:type owl:Class .
+
+
+###  http://purl.org/dc/terms/ProvenanceStatement
+<http://purl.org/dc/terms/ProvenanceStatement> rdf:type owl:Class .
 
 
 ###  http://purl.org/spar/datacite/Resource
@@ -375,6 +421,10 @@ xsd:date rdf:type rdfs:Datatype .
 <http://www.w3.org/2000/10/swap/pim/contact#Person> rdf:type owl:Class .
 
 
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
 ###  http://www.w3.org/2006/vcard/ns#Address
 <http://www.w3.org/2006/vcard/ns#Address> rdf:type owl:Class .
 
@@ -396,6 +446,10 @@ xsd:date rdf:type rdfs:Datatype .
                                     rdfs:comment "A collection of data and available for access or download in one or more representations."@en ;
                                     rdfs:label "Dataset"@en ,
                                                "Jeu de données"@fr .
+
+
+###  http://www.w3.org/ns/dcat#DatasetSeries
+<http://www.w3.org/ns/dcat#DatasetSeries> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/ns/dcat#Resource
@@ -449,7 +503,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3
 :BD_TOPO_V3 rdf:type owl:NamedIndividual ,
                      <http://www.w3.org/ns/dcat#DatasetSeries> ;
-            <http://www.w3.org/ns/dcat#contactPoint> _:genid1 ;
+            <http://www.w3.org/ns/dcat#contactPoint> _:genid4 ;
             <http://www.w3.org/ns/dcat#theme> <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ,
                                               <http://publications.europa.eu/resource/authority/high-value-dataset-category/ENVI> ,
                                               <http://publications.europa.eu/resource/authority/high-value-dataset-category/GEO> ,
@@ -467,22 +521,6 @@ xsd:date rdf:type rdfs:Datatype .
                                               <https://www.eionet.europa.eu/gemet/fr/inspire-theme/rs> ,
                                               <https://www.eionet.europa.eu/gemet/fr/inspire-theme/tn> ,
                                               <https://www.eionet.europa.eu/gemet/fr/inspire-theme/us> ;
-            <http://www.w3.org/ns/dcat#keyword> "Géospatiales" ,
-                                                "Mobilité" ,
-                                                "Observation de la terre et environnement" ,
-                                                "activités" ,
-                                                "aspects militaires" ,
-                                                "données ouvertes" ,
-                                                "eau" ,
-                                                "forêts" ,
-                                                "haies" ,
-                                                "historique" ,
-                                                "hvd" ,
-                                                "routes" ,
-                                                "toponymie" ,
-                                                "transports" ,
-                                                "végétation" ,
-                                                "énergies" ;
             <http://purl.org/dc/terms/created> "2002-12-15T01:00:00"^^xsd:dateTime ;
             <http://purl.org/dc/terms/description> """La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique.
 
@@ -529,15 +567,31 @@ xsd:date rdf:type rdfs:Datatype .
 			de l'aménagement et de l'observation du territoire pour analyser, situer, 
 			représenter des données dans leur réalité géographique"""@fr ;
             rdfs:label "BD TOPO® V3."@en ;
+            <http://www.w3.org/ns/dcat#keyword> "Géospatiales" ,
+                                                "Mobilité" ,
+                                                "Observation de la terre et environnement" ,
+                                                "activités" ,
+                                                "aspects militaires" ,
+                                                "données ouvertes" ,
+                                                "eau" ,
+                                                "forêts" ,
+                                                "haies" ,
+                                                "historique" ,
+                                                "hvd" ,
+                                                "routes" ,
+                                                "toponymie" ,
+                                                "transports" ,
+                                                "végétation" ,
+                                                "énergies" ;
             <http://www.w3.org/ns/dcat#language> "fr-FR" ;
             <http://www.w3.org/ns/dcat#publisher> <https://ign.fr> .
 
-_:genid1 rdf:type <http://www.w3.org/2006/vcard/ns#Organization> ;
+_:genid4 rdf:type <http://www.w3.org/2006/vcard/ns#Organization> ;
           <http://www.w3.org/2006/vcard/ns#fn> "Institut national de l'information géographique et forestière (IGN)" ;
-          <http://www.w3.org/2006/vcard/ns#hasAddress> _:genid2 ;
+          <http://www.w3.org/2006/vcard/ns#hasAddress> _:genid5 ;
           <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:contact.geoservices@ign.fr> .
 
-_:genid2 rdf:type <http://www.w3.org/2006/vcard/ns#Address> ;
+_:genid5 rdf:type <http://www.w3.org/2006/vcard/ns#Address> ;
           <http://www.w3.org/2006/vcard/ns#country-name> "France" ;
           <http://www.w3.org/2006/vcard/ns#locality> "Saint-Mandé" ;
           <http://www.w3.org/2006/vcard/ns#postal-code> "94165" ;
@@ -547,18 +601,11 @@ _:genid2 rdf:type <http://www.w3.org/2006/vcard/ns#Address> ;
 ###  http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE
 :IGNF_BD-HAIE rdf:type owl:NamedIndividual ,
                        <http://www.w3.org/ns/dcat#DatasetSeries> ;
-              <http://www.w3.org/ns/dcat#contactPoint> _:genid3 ,
+              <http://www.w3.org/ns/dcat#contactPoint> _:genid6 ,
                                                        [ ] ;
 <http://www.w3.org/ns/dcat#theme> <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ,
                                   <https://www.eionet.europa.eu/gemet/fr/inspire-theme/hb> ,
                                   <https://www.eionet.europa.eu/gemet/fr/inspire-theme/so> ;
-<http://www.w3.org/ns/dcat#keyword> "arbres" ,
-                                    "biodiversité" ,
-                                    "bocages" ,
-                                    "bosquets" ,
-                                    "données ouvertes" ,
-                                    "environnement" ,
-                                    "haies" ;
 <http://purl.org/dc/terms/description> """Le produit La BD Haie est une couche nationale de référence des haies linéaires en France métropolitaine, élaborée dans le cadre du dispositif de suivi des bocages (DSB), OFB-IGN initié en 2017. Les objets linéaires de la BD Haie ont été obtenus à partir de données existantes sur les haies au format surfacique (polygones). La production de la BD Haie suit une logique départementale.
             
             Il existe à ce jour deux versions de la BD Haie :
@@ -585,15 +632,22 @@ _:genid2 rdf:type <http://www.w3.org/2006/vcard/ns#Address> ;
 <http://purl.org/dc/terms/temporal> :TemporalPeriodBDHaie ;
 <http://purl.org/dc/terms/title> "BD HAIE" ;
 rdfs:label "BD Haie v2"@en ;
+<http://www.w3.org/ns/dcat#keyword> "arbres" ,
+                                    "biodiversité" ,
+                                    "bocages" ,
+                                    "bosquets" ,
+                                    "données ouvertes" ,
+                                    "environnement" ,
+                                    "haies" ;
 <http://www.w3.org/ns/dcat#language> <http://publications.europa.eu/resource/authority/language/FRA> ;
 <http://www.w3.org/ns/dcat#publisher> <https://ign.fr> .
 
-_:genid3 rdf:type <http://www.w3.org/2006/vcard/ns#Organization> ;
+_:genid6 rdf:type <http://www.w3.org/2006/vcard/ns#Organization> ;
           <http://www.w3.org/2006/vcard/ns#fn> "Institut national de l'information géographique et forestière (IGN)" ;
-          <http://www.w3.org/2006/vcard/ns#hasAddress> _:genid4 ;
+          <http://www.w3.org/2006/vcard/ns#hasAddress> _:genid7 ;
           <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:contact.geoservices@ign.fr> .
 
-_:genid4 rdf:type <http://www.w3.org/2006/vcard/ns#Address> ;
+_:genid7 rdf:type <http://www.w3.org/2006/vcard/ns#Address> ;
           <http://www.w3.org/2006/vcard/ns#country-name> "France" ;
           <http://www.w3.org/2006/vcard/ns#locality> "Saint-Mandé" ;
           <http://www.w3.org/2006/vcard/ns#postal-code> "94165" ;
