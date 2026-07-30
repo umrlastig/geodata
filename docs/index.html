@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://www.umr-lastig.fr/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.umr-lastig.fr/geodata#","name":"Ontology of Geospatial Datasets for Open Science", "headline":"Document describing the ontology http://www.umr-lastig.fr/geodata#", "dateReleased":"Thu Jul 30 13:36:21 UTC 2026", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Benedicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://www.umr-lastig.fr/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.umr-lastig.fr/geodata#","name":"Ontology of Geospatial Datasets for Open Science", "headline":"Document describing the ontology http://www.umr-lastig.fr/geodata#", "dateReleased":"Thu Jul 30 14:44:40 UTC 2026", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Benedicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -212,6 +212,12 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#http://purl.org/www.umr-lastig.fr/geodata#target" title="http://purl.org/www.umr-lastig.fr/geodata#target">
          <span>target</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures"
+         title="http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures">
+         <span>type Of Provided Features</span>
       </a>
    </li>
 </ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
@@ -550,7 +556,7 @@ This section provides details for each class and property defined by Ontology of
     is in domain of
    </dt>
    <dd>
-    <a href="#http://purl.org/www.umr-lastig.fr/geodata#annotates" title="http://purl.org/www.umr-lastig.fr/geodata#annotates">annotates</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#http://purl.org/www.umr-lastig.fr/geodata#annotates" title="http://purl.org/www.umr-lastig.fr/geodata#annotates">annotates</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures" title="http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures">type Of Provided Features</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -635,6 +641,12 @@ This section provides details for each class and property defined by Ontology of
    </dt>
    <dd>
     <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures" title="http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures">type Of Provided Features</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -731,6 +743,7 @@ This section provides details for each class and property defined by Ontology of
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy" title="http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy"> <span>is Represented By</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#represents" title="http://purl.org/www.umr-lastig.fr/geodata#represents"> <span>represents</span> </a></li>
   <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#target" title="http://purl.org/www.umr-lastig.fr/geodata#target"> <span>target</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures" title="http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures"> <span>type Of Provided Features</span> </a></li>
  </ul>
  <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#annotates">
   <h3>annotates<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
@@ -860,6 +873,20 @@ This section provides details for each class and property defined by Ontology of
     </dt>
     <dd>
      <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures">
+  <h3>type Of Provided Features<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://purl.org/www.umr-lastig.fr/geodata#Process" title="http://purl.org/www.umr-lastig.fr/geodata#Process">Process</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#http://www.w3.org/ns/dcat#Dataset" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -1017,7 +1044,7 @@ This section provides details for each class and property defined by Ontology of
     belongs to
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#DatasetSeries" target="_blank" title="http://www.w3.org/ns/dcat#DatasetSeries">Dataset series</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://www.w3.org/ns/dcat#DatasetSeries" target="_blank" title="http://www.w3.org/ns/dcat#DatasetSeries">Dataset Series</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -1036,27 +1063,6 @@ This section provides details for each class and property defined by Ontology of
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#theme" target="_blank" title="http://www.w3.org/ns/dcat#theme">theme</a> <sup class="type-op" title="object property">op</sup> <a href="#https://www.eionet.europa.eu/gemet/fr/inspire-theme/so" title="https://www.eionet.europa.eu/gemet/fr/inspire-theme/so">Sols</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#keyword" target="_blank" title="http://www.w3.org/ns/dcat#keyword">keyword</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"arbres"</span>
-   </dd>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#keyword" target="_blank" title="http://www.w3.org/ns/dcat#keyword">keyword</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"biodiversité"</span>
-   </dd>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#keyword" target="_blank" title="http://www.w3.org/ns/dcat#keyword">keyword</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"bocages"</span>
-   </dd>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#keyword" target="_blank" title="http://www.w3.org/ns/dcat#keyword">keyword</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"bosquets"</span>
-   </dd>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#keyword" target="_blank" title="http://www.w3.org/ns/dcat#keyword">keyword</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"données ouvertes"</span>
-   </dd>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#keyword" target="_blank" title="http://www.w3.org/ns/dcat#keyword">keyword</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"environnement"</span>
-   </dd>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#keyword" target="_blank" title="http://www.w3.org/ns/dcat#keyword">keyword</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"haies"</span>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ni" title="named individual">ni</sup> <span class="literal">"Le produit La BD Haie est une couche nationale de référence des haies linéaires en France métropolitaine, élaborée dans le cadre du dispositif de suivi des bocages (DSB), OFB-IGN initié en 2017. Les objets linéaires de la BD Haie ont été obtenus à partir de données existantes sur les haies au format surfacique (polygones). La production de la BD Haie suit une logique départementale. Il existe à ce jour deux versions de la BD Haie : • Une version initiale « BD Haie V1 2020 » élaborée à partir de deux sources de données : o Les haies et les bosquets du thème végétation de la base de données topographique de l’IGN, BD TOPO®, obtenus par segmentation automatique d’images aériennes et classés par photo-interprétation sur images de 2004 à 2015, selon les départements ; o Les haies arborées ou non, les arbres alignés et les bosquets issus des surfaces non agricoles du Registre Parcellaire Graphique (RPG) photo-interprétées à partir d’images aériennes datant de 2011 à 2014, selon les départements. Le RPG est un système d’information géographique permettant l’identification des parcelles agricoles, géré par l’ASP (Agence de service et de paiement). • Une version 2 mise à jour en 2024 « BD Haie V2 mars 2024 ». Cette version constitue une version mise à jour et millésimée de la « BD Haie V1 2020 ». Elle n’a pas été élaborée selon la même méthode. Deux sources de données ont été utilisées pour la mise à jour : o Les haies arborées ou non, les arbres alignés et les bosquets issus des surfaces non agricoles du Registre Parcellaire Graphique (RPG) photo-interprétées à partir d’images aériennes datant de 2020 à 2022, selon les départements ; o Les modèles numériques de surface produit par « corrélation des images aériennes » datant de 2020 à 2022, selon les départements. Dans cette version 2 sont présentes : (i) les haies présentes dans la BD Haie V1 confirmées par les données utilisées, (ii) des haies ajoutées à partir des données du RPG utilisées pour la mise à jour."</span>
@@ -1080,6 +1086,27 @@ This section provides details for each class and property defined by Ontology of
     <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">title</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"BD HAIE"</span>
    </dd>
    <dd>
+    <a href="http://www.w3.org/ns/dcat#keyword" target="_blank" title="http://www.w3.org/ns/dcat#keyword">keyword</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"arbres"</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#keyword" target="_blank" title="http://www.w3.org/ns/dcat#keyword">keyword</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"biodiversité"</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#keyword" target="_blank" title="http://www.w3.org/ns/dcat#keyword">keyword</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"bocages"</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#keyword" target="_blank" title="http://www.w3.org/ns/dcat#keyword">keyword</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"bosquets"</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#keyword" target="_blank" title="http://www.w3.org/ns/dcat#keyword">keyword</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"données ouvertes"</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#keyword" target="_blank" title="http://www.w3.org/ns/dcat#keyword">keyword</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"environnement"</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#keyword" target="_blank" title="http://www.w3.org/ns/dcat#keyword">keyword</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"haies"</span>
+   </dd>
+   <dd>
     <a href="http://www.w3.org/ns/dcat#language" target="_blank" title="http://www.w3.org/ns/dcat#language">language</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://publications.europa.eu/resource/authority/language/FRA" target="_blank" title="http://publications.europa.eu/resource/authority/language/FRA">F R A</a> <sup class="type-ep" title="external property">ep</sup>
    </dd>
    <dd>
@@ -1098,7 +1125,7 @@ This section provides details for each class and property defined by Ontology of
     belongs to
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#DatasetSeries" target="_blank" title="http://www.w3.org/ns/dcat#DatasetSeries">Dataset series</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://www.w3.org/ns/dcat#DatasetSeries" target="_blank" title="http://www.w3.org/ns/dcat#DatasetSeries">Dataset Series</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -1158,6 +1185,51 @@ This section provides details for each class and property defined by Ontology of
     <a href="http://www.w3.org/ns/dcat#theme" target="_blank" title="http://www.w3.org/ns/dcat#theme">theme</a> <sup class="type-op" title="object property">op</sup> <a href="#https://www.eionet.europa.eu/gemet/fr/inspire-theme/us" title="https://www.eionet.europa.eu/gemet/fr/inspire-theme/us">Services d'utilité publique et services publics</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
+    <a href="http://purl.org/dc/terms/created" target="_blank" title="http://purl.org/dc/terms/created">created</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2002-12-15T01:00:00"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a> </span>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ni" title="named individual">ni</sup> <span class="literal">"La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique. Les objets de la BD TOPO® sont structurés en thèmes : - l'administratif ; - le bâti ; - l'hydrographie ; - les lieux nommés ; - l'occupation du sol ; - les services et activités ; - le transport ; - les zones réglementées. Le processus de production 3D permet de fournir l'altimétrie des objets, ainsi que la hauteur des bâtiments. Le relief est décrit sous forme de modèles numériques de terrain (MNT). Depuis la version 3.0, tous les objets possèdent un identifiant unique et stable dans le temps. Le produit BDTOPO® Express est l’édition hebdomadaire de la BDTOPO® si vous avez besoin de travailler sur de la donnée topographique à haute fréquence (disponible depuis mai 2025). Le produit Différentiel BD TOPO® contient les différences géométriques et sémantiques sur l'ensemble du contenu BD TOPO® entre deux éditions trimestrielles successives BD TOPO®. Plus précisément, l'édition N du Différentiel BD TOPO® en vigueur contient tout objet de la BD TOPO® dont la date de modification, la date de création ou la date de suppression en base est postérieure à la date de prédiffusion de la précédente édition trimestrielle (N-1), équivalent à une activité de mise à jour par l'IGN d'une durée de 3 mois."</span>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/identifier" target="_blank" title="http://purl.org/dc/terms/identifier">identifier</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"IGNF_BD-TOPO"</span>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/issued" target="_blank" title="http://purl.org/dc/terms/issued">issued</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2025-09-15T02:00:00"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a> </span>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/modified" target="_blank" title="http://purl.org/dc/terms/modified">modified</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2026-07-03T02:00:00"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a> </span>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/modified" target="_blank" title="http://purl.org/dc/terms/modified">modified</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2026-07-03T11:26:44"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a> </span>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/temporal" target="_blank" title="http://purl.org/dc/terms/temporal">temporal</a> <sup class="type-ni" title="named individual">ni</sup> <a href="#http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDTopo" title="http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDTopo">Temporal Period B D Topo</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">title</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"BD TOPO®"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"GPKG"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"PostGreSQL"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"SHP"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"TMS"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"WFS"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"WMS"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"WMTS"</span>
+   </dd>
+   <dd>
     <a href="http://www.w3.org/ns/dcat#keyword" target="_blank" title="http://www.w3.org/ns/dcat#keyword">keyword</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Géospatiales"</span>
    </dd>
    <dd>
@@ -1204,51 +1276,6 @@ This section provides details for each class and property defined by Ontology of
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#keyword" target="_blank" title="http://www.w3.org/ns/dcat#keyword">keyword</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"énergies"</span>
-   </dd>
-   <dd>
-    <a href="http://purl.org/dc/terms/created" target="_blank" title="http://purl.org/dc/terms/created">created</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2002-12-15T01:00:00"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a> </span>
-   </dd>
-   <dd>
-    <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ni" title="named individual">ni</sup> <span class="literal">"La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique. Les objets de la BD TOPO® sont structurés en thèmes : - l'administratif ; - le bâti ; - l'hydrographie ; - les lieux nommés ; - l'occupation du sol ; - les services et activités ; - le transport ; - les zones réglementées. Le processus de production 3D permet de fournir l'altimétrie des objets, ainsi que la hauteur des bâtiments. Le relief est décrit sous forme de modèles numériques de terrain (MNT). Depuis la version 3.0, tous les objets possèdent un identifiant unique et stable dans le temps. Le produit BDTOPO® Express est l’édition hebdomadaire de la BDTOPO® si vous avez besoin de travailler sur de la donnée topographique à haute fréquence (disponible depuis mai 2025). Le produit Différentiel BD TOPO® contient les différences géométriques et sémantiques sur l'ensemble du contenu BD TOPO® entre deux éditions trimestrielles successives BD TOPO®. Plus précisément, l'édition N du Différentiel BD TOPO® en vigueur contient tout objet de la BD TOPO® dont la date de modification, la date de création ou la date de suppression en base est postérieure à la date de prédiffusion de la précédente édition trimestrielle (N-1), équivalent à une activité de mise à jour par l'IGN d'une durée de 3 mois."</span>
-   </dd>
-   <dd>
-    <a href="http://purl.org/dc/terms/identifier" target="_blank" title="http://purl.org/dc/terms/identifier">identifier</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"IGNF_BD-TOPO"</span>
-   </dd>
-   <dd>
-    <a href="http://purl.org/dc/terms/issued" target="_blank" title="http://purl.org/dc/terms/issued">issued</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2025-09-15T02:00:00"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a> </span>
-   </dd>
-   <dd>
-    <a href="http://purl.org/dc/terms/modified" target="_blank" title="http://purl.org/dc/terms/modified">modified</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2026-07-03T02:00:00"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a> </span>
-   </dd>
-   <dd>
-    <a href="http://purl.org/dc/terms/modified" target="_blank" title="http://purl.org/dc/terms/modified">modified</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2026-07-03T11:26:44"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a> </span>
-   </dd>
-   <dd>
-    <a href="http://purl.org/dc/terms/temporal" target="_blank" title="http://purl.org/dc/terms/temporal">temporal</a> <sup class="type-ni" title="named individual">ni</sup> <a href="#http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDTopo" title="http://purl.org/www.umr-lastig.fr/geodata#TemporalPeriodBDTopo">Temporal Period B D Topo</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dd>
-    <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">title</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"BD TOPO®"</span>
-   </dd>
-   <dd>
-    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"GPKG"</span>
-   </dd>
-   <dd>
-    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"PostGreSQL"</span>
-   </dd>
-   <dd>
-    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"SHP"</span>
-   </dd>
-   <dd>
-    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"TMS"</span>
-   </dd>
-   <dd>
-    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"WFS"</span>
-   </dd>
-   <dd>
-    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"WMS"</span>
-   </dd>
-   <dd>
-    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"WMTS"</span>
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#language" target="_blank" title="http://www.w3.org/ns/dcat#language">language</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"fr-FR"</span>
@@ -1314,7 +1341,7 @@ This section provides details for each class and property defined by Ontology of
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">risoluzione spaziale (metri)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"10.0"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
+    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">spatial resolution (metres)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"10.0"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#temporalResolution" target="_blank" title="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"PT6s"^^<a href="xsd:duration" target="_blank" title="xsd:duration">xsd:duration</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -1467,7 +1494,7 @@ This section provides details for each class and property defined by Ontology of
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">risoluzione spaziale (metri)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
+    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">spatial resolution (metres)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#temporalResolution" target="_blank" title="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"PT1s"^^<a href="xsd:duration" target="_blank" title="xsd:duration">xsd:duration</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -1638,7 +1665,7 @@ This section provides details for each class and property defined by Ontology of
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">risoluzione spaziale (metri)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
+    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">spatial resolution (metres)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#temporalResolution" target="_blank" title="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"PT1s"^^<a href="xsd:duration" target="_blank" title="xsd:duration">xsd:duration</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -1656,7 +1683,7 @@ This section provides details for each class and property defined by Ontology of
     belongs to
    </dt>
    <dd>
-    <a href="http://purl.org/dc/terms/ProvenanceStatement" target="_blank" title="http://purl.org/dc/terms/ProvenanceStatement">Provenance Statement</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://purl.org/dc/terms/ProvenanceStatement" target="_blank" title="http://purl.org/dc/terms/ProvenanceStatement">Provenance Statement</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -1770,7 +1797,7 @@ This section provides details for each class and property defined by Ontology of
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">risoluzione spaziale (metri)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"15.0"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
+    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">spatial resolution (metres)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"15.0"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#temporalResolution" target="_blank" title="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"PT10s"^^<a href="xsd:duration" target="_blank" title="xsd:duration">xsd:duration</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -1806,7 +1833,7 @@ This section provides details for each class and property defined by Ontology of
     belongs to
    </dt>
    <dd>
-    <a href="http://purl.org/dc/terms/PeriodOfTime" target="_blank" title="http://purl.org/dc/terms/PeriodOfTime">Period Of Time</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://purl.org/dc/terms/PeriodOfTime" target="_blank" title="http://purl.org/dc/terms/PeriodOfTime">Period Of Time</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -1827,7 +1854,7 @@ This section provides details for each class and property defined by Ontology of
     belongs to
    </dt>
    <dd>
-    <a href="http://purl.org/dc/terms/PeriodOfTime" target="_blank" title="http://purl.org/dc/terms/PeriodOfTime">Period Of Time</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://purl.org/dc/terms/PeriodOfTime" target="_blank" title="http://purl.org/dc/terms/PeriodOfTime">Period Of Time</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -1893,7 +1920,7 @@ This section provides details for each class and property defined by Ontology of
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">risoluzione spaziale (metri)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
+    <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters" target="_blank" title="http://www.w3.org/ns/dcat#spatialResolutionInMeters">spatial resolution (metres)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.5"^^<a href="xsd:decimal" target="_blank" title="xsd:decimal">xsd:decimal</a> <sup class="type-ep" title="external property">ep</sup> </span>
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/dcat#temporalResolution" target="_blank" title="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"PT1s"^^<a href="xsd:duration" target="_blank" title="xsd:duration">xsd:duration</a> <sup class="type-ep" title="external property">ep</sup> </span>
