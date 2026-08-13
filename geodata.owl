@@ -441,6 +441,7 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#represents -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/www.umr-lastig.fr/geodata#represents">
+        <owl:inverseOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#isRepresentedBy"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment xml:lang="en">Connect digital assets that are useful to derive meaningful representations of interests expressed with non digital concepts. It is a generic property that is inferred from the following : either a concept is present in the topicCategories, keywords, themes, application schema of a given asset.</rdfs:comment>
