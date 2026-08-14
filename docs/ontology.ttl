@@ -262,6 +262,13 @@ xsd:date rdf:type rdfs:Datatype .
                         rdfs:range <http://purl.org/dc/terms/MethodOfInstruction> .
 
 
+###  http://purl.org/www.umr-lastig.fr/geodata#hasUserFeedback
+:hasUserFeedback rdf:type owl:ObjectProperty ;
+                 rdfs:domain <http://www.w3.org/ns/dcat#Resource> ;
+                 rdfs:range :UserFeedback ;
+                 rdfs:comment "hasUserFeedback"@en .
+
+
 ###  http://purl.org/www.umr-lastig.fr/geodata#has_member
 :has_member rdf:type owl:ObjectProperty ;
             rdfs:domain :Collection .
@@ -283,8 +290,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#target
 :target rdf:type owl:ObjectProperty ;
+        owl:inverseOf :hasUserFeedback ;
         rdfs:domain :UserFeedback ;
-        rdfs:range <http://www.w3.org/ns/dcat#Resource> .
+        rdfs:range <http://www.w3.org/ns/dcat#Resource> ;
+        rdfs:comment "target"@en .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures

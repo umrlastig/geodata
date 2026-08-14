@@ -212,6 +212,12 @@
 <http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/www.umr-lastig.fr/geodata#Collection> .
 <http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/MethodOfInstruction> .
 # 
+# http://purl.org/www.umr-lastig.fr/geodata#hasUserFeedback
+<http://purl.org/www.umr-lastig.fr/geodata#hasUserFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/www.umr-lastig.fr/geodata#hasUserFeedback> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Resource> .
+<http://purl.org/www.umr-lastig.fr/geodata#hasUserFeedback> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
+<http://purl.org/www.umr-lastig.fr/geodata#hasUserFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "hasUserFeedback"@en .
+# 
 # http://purl.org/www.umr-lastig.fr/geodata#has_member
 <http://purl.org/www.umr-lastig.fr/geodata#has_member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/www.umr-lastig.fr/geodata#has_member> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/www.umr-lastig.fr/geodata#Collection> .
@@ -230,8 +236,10 @@
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#target
 <http://purl.org/www.umr-lastig.fr/geodata#target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/www.umr-lastig.fr/geodata#target> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/www.umr-lastig.fr/geodata#hasUserFeedback> .
 <http://purl.org/www.umr-lastig.fr/geodata#target> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
 <http://purl.org/www.umr-lastig.fr/geodata#target> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Resource> .
+<http://purl.org/www.umr-lastig.fr/geodata#target> <http://www.w3.org/2000/01/rdf-schema#comment> "target"@en .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures
 <http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
